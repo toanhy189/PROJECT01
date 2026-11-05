@@ -46,6 +46,7 @@ docs/screenshots/
 *.tmp
 ~$*
 .work/
+.vscode/
 .idea/
 *.code-workspace
 .DS_Store
