@@ -1,0 +1,78 @@
+# Môi trường và cache có thể tạo lại.
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Cấu hình bí mật chỉ tồn tại trên máy; giữ bản mẫu không chứa key.
+.env*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+.ssh/
+.codex/
+.agents/
+
+# Thư viện, bản build và kết quả kiểm thử trình duyệt.
+frontend/node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+frontend/*.tsbuildinfo
+
+# Báo cáo Word/PDF, script, ảnh và bản thảo dùng để tạo báo cáo.
+/reports/
+/report/
+/repot/
+docs/screenshots/
+/artifacts/ui_upgrade/
+/artifacts/figure_capture_report.json
+
+# Prompt giao việc và bản sao cục bộ không thuộc mã nguồn ứng dụng.
+/*[Pp]rompt*.md
+/prompts/
+*.prompt.md
+*.zip
+*.bak
+*.tmp
+~$*
+.work/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Dữ liệu tải về và cơ sở dữ liệu được chuẩn bị lại theo README.
+data/raw/*.csv
+data/raw/*.zip
+data/chroma/
+data/neo4j/
+
+# Không đưa model lớn phát sinh sau này lên Git; giữ bộ model nhỏ đang dùng.
+artifacts/*.pt
+artifacts/*.joblib
+!artifacts/model.pt
+!artifacts/baseline.joblib
+!artifacts/preprocessor.joblib
+artifacts/reranker_cache/
+
+# Nhật ký dọn máy, bản nháp và kết quả debug trung gian.
+/artifacts/cleanup_report.json
+/artifacts/documentation_audit_report.json
+/artifacts/citation_reproduction.json
+/artifacts/citation_fixed_draft.json
+/artifacts/neo4j_migration_failed.json
+/artifacts/rag_metrics_before_fix.json
+/artifacts/rag_metrics_schema_fix.json
+/artifacts/retrieval_ablation_niddk_initial.json
+*.log

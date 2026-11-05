@@ -1,0 +1,2 @@
+# Tùy chọn cho benchmark reranker; không cần khi ENABLE_RERANKING=false.
+transformers>=4.57,<5

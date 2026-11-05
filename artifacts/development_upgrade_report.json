@@ -1,0 +1,245 @@
+{
+  "checked_at": "2026-11-05T11:15:10.129040+00:00",
+  "status": "implemented_and_verified_with_documented_limits",
+  "features": [
+    "zip_reference_ui_system_vietnamese_fonts",
+    "source_checked_bmi_classification_without_gemini",
+    "validated_scenarios_without_mutating_original_profile",
+    "real_mlp_and_logistic_comparison",
+    "reproducible_global_permutation_importance_21_features",
+    "opt_in_tab_memory_profile_and_bmi_follow_up",
+    "real_neo4j_relations_and_source_evidence_ui",
+    "validated_dataset_summary_filters",
+    "targeted_test_range_semantic_guard"
+  ],
+  "dependencies_added": [],
+  "model": {
+    "version": "cdc-mlp-20261101T102617Z",
+    "retrained": false,
+    "weights_scaler_threshold_unchanged": true,
+    "verified_artifact_checksums": {
+      "model.pt": "e3e4aa9cb9bece749c74a42bfed96856c9c2f62e7c3ad417fb465a4eefe523b8",
+      "baseline.joblib": "f91dac0cdd5a944480fedc2aac899977b637b473677f2c12603b072bf57ba0d0",
+      "preprocessor.joblib": "896107474d6cb4dad3b4b251ca48e737f339597298f44b7210ae2e614b39dab8",
+      "metrics.json": "578b7f81e1d68f6546403c00317085386cfa64639120a184b3f3d5ae54cb772d"
+    },
+    "inspection_recheck": {
+      "test_rows": 34411,
+      "repeats": 5,
+      "maximum_absolute_importance_difference": 0.0
+    }
+  },
+  "retrieval": {
+    "active_snapshot": "dda7fa12276ad18120a9ceb6f119085fbeeed6370fe0fcd87be0bf70a102b644",
+    "collection": "diabetes_knowledge_20261105",
+    "corpus_version": "9fe193e91b82172ef6583be2f055603ac241ba6b122dd054ba02967259073a34",
+    "counts": {
+      "Entity": 37,
+      "RelationFact": 38,
+      "Evidence": 40,
+      "Chunk": 67,
+      "Document": 6
+    },
+    "structural_relationships": 223,
+    "new_bmi_chunks": 9,
+    "existing_vectors_reembedded": 0,
+    "unique_chunk_ids": 67,
+    "old_collection_still_unchanged": true,
+    "rollback": {
+      "snapshot_id": "f70e5a9bc1bd55ff0e832eb266438204743f539f63ae62b0724912410f366b86",
+      "collection": "diabetes_knowledge",
+      "old_collection_unchanged": true
+    },
+    "unchanged_bmi_index_recheck": {
+      "indexed_documents": 0,
+      "unchanged_documents": 1,
+      "errors": []
+    },
+    "gold_queries": 50,
+    "metrics": {
+      "vector": {
+        "recall_at_5": 0.9666666666666667,
+        "mrr": 0.8174074074074075,
+        "ndcg_at_5": 0.8438038837208113
+      },
+      "vector_graph": {
+        "recall_at_5": 0.9666666666666667,
+        "mrr": 0.8507407407407409,
+        "ndcg_at_5": 0.8750721186344849
+      }
+    },
+    "old_corpus_recall_at_5": 0.9777777777777777,
+    "recall_drop_percentage_points": 1.1111111111111072,
+    "acceptance": {
+      "minimum_vector_recall": 0.95,
+      "graph_no_recall_regression_against_vector": true,
+      "no_graph_service_fallback": true,
+      "passed": true
+    },
+    "limitation": "Retrieval metrics do not establish answer correctness or clinical validity."
+  },
+  "validation": {
+    "pytest": {
+      "passed": 193,
+      "neo4j_real_integration": 13,
+      "failures": 0,
+      "duration_seconds": 47.99,
+      "report": "artifacts/development_pytest.xml"
+    },
+    "playwright": {
+      "passed": 11,
+      "failures": 0,
+      "report": "artifacts/development_playwright.json"
+    },
+    "frontend_build": "passed",
+    "ruff": "passed",
+    "targeted_pep8_line_lengths": "passed",
+    "changed_text_utf8_no_replacement_characters": true,
+    "live_results": [
+      {
+        "question": "BMI 59 của mik có quá cao k",
+        "safety_status": "passed",
+        "mode": "sourced_rule",
+        "citations": 2
+      },
+      {
+        "question": "BMI của mình có cao không?",
+        "safety_status": "passed",
+        "mode": "sourced_rule",
+        "citations": 2
+      },
+      {
+        "question": "Nếu giảm 3 thì sao?",
+        "safety_status": "passed",
+        "mode": "model_scenario",
+        "citations": 0
+      },
+      {
+        "question": "Kháng insulin là gì?",
+        "safety_status": "passed",
+        "mode": "hybrid_graph",
+        "citations": 2
+      },
+      {
+        "question": "Có những xét nghiệm nào để chẩn đoán tiểu đường?",
+        "safety_status": "passed",
+        "mode": "hybrid_graph",
+        "citations": 4
+      },
+      {
+        "question": "Tôi nên uống metformin liều bao nhiêu?",
+        "safety_status": "fallback",
+        "mode": null,
+        "citations": 0
+      }
+    ],
+    "real_gemini_knowledge_questions": 2,
+    "live_report": "artifacts/development_live_verification.json",
+    "warning": "Joblib/NumPy deprecation warnings remain; no test failures."
+  },
+  "file_inventory": {
+    "modified_in_backed_up_scope": [
+      "README.md",
+      "backend/agents/nodes.py",
+      "backend/agents/safety.py",
+      "backend/api/routes.py",
+      "backend/graph/state.py",
+      "backend/graph/workflow.py",
+      "backend/schemas/api.py",
+      "data/knowledge/download_report.json",
+      "data/knowledge/graph_annotations.json",
+      "data/knowledge/manifest.json",
+      "data/knowledge/ontology.json",
+      "data/retrieval/active.json",
+      "docs/architecture.md",
+      "docs/demo.md",
+      "docs/development_plan.md",
+      "docs/evaluation.md",
+      "docs/implementation.md",
+      "docs/neo4j_demo.md",
+      "frontend/playwright.config.ts",
+      "frontend/src/App.tsx",
+      "frontend/src/components/Answer.tsx",
+      "frontend/src/pages/Chat.tsx",
+      "frontend/src/pages/Dashboard.tsx",
+      "frontend/src/pages/Prediction.tsx",
+      "frontend/src/services/api.ts",
+      "frontend/src/styles.css",
+      "frontend/src/types/api.ts",
+      "ingestion/download_sources.py",
+      "tests/test_source_download.py"
+    ],
+    "added_in_scanned_scope": [
+      "backend/api/tools_routes.py",
+      "backend/core/text.py",
+      "backend/knowledge/__init__.py",
+      "backend/knowledge/clinical_rules.py",
+      "backend/knowledge/measurements.py",
+      "backend/ml/dataset_service.py",
+      "backend/ml/tools.py",
+      "backend/rag/semantic_validator.py",
+      "backend/schemas/tools.py",
+      "data/knowledge/bmi.md",
+      "data/knowledge/clinical_rules.json",
+      "docs/development_upgrade.md",
+      "frontend/src/components/DatasetExplorer.tsx",
+      "frontend/src/components/KnowledgeGraph.tsx",
+      "frontend/src/components/ModelLab.tsx",
+      "frontend/src/data/features.ts",
+      "frontend/src/state/ProfileContext.tsx",
+      "ingestion/activate_snapshot.py",
+      "tests/test_clinical_rules.py",
+      "tests/test_dataset_tools.py",
+      "tests/test_model_tools.py",
+      "tests/test_upgrade_reproducibility.py"
+    ],
+    "removed_in_backed_up_scope": [],
+    "additional_changed_files_outside_backup_scope": [
+      "training/train.py",
+      "evaluation/inspect_model.py",
+      "frontend/vite.config.ts",
+      "frontend/e2e/upgrade.spec.ts"
+    ],
+    "configuration": ".env: CHROMA_COLLECTION only; credentials not exported",
+    "backup_scope": [
+      "backend",
+      "ingestion",
+      "tests",
+      "docs",
+      "frontend/src",
+      "data/knowledge",
+      "README.md",
+      "frontend/playwright.config.ts",
+      "frontend/package.json",
+      "data/retrieval/active.json"
+    ],
+    "source_backup": "artifacts/development_source_backup.zip",
+    "source_backup_sha256": "29095073daeada628a9bc5937711f546b8fd7cd6c848ec031556754664c2b571",
+    "source_backup_contains_secrets": false
+  },
+  "screenshots": [
+    "artifacts/ui_upgrade/dashboard-desktop.png",
+    "artifacts/ui_upgrade/prediction-desktop.png",
+    "artifacts/ui_upgrade/prediction-mobile.png",
+    "artifacts/ui_upgrade/upgrade-chat-mobile.png",
+    "artifacts/ui_upgrade/upgrade-chat-profile.png",
+    "artifacts/ui_upgrade/upgrade-model-lab-panel.png",
+    "artifacts/ui_upgrade/upgrade-model-lab.png",
+    "artifacts/ui_upgrade/upgrade-neo4j-panel.png"
+  ],
+  "limitations": [
+    "Targeted semantic guard; no general medical entailment verification.",
+    "No individual SHAP, SSE, 3D, persistent health history or arbitrary dialogue memory.",
+    "Open knowledge RAG still needs Gemini key and quota.",
+    "Wiki/BM25/reranker retain previous activation policies.",
+    "Model scores and what-if changes are not medical risks or causal effects."
+  ],
+  "usage": "Restart API and Vite; no training or full reindex needed.",
+  "documentation": "docs/development_upgrade.md",
+  "cleanup": {
+    "temporary_work_directory_removed": true,
+    "duplicate_inspection_recheck_removed": true,
+    "source_backup_verified": true,
+    "updated_document_links_valid": true
+  }
+}

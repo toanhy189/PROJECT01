@@ -1,0 +1,379 @@
+[
+  {
+    "subject": "diabetes",
+    "predicate": "HAS_SUBTYPE",
+    "object": "type_1_diabetes",
+    "document_id": "niddk-overview",
+    "quote": "The most common types of diabetes are type 1, type 2, and gestational diabetes.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "diabetes",
+    "predicate": "HAS_SUBTYPE",
+    "object": "type_2_diabetes",
+    "document_id": "niddk-overview",
+    "quote": "The most common types of diabetes are type 1, type 2, and gestational diabetes.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "diabetes",
+    "predicate": "HAS_SUBTYPE",
+    "object": "gestational_diabetes",
+    "document_id": "niddk-overview",
+    "quote": "The most common types of diabetes are type 1, type 2, and gestational diabetes.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "gestational_diabetes",
+    "predicate": "RISK_FACTOR_FOR",
+    "object": "type_2_diabetes",
+    "qualifiers": "History of gestational diabetes; higher chance later in life, not certainty.",
+    "document_id": "niddk-overview",
+    "quote": "However, if you’ve had gestational diabetes, you have a higher chance of developing type 2 diabetes later in life.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "prediabetes",
+    "predicate": "RISK_FACTOR_FOR",
+    "object": "type_2_diabetes",
+    "document_id": "niddk-overview",
+    "quote": "If you have prediabetes, you have a higher risk of developing type 2 diabetes in the future.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "prediabetes",
+    "predicate": "ASSOCIATED_WITH",
+    "object": "heart_disease",
+    "qualifiers": "Higher risk; not a claim of direct causation.",
+    "document_id": "niddk-overview",
+    "quote": "You also have a higher risk for heart disease than people with normal glucose levels.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "diabetes",
+    "predicate": "ASSOCIATED_WITH",
+    "object": "kidney_damage",
+    "document_id": "niddk-overview",
+    "quote": "Diabetes raises the risk for damage to the eyes, kidneys, nerves, and heart.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "diabetes",
+    "predicate": "ASSOCIATED_WITH",
+    "object": "heart_disease",
+    "document_id": "niddk-overview",
+    "quote": "Diabetes raises the risk for damage to the eyes, kidneys, nerves, and heart.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "obesity",
+    "predicate": "RISK_FACTOR_FOR",
+    "object": "type_2_diabetes",
+    "qualifiers": "Risk-factor list in section What are the risk factors for type 2 diabetes; not a diagnosis.",
+    "document_id": "niddk-risk",
+    "quote": "are overweight or have obesity.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "family_history",
+    "predicate": "RISK_FACTOR_FOR",
+    "object": "type_2_diabetes",
+    "qualifiers": "Risk-factor list in section What are the risk factors for type 2 diabetes.",
+    "document_id": "niddk-risk",
+    "quote": "have a family history of diabetes.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "physical_inactivity",
+    "predicate": "RISK_FACTOR_FOR",
+    "object": "type_2_diabetes",
+    "qualifiers": "Risk-factor list, association does not establish causation.",
+    "document_id": "niddk-risk",
+    "quote": "are not physically active, because of physical limitations, a sedentary lifestyle, or a job that requires sitting for long periods of time.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "age_risk",
+    "predicate": "RISK_FACTOR_FOR",
+    "object": "type_2_diabetes",
+    "qualifiers": "Risk rises with age; children and teens can also develop type 2 diabetes.",
+    "document_id": "niddk-risk",
+    "quote": "are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "waist",
+    "predicate": "RISK_FACTOR_FOR",
+    "object": "diabetes",
+    "qualifiers": "Large waist circumference; not every waist measurement implies elevated risk.",
+    "document_id": "niddk-risk",
+    "quote": "Having a large waist circumference is a risk factor for diabetes and heart disease, even if you have a normal BMI.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "bmi",
+    "predicate": "USED_TO_ASSESS",
+    "object": "obesity",
+    "document_id": "niddk-risk",
+    "quote": "Your BMI can help you tell if you are at a healthy weight or have overweight or obesity.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "physical_activity",
+    "predicate": "MAY_REDUCE_RISK_OF",
+    "object": "type_2_diabetes",
+    "qualifiers": "Physical activity together with modest weight loss and reduced-calorie eating; not a guarantee.",
+    "document_id": "niddk-prevention",
+    "quote": "You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "weight_loss",
+    "predicate": "MAY_REDUCE_RISK_OF",
+    "object": "type_2_diabetes",
+    "qualifiers": "Modest weight loss with eating plan and activity; not every person should lose weight.",
+    "document_id": "niddk-prevention",
+    "quote": "You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "healthy_eating",
+    "predicate": "MAY_REDUCE_RISK_OF",
+    "object": "type_2_diabetes",
+    "qualifiers": "Combined lifestyle changes, not a guaranteed effect from one food.",
+    "document_id": "niddk-prevention",
+    "quote": "You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "a1c_test",
+    "predicate": "USED_TO_ASSESS",
+    "object": "diabetes",
+    "qualifiers": "Test interpretation depends on pregnancy, anemia and other factors described in source; not diagnosis by the assistant.",
+    "document_id": "niddk-tests",
+    "quote": "Before using the A1C test to diagnose diabetes, your doctor will consider factors, such as whether you are in your second or third trimester of pregnancy or whether you have certain types of anemia or another problem with your blood.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "a1c_test",
+    "predicate": "MEASURES",
+    "object": "blood_glucose",
+    "qualifiers": "Average over the last 3 months, not a single instant.",
+    "document_id": "niddk-tests",
+    "quote": "The A1C test is a blood test that provides your average levels of blood glucose over the last 3 months.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "fpg_test",
+    "predicate": "MEASURES",
+    "object": "blood_glucose",
+    "qualifiers": "At a single point in time after fasting; see source conditions.",
+    "document_id": "niddk-tests",
+    "quote": "The fasting plasma glucose (FPG) test measures your blood glucose level at a single point in time.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "ogtt",
+    "predicate": "USED_TO_ASSESS",
+    "object": "type_2_diabetes",
+    "document_id": "niddk-tests",
+    "quote": "The oral glucose tolerance test (OGTT) helps doctors detect type 2 diabetes, prediabetes, and gestational diabetes.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "ogtt",
+    "predicate": "USED_TO_ASSESS",
+    "object": "prediabetes",
+    "document_id": "niddk-tests",
+    "quote": "The oral glucose tolerance test (OGTT) helps doctors detect type 2 diabetes, prediabetes, and gestational diabetes.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "ogtt",
+    "predicate": "USED_TO_ASSESS",
+    "object": "gestational_diabetes",
+    "document_id": "niddk-tests",
+    "quote": "The oral glucose tolerance test (OGTT) helps doctors detect type 2 diabetes, prediabetes, and gestational diabetes.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "glucose_challenge",
+    "predicate": "USED_TO_ASSESS",
+    "object": "gestational_diabetes",
+    "document_id": "niddk-tests",
+    "quote": "If you are pregnant, your doctor might test you for gestational diabetes with the glucose challenge test.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "genetic_testing",
+    "predicate": "USED_TO_ASSESS",
+    "object": "monogenic_diabetes",
+    "qualifiers": "Most forms, not every case.",
+    "document_id": "niddk-tests",
+    "quote": "Genetic testing can diagnose most forms of monogenic diabetes, which is caused by a change—or mutation—in a gene.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "autoantibody_test",
+    "predicate": "USED_TO_ASSESS",
+    "object": "type_1_diabetes",
+    "qualifiers": "A clinician may use autoantibodies; a positive result may indicate type 1, not certainty.",
+    "document_id": "niddk-tests",
+    "quote": "If you have diabetes, your doctor may look for certain autoantibodies to see if your diabetes is type 1.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "glucose_meter",
+    "predicate": "CANNOT_DIAGNOSE",
+    "object": "diabetes",
+    "polarity": "positive",
+    "document_id": "niddk-tests",
+    "quote": "Blood testing equipment that you can buy over the counter, such as a blood glucose meter, cannot diagnose diabetes.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review",
+    "qualifiers": "The predicate itself encodes inability to diagnose; positive polarity affirms that negative capability statement."
+  },
+  {
+    "subject": "diabetes",
+    "predicate": "HAS_ASSOCIATED_SYMPTOM",
+    "object": "frequent_urination",
+    "qualifiers": "Common symptoms list; symptoms alone do not diagnose disease.",
+    "document_id": "niddk-symptoms",
+    "quote": "increased urination",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "diabetes",
+    "predicate": "HAS_ASSOCIATED_SYMPTOM",
+    "object": "thirst",
+    "qualifiers": "Common symptoms list; symptoms alone do not diagnose disease.",
+    "document_id": "niddk-symptoms",
+    "quote": "feeling very thirsty",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "diabetes",
+    "predicate": "HAS_ASSOCIATED_SYMPTOM",
+    "object": "fatigue",
+    "qualifiers": "Common symptoms list; symptoms alone do not diagnose disease.",
+    "document_id": "niddk-symptoms",
+    "quote": "fatigue",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "diabetes",
+    "predicate": "HAS_ASSOCIATED_SYMPTOM",
+    "object": "blurred_vision",
+    "qualifiers": "Common symptoms list; symptoms alone do not diagnose disease.",
+    "document_id": "niddk-symptoms",
+    "quote": "blurred vision",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "diabetes",
+    "predicate": "HAS_ASSOCIATED_SYMPTOM",
+    "object": "slow_healing",
+    "qualifiers": "Common symptoms list; symptoms alone do not diagnose disease.",
+    "document_id": "niddk-symptoms",
+    "quote": "sores that do not heal",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "type_1_diabetes",
+    "predicate": "HAS_ASSOCIATED_SYMPTOM",
+    "object": "unexplained_weight_loss",
+    "document_id": "niddk-symptoms",
+    "quote": "In addition to some of the common diabetes symptoms listed above, people with type 1 diabetes may also have an unexplained weight loss.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "type_2_diabetes",
+    "predicate": "ASSOCIATED_WITH",
+    "object": "insulin_resistance",
+    "document_id": "niddk-symptoms",
+    "quote": "Type 2 diabetes develops when your pancreas doesn’t produce enough insulin, and your body has trouble using insulin, a condition called insulin resistance.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "gestational_diabetes",
+    "predicate": "RISK_FACTOR_FOR",
+    "object": "type_2_diabetes",
+    "qualifiers": "History of gestational diabetes; higher chance later in life, not certainty.",
+    "document_id": "niddk-symptoms",
+    "quote": "People with a history of gestational diabetes are at higher risk of developing type 2 diabetes later in life.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "type_1_diabetes",
+    "predicate": "ASSOCIATED_WITH",
+    "object": "dka",
+    "qualifiers": "DKA is a medical emergency; association also possible in type 2 when insufficient insulin.",
+    "document_id": "niddk-symptoms",
+    "quote": "DKA usually affects people with type 1 diabetes. People with type 2 diabetes may also develop DKA if their body doesn’t produce enough insulin.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "pancreas",
+    "predicate": "PRODUCES",
+    "object": "insulin",
+    "document_id": "niddk-overview",
+    "quote": "Insulin is a hormone made by the pancreas that helps glucose get into your cells to be used for energy.",
+    "status": "source_checked",
+    "checked_by": "codex_source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "bmi",
+    "predicate": "USED_TO_ASSESS",
+    "object": "obesity",
+    "document_id": "niddk-bmi",
+    "quote": "Overweight and obesity are defined by body mass index (BMI).",
+    "qualifiers": "BMI categorization in adults aged 20 and older; not a diabetes diagnosis.",
+    "status": "source_checked",
+    "checked_by": "source_alignment_not_clinical_review"
+  },
+  {
+    "subject": "bmi",
+    "predicate": "USED_TO_ASSESS",
+    "object": "severe_obesity",
+    "document_id": "niddk-bmi",
+    "quote": "| BMI | Category |\n| --- | --- |\n| 18.5 to 24.9 | Healthy weight |\n| 25 to 29.9 | Overweight |\n| 30+ | Obesity (including severe obesity) |\n| 40+ | Severe obesity |",
+    "qualifiers": "BMI categorization in adults aged 20 and older; not a diabetes diagnosis.",
+    "status": "source_checked",
+    "checked_by": "source_alignment_not_clinical_review"
+  }
+]

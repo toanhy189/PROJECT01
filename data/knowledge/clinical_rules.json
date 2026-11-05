@@ -1,0 +1,35 @@
+{
+  "rule_id": "niddk-bmi-adults-20-v1",
+  "document_id": "niddk-bmi",
+  "source_sha256": "ad004e80502fe87f42df05b67a2ed92e908692091984531f63b123701ec02b97",
+  "scope": "Adults aged 20 and older; conditional if exact age is unknown. Not applied to children or pregnancy.",
+  "quote": "| BMI | Category |\n| --- | --- |\n| 18.5 to 24.9 | Healthy weight |\n| 25 to 29.9 | Overweight |\n| 30+ | Obesity (including severe obesity) |\n| 40+ | Severe obesity |",
+  "categories": [
+    {
+      "min": 40,
+      "max": null,
+      "label_vi": "béo phì nặng",
+      "range_label": "BMI từ 40 trở lên"
+    },
+    {
+      "min": 30,
+      "max": 39.9,
+      "label_vi": "béo phì",
+      "range_label": "BMI từ 30 đến 39,9"
+    },
+    {
+      "min": 25,
+      "max": 29.9,
+      "label_vi": "thừa cân",
+      "range_label": "BMI từ 25 đến 29,9"
+    },
+    {
+      "min": 18.5,
+      "max": 24.9,
+      "label_vi": "cân nặng trong khoảng khỏe mạnh theo bảng BMI",
+      "range_label": "BMI từ 18,5 đến 24,9"
+    }
+  ],
+  "rounding_policy": "No silent rounding; values in gaps between displayed decimal boundaries need clarification.",
+  "checked_by": "source_alignment_not_clinical_review"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "verified",
+  "backend": "neo4j",
+  "snapshot_id": "dda7fa12276ad18120a9ceb6f119085fbeeed6370fe0fcd87be0bf70a102b644",
+  "corpus_version": "9fe193e91b82172ef6583be2f055603ac241ba6b122dd054ba02967259073a34",
+  "created": false,
+  "idempotent": true,
+  "counts": {
+    "Entity": 37,
+    "RelationFact": 38,
+    "Evidence": 40,
+    "Chunk": 67,
+    "Document": 6
+  },
+  "structural_relationships": 223,
+  "embedding_requests": 0,
+  "provenance_verified": true,
+  "chroma_modified": false
+}

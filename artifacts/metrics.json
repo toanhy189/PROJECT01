@@ -1,0 +1,57 @@
+{
+  "logistic_regression": {
+    "threshold": 0.5890201514183528,
+    "accuracy": 0.7705094301240882,
+    "precision": 0.36097612507923094,
+    "recall": 0.649002849002849,
+    "f1": 0.46391962528002173,
+    "roc_auc": 0.8080127300946625,
+    "pr_auc": 0.40927653097896455,
+    "brier_score": 0.18362815789541811,
+    "confusion_matrix": [
+      [
+        23097,
+        6049
+      ],
+      [
+        1848,
+        3417
+      ]
+    ]
+  },
+  "mlp": {
+    "threshold": 0.6208900213241577,
+    "accuracy": 0.7809130801197292,
+    "precision": 0.3739467849223947,
+    "recall": 0.6406457739791073,
+    "f1": 0.472243612180609,
+    "roc_auc": 0.8146567312913753,
+    "pr_auc": 0.4341411068989293,
+    "brier_score": 0.1836941540706044,
+    "confusion_matrix": [
+      [
+        23499,
+        5647
+      ],
+      [
+        1892,
+        3373
+      ]
+    ]
+  },
+  "split_counts": {
+    "train": 160636,
+    "validation": 34427,
+    "test": 34411
+  },
+  "split_positive_rates": {
+    "train": 0.15294206142425537,
+    "validation": 0.1529032438993454,
+    "test": 0.15300339460372925
+  },
+  "threshold_selection": "F1 tối đa trên validation; test giữ riêng",
+  "deduplication": "Loại hàng trùng; cùng đặc trưng luôn thuộc cùng một tập",
+  "limitations": "Mô hình học từ khảo sát BRFSS 2015 tại Hoa Kỳ. Lớp 1 gộp tiền tiểu đường và tiểu đường theo nhãn dữ liệu. Điểm mô hình không phải xác suất chẩn đoán hoặc nguy cơ mắc bệnh trong tương lai. Không thay thế xét nghiệm hay bác sĩ.",
+  "model_version": "cdc-mlp-20261101T102617Z",
+  "dataset_sha256": "9f71fda9d4ae5f4878c99b9233b6a16accfa9a17c194116a6b78100540934964"
+}

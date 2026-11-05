@@ -1,0 +1,60 @@
+{
+  "downloaded": [
+    {
+      "document_id": "niddk-overview",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+      "retrieved_at": "2026-11-01T15:27:56.287538+00:00",
+      "sha256": "96524a51d73547a3154b0a4e6a1252de33dbc6da033772da396bd31793991a35",
+      "characters": 4832,
+      "changed": false,
+      "copyright_policy": "https://www.niddk.nih.gov/copyright"
+    },
+    {
+      "document_id": "niddk-symptoms",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "retrieved_at": "2026-11-01T15:27:56.363244+00:00",
+      "sha256": "247f31408349964bac16b859bbc6b44e1160ef20cf7820193fb544ef92978dc6",
+      "characters": 14142,
+      "changed": false,
+      "copyright_policy": "https://www.niddk.nih.gov/copyright"
+    },
+    {
+      "document_id": "niddk-risk",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+      "retrieved_at": "2026-11-01T15:27:56.430040+00:00",
+      "sha256": "7ee1cf28c6cc3459a4a93b4569d1264d5ae277031a58f2f591ce3e73dcaaed81",
+      "characters": 5321,
+      "changed": false,
+      "copyright_policy": "https://www.niddk.nih.gov/copyright"
+    },
+    {
+      "document_id": "niddk-prevention",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+      "retrieved_at": "2026-11-01T15:27:56.503234+00:00",
+      "sha256": "7118c57188bf9efccf64628c87c30cba81586f16201935a13975e3ee92c27152",
+      "characters": 5385,
+      "changed": false,
+      "copyright_policy": "https://www.niddk.nih.gov/copyright"
+    },
+    {
+      "document_id": "niddk-tests",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "retrieved_at": "2026-11-01T15:27:56.575700+00:00",
+      "sha256": "b69868f92c3d417bfbe76bee1634fe6a0d2fe9c11c30bb93e5d56cee2e7dcf7a",
+      "characters": 9315,
+      "changed": true,
+      "copyright_policy": "https://www.niddk.nih.gov/copyright"
+    },
+    {
+      "document_id": "niddk-bmi",
+      "source_url": "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/definition-facts",
+      "retrieved_at": "2026-11-05T10:18:36.288893+00:00",
+      "sha256": "ad004e80502fe87f42df05b67a2ed92e908692091984531f63b123701ec02b97",
+      "characters": 2843,
+      "changed": true,
+      "copyright_policy": "https://www.niddk.nih.gov/copyright"
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

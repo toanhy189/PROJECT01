@@ -1,0 +1,1113 @@
+{
+  "schema_version": 1,
+  "corpus_version": "5496cd17110941dc998fbe21a1e19088b58256687734060fd4ec47741ab48885",
+  "entities": [
+    {
+      "entity_id": "diabetes",
+      "name": "Diabetes",
+      "entity_type": "condition",
+      "aliases": [
+        "tiểu đường",
+        "đái tháo đường",
+        "diabetes mellitus"
+      ]
+    },
+    {
+      "entity_id": "type_1_diabetes",
+      "name": "Type 1 diabetes",
+      "entity_type": "condition",
+      "aliases": [
+        "tiểu đường típ 1",
+        "tiểu đường type 1",
+        "tiểu đường tuýp 1",
+        "đái tháo đường típ 1",
+        "đái tháo đường type 1"
+      ]
+    },
+    {
+      "entity_id": "type_2_diabetes",
+      "name": "Type 2 diabetes",
+      "entity_type": "condition",
+      "aliases": [
+        "tiểu đường típ 2",
+        "tiểu đường type 2",
+        "tiểu đường tuýp 2",
+        "đái tháo đường típ 2",
+        "đái tháo đường type 2"
+      ]
+    },
+    {
+      "entity_id": "gestational_diabetes",
+      "name": "Gestational diabetes",
+      "entity_type": "condition",
+      "aliases": [
+        "tiểu đường thai kỳ",
+        "đái tháo đường thai kỳ"
+      ]
+    },
+    {
+      "entity_id": "prediabetes",
+      "name": "Prediabetes",
+      "entity_type": "condition",
+      "aliases": [
+        "tiền tiểu đường",
+        "tiền đái tháo đường",
+        "borderline diabetes",
+        "impaired fasting glucose",
+        "impaired glucose tolerance"
+      ]
+    },
+    {
+      "entity_id": "monogenic_diabetes",
+      "name": "Monogenic diabetes",
+      "entity_type": "condition",
+      "aliases": [
+        "tiểu đường đơn gen",
+        "đái tháo đường đơn gen"
+      ]
+    },
+    {
+      "entity_id": "insulin_resistance",
+      "name": "Insulin resistance",
+      "entity_type": "condition",
+      "aliases": [
+        "kháng insulin",
+        "đề kháng insulin"
+      ]
+    },
+    {
+      "entity_id": "blood_glucose",
+      "name": "Blood glucose",
+      "entity_type": "concept",
+      "aliases": [
+        "đường huyết",
+        "glucose máu",
+        "đường máu",
+        "blood sugar"
+      ]
+    },
+    {
+      "entity_id": "insulin",
+      "name": "Insulin",
+      "entity_type": "concept",
+      "aliases": []
+    },
+    {
+      "entity_id": "pancreas",
+      "name": "Pancreas",
+      "entity_type": "organ",
+      "aliases": [
+        "tuyến tụy",
+        "tụy"
+      ]
+    },
+    {
+      "entity_id": "a1c_test",
+      "name": "A1C test",
+      "entity_type": "test",
+      "aliases": [
+        "a1c",
+        "hba1c",
+        "glycated hemoglobin",
+        "glycosylated hemoglobin",
+        "hemoglobin a1c",
+        "hemoglobin đường hóa",
+        "huyết sắc tố glycated"
+      ]
+    },
+    {
+      "entity_id": "fpg_test",
+      "name": "Fasting plasma glucose test",
+      "entity_type": "test",
+      "aliases": [
+        "fpg",
+        "đường huyết lúc đói",
+        "glucose huyết tương lúc đói",
+        "fasting blood glucose"
+      ]
+    },
+    {
+      "entity_id": "rpg_test",
+      "name": "Random plasma glucose test",
+      "entity_type": "test",
+      "aliases": [
+        "rpg",
+        "glucose ngẫu nhiên",
+        "đường huyết ngẫu nhiên"
+      ]
+    },
+    {
+      "entity_id": "ogtt",
+      "name": "Oral glucose tolerance test",
+      "entity_type": "test",
+      "aliases": [
+        "ogtt",
+        "nghiệm pháp dung nạp glucose",
+        "nghiệm pháp dung nạp đường",
+        "dung nạp glucose đường uống"
+      ]
+    },
+    {
+      "entity_id": "glucose_challenge",
+      "name": "Glucose challenge test",
+      "entity_type": "test",
+      "aliases": [
+        "glucose screening test",
+        "xét nghiệm thử thách glucose",
+        "sàng lọc glucose"
+      ]
+    },
+    {
+      "entity_id": "genetic_testing",
+      "name": "Genetic testing",
+      "entity_type": "test",
+      "aliases": [
+        "xét nghiệm gen",
+        "xét nghiệm di truyền"
+      ]
+    },
+    {
+      "entity_id": "autoantibody_test",
+      "name": "Autoantibodies",
+      "entity_type": "test",
+      "aliases": [
+        "tự kháng thể",
+        "autoantibody",
+        "xét nghiệm tự kháng thể"
+      ]
+    },
+    {
+      "entity_id": "glucose_meter",
+      "name": "Blood glucose meter",
+      "entity_type": "test",
+      "aliases": [
+        "máy đo đường huyết",
+        "máy đo đường máu",
+        "máy đo tại nhà"
+      ]
+    },
+    {
+      "entity_id": "obesity",
+      "name": "Overweight or obesity",
+      "entity_type": "risk_factor",
+      "aliases": [
+        "thừa cân",
+        "béo phì",
+        "overweight",
+        "obesity"
+      ]
+    },
+    {
+      "entity_id": "family_history",
+      "name": "Family history of diabetes",
+      "entity_type": "risk_factor",
+      "aliases": [
+        "tiền sử gia đình",
+        "người thân mắc tiểu đường",
+        "family history"
+      ]
+    },
+    {
+      "entity_id": "physical_inactivity",
+      "name": "Physical inactivity",
+      "entity_type": "risk_factor",
+      "aliases": [
+        "ít vận động",
+        "không vận động",
+        "sedentary",
+        "not physically active"
+      ]
+    },
+    {
+      "entity_id": "age_risk",
+      "name": "Age 35 or older",
+      "entity_type": "risk_factor",
+      "aliases": [
+        "35 tuổi",
+        "tuổi tác",
+        "age 35"
+      ]
+    },
+    {
+      "entity_id": "waist",
+      "name": "Waist circumference",
+      "entity_type": "risk_factor",
+      "aliases": [
+        "vòng eo",
+        "vòng bụng",
+        "waist size"
+      ]
+    },
+    {
+      "entity_id": "bmi",
+      "name": "Body mass index",
+      "entity_type": "concept",
+      "aliases": [
+        "bmi",
+        "chỉ số khối cơ thể"
+      ]
+    },
+    {
+      "entity_id": "weight_loss",
+      "name": "Weight loss",
+      "entity_type": "prevention",
+      "aliases": [
+        "giảm cân",
+        "losing weight"
+      ]
+    },
+    {
+      "entity_id": "physical_activity",
+      "name": "Physical activity",
+      "entity_type": "prevention",
+      "aliases": [
+        "hoạt động thể chất",
+        "tập thể dục",
+        "vận động thể lực",
+        "being physically active"
+      ]
+    },
+    {
+      "entity_id": "healthy_eating",
+      "name": "Healthy eating",
+      "entity_type": "prevention",
+      "aliases": [
+        "ăn uống lành mạnh",
+        "chế độ ăn",
+        "reduced-calorie eating plan"
+      ]
+    },
+    {
+      "entity_id": "frequent_urination",
+      "name": "Increased urination",
+      "entity_type": "symptom",
+      "aliases": [
+        "tiểu nhiều",
+        "đi tiểu nhiều",
+        "frequent urination"
+      ]
+    },
+    {
+      "entity_id": "thirst",
+      "name": "Feeling very thirsty",
+      "entity_type": "symptom",
+      "aliases": [
+        "khát nước",
+        "khát nhiều",
+        "thirst"
+      ]
+    },
+    {
+      "entity_id": "fatigue",
+      "name": "Fatigue",
+      "entity_type": "symptom",
+      "aliases": [
+        "mệt mỏi",
+        "mệt"
+      ]
+    },
+    {
+      "entity_id": "blurred_vision",
+      "name": "Blurred vision",
+      "entity_type": "symptom",
+      "aliases": [
+        "nhìn mờ",
+        "mờ mắt"
+      ]
+    },
+    {
+      "entity_id": "slow_healing",
+      "name": "Sores that do not heal",
+      "entity_type": "symptom",
+      "aliases": [
+        "vết thương lâu lành",
+        "vết loét lâu lành"
+      ]
+    },
+    {
+      "entity_id": "unexplained_weight_loss",
+      "name": "Unexplained weight loss",
+      "entity_type": "symptom",
+      "aliases": [
+        "sụt cân không rõ nguyên nhân",
+        "sụt cân"
+      ]
+    },
+    {
+      "entity_id": "heart_disease",
+      "name": "Heart disease",
+      "entity_type": "condition",
+      "aliases": [
+        "bệnh tim",
+        "bệnh tim mạch"
+      ]
+    },
+    {
+      "entity_id": "kidney_damage",
+      "name": "Kidney damage",
+      "entity_type": "condition",
+      "aliases": [
+        "tổn thương thận",
+        "bệnh thận"
+      ]
+    },
+    {
+      "entity_id": "dka",
+      "name": "Diabetic ketoacidosis",
+      "entity_type": "condition",
+      "aliases": [
+        "dka",
+        "nhiễm toan ceton",
+        "nhiễm toan ketone"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "00c01e24406d26b61534ec3a",
+      "subject": "a1c_test",
+      "predicate": "USED_TO_ASSESS",
+      "object": "diabetes",
+      "polarity": "positive",
+      "qualifiers": "Test interpretation depends on pregnancy, anemia and other factors described in source; not diagnosis by the assistant."
+    },
+    {
+      "relation_id": "0ca993457ba8211269fb65e5",
+      "subject": "glucose_challenge",
+      "predicate": "USED_TO_ASSESS",
+      "object": "gestational_diabetes",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "110b13bda4956df75a2fc710",
+      "subject": "diabetes",
+      "predicate": "HAS_ASSOCIATED_SYMPTOM",
+      "object": "slow_healing",
+      "polarity": "positive",
+      "qualifiers": "Common symptoms list; symptoms alone do not diagnose disease."
+    },
+    {
+      "relation_id": "1c65b9806dc17fd6b79de884",
+      "subject": "ogtt",
+      "predicate": "USED_TO_ASSESS",
+      "object": "type_2_diabetes",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "1d1c852dc6cc7ce8610e6af4",
+      "subject": "ogtt",
+      "predicate": "USED_TO_ASSESS",
+      "object": "gestational_diabetes",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "22fca08d35bbb8cea501125e",
+      "subject": "diabetes",
+      "predicate": "HAS_ASSOCIATED_SYMPTOM",
+      "object": "blurred_vision",
+      "polarity": "positive",
+      "qualifiers": "Common symptoms list; symptoms alone do not diagnose disease."
+    },
+    {
+      "relation_id": "2e7dcbf6bd0d91b458210ea8",
+      "subject": "obesity",
+      "predicate": "RISK_FACTOR_FOR",
+      "object": "type_2_diabetes",
+      "polarity": "positive",
+      "qualifiers": "Risk-factor list in section What are the risk factors for type 2 diabetes; not a diagnosis."
+    },
+    {
+      "relation_id": "2e941ae9f2ea565ee62ef95e",
+      "subject": "physical_inactivity",
+      "predicate": "RISK_FACTOR_FOR",
+      "object": "type_2_diabetes",
+      "polarity": "positive",
+      "qualifiers": "Risk-factor list, association does not establish causation."
+    },
+    {
+      "relation_id": "35fa4721905936abef9beda4",
+      "subject": "autoantibody_test",
+      "predicate": "USED_TO_ASSESS",
+      "object": "type_1_diabetes",
+      "polarity": "positive",
+      "qualifiers": "A clinician may use autoantibodies; a positive result may indicate type 1, not certainty."
+    },
+    {
+      "relation_id": "37d2c6264b51cf75dd4d80bf",
+      "subject": "weight_loss",
+      "predicate": "MAY_REDUCE_RISK_OF",
+      "object": "type_2_diabetes",
+      "polarity": "positive",
+      "qualifiers": "Modest weight loss with eating plan and activity; not every person should lose weight."
+    },
+    {
+      "relation_id": "3b33a9ef06af2b8e10690d16",
+      "subject": "prediabetes",
+      "predicate": "RISK_FACTOR_FOR",
+      "object": "type_2_diabetes",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "3e7a5092b1466f3a258aed87",
+      "subject": "pancreas",
+      "predicate": "PRODUCES",
+      "object": "insulin",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "4f5080627d0349b0a7e2a6d4",
+      "subject": "healthy_eating",
+      "predicate": "MAY_REDUCE_RISK_OF",
+      "object": "type_2_diabetes",
+      "polarity": "positive",
+      "qualifiers": "Combined lifestyle changes, not a guaranteed effect from one food."
+    },
+    {
+      "relation_id": "5596f497c0198144e3cf57be",
+      "subject": "fpg_test",
+      "predicate": "MEASURES",
+      "object": "blood_glucose",
+      "polarity": "positive",
+      "qualifiers": "At a single point in time after fasting; see source conditions."
+    },
+    {
+      "relation_id": "58af3c9255b071932c467fee",
+      "subject": "physical_activity",
+      "predicate": "MAY_REDUCE_RISK_OF",
+      "object": "type_2_diabetes",
+      "polarity": "positive",
+      "qualifiers": "Physical activity together with modest weight loss and reduced-calorie eating; not a guarantee."
+    },
+    {
+      "relation_id": "78fee37f325e842075a795b8",
+      "subject": "type_2_diabetes",
+      "predicate": "ASSOCIATED_WITH",
+      "object": "insulin_resistance",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "7ad7cbc28d40a3cc44d80626",
+      "subject": "diabetes",
+      "predicate": "HAS_SUBTYPE",
+      "object": "gestational_diabetes",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "7bd9949b4e3fa81f0ae99388",
+      "subject": "type_1_diabetes",
+      "predicate": "ASSOCIATED_WITH",
+      "object": "dka",
+      "polarity": "positive",
+      "qualifiers": "DKA is a medical emergency; association also possible in type 2 when insufficient insulin."
+    },
+    {
+      "relation_id": "83e39a2acacdec2fbb77459c",
+      "subject": "diabetes",
+      "predicate": "ASSOCIATED_WITH",
+      "object": "heart_disease",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "903b81d66c3054c3530816f5",
+      "subject": "gestational_diabetes",
+      "predicate": "RISK_FACTOR_FOR",
+      "object": "type_2_diabetes",
+      "polarity": "positive",
+      "qualifiers": "History of gestational diabetes; higher chance later in life, not certainty."
+    },
+    {
+      "relation_id": "90cd8845190bd7b1b0125805",
+      "subject": "type_1_diabetes",
+      "predicate": "HAS_ASSOCIATED_SYMPTOM",
+      "object": "unexplained_weight_loss",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "955d6e1ec6864cd520ad6449",
+      "subject": "family_history",
+      "predicate": "RISK_FACTOR_FOR",
+      "object": "type_2_diabetes",
+      "polarity": "positive",
+      "qualifiers": "Risk-factor list in section What are the risk factors for type 2 diabetes."
+    },
+    {
+      "relation_id": "9b31fb0453a7e68f4b491cf9",
+      "subject": "age_risk",
+      "predicate": "RISK_FACTOR_FOR",
+      "object": "type_2_diabetes",
+      "polarity": "positive",
+      "qualifiers": "Risk rises with age; children and teens can also develop type 2 diabetes."
+    },
+    {
+      "relation_id": "9dc3eb2c7fb1ff538885dad3",
+      "subject": "diabetes",
+      "predicate": "HAS_ASSOCIATED_SYMPTOM",
+      "object": "fatigue",
+      "polarity": "positive",
+      "qualifiers": "Common symptoms list; symptoms alone do not diagnose disease."
+    },
+    {
+      "relation_id": "af50677aeb7ae6e430a741ac",
+      "subject": "glucose_meter",
+      "predicate": "CANNOT_DIAGNOSE",
+      "object": "diabetes",
+      "polarity": "positive",
+      "qualifiers": "The predicate itself encodes inability to diagnose; positive polarity affirms that negative capability statement."
+    },
+    {
+      "relation_id": "c5186d803b6bb1dd6e1ebdfb",
+      "subject": "diabetes",
+      "predicate": "HAS_SUBTYPE",
+      "object": "type_1_diabetes",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "c95f2ddb71218f10237780b8",
+      "subject": "diabetes",
+      "predicate": "HAS_ASSOCIATED_SYMPTOM",
+      "object": "frequent_urination",
+      "polarity": "positive",
+      "qualifiers": "Common symptoms list; symptoms alone do not diagnose disease."
+    },
+    {
+      "relation_id": "cec735c9211c5133401d1703",
+      "subject": "a1c_test",
+      "predicate": "MEASURES",
+      "object": "blood_glucose",
+      "polarity": "positive",
+      "qualifiers": "Average over the last 3 months, not a single instant."
+    },
+    {
+      "relation_id": "d05227ef380618d37ba7fb2f",
+      "subject": "diabetes",
+      "predicate": "HAS_ASSOCIATED_SYMPTOM",
+      "object": "thirst",
+      "polarity": "positive",
+      "qualifiers": "Common symptoms list; symptoms alone do not diagnose disease."
+    },
+    {
+      "relation_id": "d1f9161565b642184c3d604f",
+      "subject": "genetic_testing",
+      "predicate": "USED_TO_ASSESS",
+      "object": "monogenic_diabetes",
+      "polarity": "positive",
+      "qualifiers": "Most forms, not every case."
+    },
+    {
+      "relation_id": "d6f53dabb2623c73ae21f88e",
+      "subject": "ogtt",
+      "predicate": "USED_TO_ASSESS",
+      "object": "prediabetes",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "e2349c9808e93ed84ac558d7",
+      "subject": "waist",
+      "predicate": "RISK_FACTOR_FOR",
+      "object": "diabetes",
+      "polarity": "positive",
+      "qualifiers": "Large waist circumference; not every waist measurement implies elevated risk."
+    },
+    {
+      "relation_id": "e4e5871b3e4356eaf1918ebe",
+      "subject": "diabetes",
+      "predicate": "ASSOCIATED_WITH",
+      "object": "kidney_damage",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "e5ac7944c1f92fbbf45b6415",
+      "subject": "diabetes",
+      "predicate": "HAS_SUBTYPE",
+      "object": "type_2_diabetes",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "f1f352c9e071e219bb3a1bb2",
+      "subject": "bmi",
+      "predicate": "USED_TO_ASSESS",
+      "object": "obesity",
+      "polarity": "positive",
+      "qualifiers": ""
+    },
+    {
+      "relation_id": "f39fc87d23cc2c462d589ba7",
+      "subject": "prediabetes",
+      "predicate": "ASSOCIATED_WITH",
+      "object": "heart_disease",
+      "polarity": "positive",
+      "qualifiers": "Higher risk; not a claim of direct causation."
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "023e25957cf56eae634659fd",
+      "relation_id": "d05227ef380618d37ba7fb2f",
+      "document_id": "niddk-symptoms",
+      "chunk_id": "8c9eaa7c339a9daa41309fca",
+      "content_version": "8ff02b6728b24f6aa97b3433c9d048a2c1b70923c81495a8e1f01d0d52cae0b9",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "source_provider": "niddk",
+      "quote": "feeling very thirsty",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "03143465af7313b7c2a9c108",
+      "relation_id": "f39fc87d23cc2c462d589ba7",
+      "document_id": "niddk-overview",
+      "chunk_id": "8eb04b5c41080d228d1bad68",
+      "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+      "source_provider": "niddk",
+      "quote": "You also have a higher risk for heart disease than people with normal glucose levels.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "05fe643b367a4942bf3cde97",
+      "relation_id": "955d6e1ec6864cd520ad6449",
+      "document_id": "niddk-risk",
+      "chunk_id": "c185033cc2d2eef7b62ae616",
+      "content_version": "8d5fbb19ed5b5c8d9ed994ff977d9cc2a9a37477fd010b7978268e61c7ef32dc",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+      "source_provider": "niddk",
+      "quote": "have a family history of diabetes.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "07adcff95579c18ffbabe647",
+      "relation_id": "110b13bda4956df75a2fc710",
+      "document_id": "niddk-symptoms",
+      "chunk_id": "8c9eaa7c339a9daa41309fca",
+      "content_version": "8ff02b6728b24f6aa97b3433c9d048a2c1b70923c81495a8e1f01d0d52cae0b9",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "source_provider": "niddk",
+      "quote": "sores that do not heal",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "1b85ea7671db735b6a12b2d3",
+      "relation_id": "3b33a9ef06af2b8e10690d16",
+      "document_id": "niddk-overview",
+      "chunk_id": "8eb04b5c41080d228d1bad68",
+      "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+      "source_provider": "niddk",
+      "quote": "If you have prediabetes, you have a higher risk of developing type 2 diabetes in the future.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "1c864aec07ff0cf0419230cf",
+      "relation_id": "903b81d66c3054c3530816f5",
+      "document_id": "niddk-symptoms",
+      "chunk_id": "7a5b18415aff1c3452865608",
+      "content_version": "8ff02b6728b24f6aa97b3433c9d048a2c1b70923c81495a8e1f01d0d52cae0b9",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "source_provider": "niddk",
+      "quote": "People with a history of gestational diabetes are at higher risk of developing type 2 diabetes later in life.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "1fb4003eed806c71c3f4534f",
+      "relation_id": "c95f2ddb71218f10237780b8",
+      "document_id": "niddk-symptoms",
+      "chunk_id": "8c9eaa7c339a9daa41309fca",
+      "content_version": "8ff02b6728b24f6aa97b3433c9d048a2c1b70923c81495a8e1f01d0d52cae0b9",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "source_provider": "niddk",
+      "quote": "increased urination",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "202ac53bd84973569b510eb1",
+      "relation_id": "3e7a5092b1466f3a258aed87",
+      "document_id": "niddk-overview",
+      "chunk_id": "820f69cc4efaf4d6f2cbc179",
+      "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+      "source_provider": "niddk",
+      "quote": "Insulin is a hormone made by the pancreas that helps glucose get into your cells to be used for energy.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "296d6469a79ee1be4cfccfb8",
+      "relation_id": "f1f352c9e071e219bb3a1bb2",
+      "document_id": "niddk-risk",
+      "chunk_id": "5b9a8a36be74d1edbc714213",
+      "content_version": "8d5fbb19ed5b5c8d9ed994ff977d9cc2a9a37477fd010b7978268e61c7ef32dc",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+      "source_provider": "niddk",
+      "quote": "Your BMI can help you tell if you are at a healthy weight or have overweight or obesity.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "3a0c5e41cfa02f33cdc8b336",
+      "relation_id": "1c65b9806dc17fd6b79de884",
+      "document_id": "niddk-tests",
+      "chunk_id": "a9f6e2487b8ee8c3f4803d3f",
+      "content_version": "c087eed9a195358a23bdcaa7ec6e87e305275962a9ab297879d4aadf00937a34",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "source_provider": "niddk",
+      "quote": "The oral glucose tolerance test (OGTT) helps doctors detect type 2 diabetes, prediabetes, and gestational diabetes.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "3a671d0c551b272f4f6a5cee",
+      "relation_id": "cec735c9211c5133401d1703",
+      "document_id": "niddk-tests",
+      "chunk_id": "2051c02baa3df2782b80fa3d",
+      "content_version": "c087eed9a195358a23bdcaa7ec6e87e305275962a9ab297879d4aadf00937a34",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "source_provider": "niddk",
+      "quote": "The A1C test is a blood test that provides your average levels of blood glucose over the last 3 months.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "3c859dafc52ac6dab2265a2f",
+      "relation_id": "7ad7cbc28d40a3cc44d80626",
+      "document_id": "niddk-overview",
+      "chunk_id": "1e89935edd1f3947b50d720d",
+      "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+      "source_provider": "niddk",
+      "quote": "The most common types of diabetes are type 1, type 2, and gestational diabetes.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "443909af16f07aada57aa6f0",
+      "relation_id": "78fee37f325e842075a795b8",
+      "document_id": "niddk-symptoms",
+      "chunk_id": "51f155be2db8f29c78324d39",
+      "content_version": "8ff02b6728b24f6aa97b3433c9d048a2c1b70923c81495a8e1f01d0d52cae0b9",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "source_provider": "niddk",
+      "quote": "Type 2 diabetes develops when your pancreas doesn’t produce enough insulin, and your body has trouble using insulin, a condition called insulin resistance.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "44c7f7171f9813f8c05e13f1",
+      "relation_id": "83e39a2acacdec2fbb77459c",
+      "document_id": "niddk-overview",
+      "chunk_id": "820f69cc4efaf4d6f2cbc179",
+      "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+      "source_provider": "niddk",
+      "quote": "Diabetes raises the risk for damage to the eyes, kidneys, nerves, and heart.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "469e3bef273853269bbbc0b3",
+      "relation_id": "5596f497c0198144e3cf57be",
+      "document_id": "niddk-tests",
+      "chunk_id": "0045496a4a7991ca04f3d613",
+      "content_version": "c087eed9a195358a23bdcaa7ec6e87e305275962a9ab297879d4aadf00937a34",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "source_provider": "niddk",
+      "quote": "The fasting plasma glucose (FPG) test measures your blood glucose level at a single point in time.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "476d1f78fef0243464433f66",
+      "relation_id": "c5186d803b6bb1dd6e1ebdfb",
+      "document_id": "niddk-overview",
+      "chunk_id": "1e89935edd1f3947b50d720d",
+      "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+      "source_provider": "niddk",
+      "quote": "The most common types of diabetes are type 1, type 2, and gestational diabetes.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "4ed4b334c8349a79dc019735",
+      "relation_id": "90cd8845190bd7b1b0125805",
+      "document_id": "niddk-symptoms",
+      "chunk_id": "4f38ccad2670e96ab10f5fdf",
+      "content_version": "8ff02b6728b24f6aa97b3433c9d048a2c1b70923c81495a8e1f01d0d52cae0b9",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "source_provider": "niddk",
+      "quote": "In addition to some of the common diabetes symptoms listed above, people with type 1 diabetes may also have an unexplained weight loss.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "5c6c19b80a0541d5f71e5686",
+      "relation_id": "903b81d66c3054c3530816f5",
+      "document_id": "niddk-overview",
+      "chunk_id": "b9a50021c01bccf24741250e",
+      "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+      "source_provider": "niddk",
+      "quote": "However, if you’ve had gestational diabetes, you have a higher chance of developing type 2 diabetes later in life.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "5e3a27fa1c7927d3b41f03f3",
+      "relation_id": "58af3c9255b071932c467fee",
+      "document_id": "niddk-prevention",
+      "chunk_id": "362d9a4153cd186782aafd3e",
+      "content_version": "76843635266f031a11fa2952657af78aa580fd99a340ef84bba39058d4d93e29",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+      "source_provider": "niddk",
+      "quote": "You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "6551c0013caae69d7266665e",
+      "relation_id": "0ca993457ba8211269fb65e5",
+      "document_id": "niddk-tests",
+      "chunk_id": "5e1af90f213bbba42cbcbb1b",
+      "content_version": "c087eed9a195358a23bdcaa7ec6e87e305275962a9ab297879d4aadf00937a34",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "source_provider": "niddk",
+      "quote": "If you are pregnant, your doctor might test you for gestational diabetes with the glucose challenge test.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "6c72e8dc3d1e5e25b145364b",
+      "relation_id": "2e7dcbf6bd0d91b458210ea8",
+      "document_id": "niddk-risk",
+      "chunk_id": "c185033cc2d2eef7b62ae616",
+      "content_version": "8d5fbb19ed5b5c8d9ed994ff977d9cc2a9a37477fd010b7978268e61c7ef32dc",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+      "source_provider": "niddk",
+      "quote": "are overweight or have obesity.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "6fc950a0de383fae5dd1e407",
+      "relation_id": "37d2c6264b51cf75dd4d80bf",
+      "document_id": "niddk-prevention",
+      "chunk_id": "362d9a4153cd186782aafd3e",
+      "content_version": "76843635266f031a11fa2952657af78aa580fd99a340ef84bba39058d4d93e29",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+      "source_provider": "niddk",
+      "quote": "You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "827feb1e8c03ad90e8c2e2ed",
+      "relation_id": "4f5080627d0349b0a7e2a6d4",
+      "document_id": "niddk-prevention",
+      "chunk_id": "362d9a4153cd186782aafd3e",
+      "content_version": "76843635266f031a11fa2952657af78aa580fd99a340ef84bba39058d4d93e29",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+      "source_provider": "niddk",
+      "quote": "You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "8945b80c08c8eed6999defa7",
+      "relation_id": "2e941ae9f2ea565ee62ef95e",
+      "document_id": "niddk-risk",
+      "chunk_id": "c185033cc2d2eef7b62ae616",
+      "content_version": "8d5fbb19ed5b5c8d9ed994ff977d9cc2a9a37477fd010b7978268e61c7ef32dc",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+      "source_provider": "niddk",
+      "quote": "are not physically active, because of physical limitations, a sedentary lifestyle, or a job that requires sitting for long periods of time.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "8e51b2f7d89caebe01dff729",
+      "relation_id": "af50677aeb7ae6e430a741ac",
+      "document_id": "niddk-tests",
+      "chunk_id": "8ed8fcc8691b65fc9129552a",
+      "content_version": "c087eed9a195358a23bdcaa7ec6e87e305275962a9ab297879d4aadf00937a34",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "source_provider": "niddk",
+      "quote": "Blood testing equipment that you can buy over the counter, such as a blood glucose meter, cannot diagnose diabetes.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "9939c9cc458e4b2e30492f25",
+      "relation_id": "d1f9161565b642184c3d604f",
+      "document_id": "niddk-tests",
+      "chunk_id": "768971484417553bfbfc1dd5",
+      "content_version": "c087eed9a195358a23bdcaa7ec6e87e305275962a9ab297879d4aadf00937a34",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "source_provider": "niddk",
+      "quote": "Genetic testing can diagnose most forms of monogenic diabetes, which is caused by a change—or mutation—in a gene.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "bfd733055aff31c482257250",
+      "relation_id": "9b31fb0453a7e68f4b491cf9",
+      "document_id": "niddk-risk",
+      "chunk_id": "c185033cc2d2eef7b62ae616",
+      "content_version": "8d5fbb19ed5b5c8d9ed994ff977d9cc2a9a37477fd010b7978268e61c7ef32dc",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+      "source_provider": "niddk",
+      "quote": "are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "c390b3c627cb2d4b5dcebf05",
+      "relation_id": "e2349c9808e93ed84ac558d7",
+      "document_id": "niddk-risk",
+      "chunk_id": "ccba5c0e0afd7564638b97c5",
+      "content_version": "8d5fbb19ed5b5c8d9ed994ff977d9cc2a9a37477fd010b7978268e61c7ef32dc",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+      "source_provider": "niddk",
+      "quote": "Having a large waist circumference is a risk factor for diabetes and heart disease, even if you have a normal BMI.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "c5c3784bab63a59a39d99048",
+      "relation_id": "7bd9949b4e3fa81f0ae99388",
+      "document_id": "niddk-symptoms",
+      "chunk_id": "4f38ccad2670e96ab10f5fdf",
+      "content_version": "8ff02b6728b24f6aa97b3433c9d048a2c1b70923c81495a8e1f01d0d52cae0b9",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "source_provider": "niddk",
+      "quote": "DKA usually affects people with type 1 diabetes. People with type 2 diabetes may also develop DKA if their body doesn’t produce enough insulin.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "d41c2fb8403772d6ca1ab3f9",
+      "relation_id": "d05227ef380618d37ba7fb2f",
+      "document_id": "niddk-symptoms",
+      "chunk_id": "4f38ccad2670e96ab10f5fdf",
+      "content_version": "8ff02b6728b24f6aa97b3433c9d048a2c1b70923c81495a8e1f01d0d52cae0b9",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "source_provider": "niddk",
+      "quote": "feeling very thirsty",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "db07b6e7925f27f763a9f1f6",
+      "relation_id": "35fa4721905936abef9beda4",
+      "document_id": "niddk-tests",
+      "chunk_id": "db5b3fd7e159b7ba599474dc",
+      "content_version": "c087eed9a195358a23bdcaa7ec6e87e305275962a9ab297879d4aadf00937a34",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "source_provider": "niddk",
+      "quote": "If you have diabetes, your doctor may look for certain autoantibodies to see if your diabetes is type 1.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "dbede5f83673e3dc56ae2d78",
+      "relation_id": "e5ac7944c1f92fbbf45b6415",
+      "document_id": "niddk-overview",
+      "chunk_id": "1e89935edd1f3947b50d720d",
+      "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+      "source_provider": "niddk",
+      "quote": "The most common types of diabetes are type 1, type 2, and gestational diabetes.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "dc7d51d169c21b36cfc2dc41",
+      "relation_id": "d6f53dabb2623c73ae21f88e",
+      "document_id": "niddk-tests",
+      "chunk_id": "a9f6e2487b8ee8c3f4803d3f",
+      "content_version": "c087eed9a195358a23bdcaa7ec6e87e305275962a9ab297879d4aadf00937a34",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "source_provider": "niddk",
+      "quote": "The oral glucose tolerance test (OGTT) helps doctors detect type 2 diabetes, prediabetes, and gestational diabetes.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "e1cdbf13f274fa2f42487fdd",
+      "relation_id": "00c01e24406d26b61534ec3a",
+      "document_id": "niddk-tests",
+      "chunk_id": "2051c02baa3df2782b80fa3d",
+      "content_version": "c087eed9a195358a23bdcaa7ec6e87e305275962a9ab297879d4aadf00937a34",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "source_provider": "niddk",
+      "quote": "Before using the A1C test to diagnose diabetes, your doctor will consider factors, such as whether you are in your second or third trimester of pregnancy or whether you have certain types of anemia or another problem with your blood.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "e53212616c8c25bd3daa5072",
+      "relation_id": "9dc3eb2c7fb1ff538885dad3",
+      "document_id": "niddk-symptoms",
+      "chunk_id": "8c9eaa7c339a9daa41309fca",
+      "content_version": "8ff02b6728b24f6aa97b3433c9d048a2c1b70923c81495a8e1f01d0d52cae0b9",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "source_provider": "niddk",
+      "quote": "fatigue",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "e81563b8187d6d39c34dd7b2",
+      "relation_id": "1d1c852dc6cc7ce8610e6af4",
+      "document_id": "niddk-tests",
+      "chunk_id": "a9f6e2487b8ee8c3f4803d3f",
+      "content_version": "c087eed9a195358a23bdcaa7ec6e87e305275962a9ab297879d4aadf00937a34",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "source_provider": "niddk",
+      "quote": "The oral glucose tolerance test (OGTT) helps doctors detect type 2 diabetes, prediabetes, and gestational diabetes.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "e84a9ef57c13f3fdfcad6b04",
+      "relation_id": "22fca08d35bbb8cea501125e",
+      "document_id": "niddk-symptoms",
+      "chunk_id": "8c9eaa7c339a9daa41309fca",
+      "content_version": "8ff02b6728b24f6aa97b3433c9d048a2c1b70923c81495a8e1f01d0d52cae0b9",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "source_provider": "niddk",
+      "quote": "blurred vision",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    },
+    {
+      "evidence_id": "ed5bedfa24b4ff20eecd48fe",
+      "relation_id": "e4e5871b3e4356eaf1918ebe",
+      "document_id": "niddk-overview",
+      "chunk_id": "820f69cc4efaf4d6f2cbc179",
+      "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+      "source_provider": "niddk",
+      "quote": "Diabetes raises the risk for damage to the eyes, kidneys, nerves, and heart.",
+      "status": "source_checked",
+      "checked_by": "codex_source_alignment_not_clinical_review"
+    }
+  ]
+}

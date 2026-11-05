@@ -1,0 +1,10 @@
+{
+  "model_version": "cdc-mlp-20261101T102617Z",
+  "dataset_sha256": "9f71fda9d4ae5f4878c99b9233b6a16accfa9a17c194116a6b78100540934964",
+  "files": {
+    "model.pt": "e3e4aa9cb9bece749c74a42bfed96856c9c2f62e7c3ad417fb465a4eefe523b8",
+    "baseline.joblib": "f91dac0cdd5a944480fedc2aac899977b637b473677f2c12603b072bf57ba0d0",
+    "preprocessor.joblib": "896107474d6cb4dad3b4b251ca48e737f339597298f44b7210ae2e614b39dab8",
+    "metrics.json": "578b7f81e1d68f6546403c00317085386cfa64639120a184b3f3d5ae54cb772d"
+  }
+}

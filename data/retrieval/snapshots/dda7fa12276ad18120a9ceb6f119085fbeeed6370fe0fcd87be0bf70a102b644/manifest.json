@@ -1,0 +1,14 @@
+{
+  "corpus_version": "9fe193e91b82172ef6583be2f055603ac241ba6b122dd054ba02967259073a34",
+  "graph_hash": "90f88f38730ad24bab662ae46429a6cf2ba3893d989c3bc09eaf187606a62c3e",
+  "embedding_model": "gemini-embedding-001",
+  "embedding_dimension": 768,
+  "collection": "diabetes_knowledge_20261105",
+  "tokenizer_version": 1,
+  "snapshot_id": "dda7fa12276ad18120a9ceb6f119085fbeeed6370fe0fcd87be0bf70a102b644",
+  "checksums": {
+    "corpus.json": "87aa36d85e184e5de67aefcaa9d6b8fef98efbaeecfd38c8d072c0c61ec811d6",
+    "graph.json": "bc4b8ea59dd2fe197b6cccbb30ebb486e15f8095b17023e554067a85b2237af8",
+    "lexical.json": "db2640586ba96eb451bf83a803ac2d000a69f1ae5a0c670b46cbd30189979735"
+  }
+}

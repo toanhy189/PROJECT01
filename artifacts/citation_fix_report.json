@@ -1,0 +1,56 @@
+{
+  "checked_at": "2026-11-05T09:11:52.086771+00:00",
+  "root_cause": "Gemini reordered source sentences and omitted list items while generating supposedly verbatim quotes.",
+  "before_valid": false,
+  "before_reason": "Đoạn trích dẫn không khớp tài liệu nguồn.",
+  "fix": "Select passage IDs; resolve original contiguous source spans on backend; retain citation and numeric validation.",
+  "model": "gemini-2.5-flash",
+  "live_verification": [
+    {
+      "question": "Những yếu tố nào liên quan đến tiểu đường típ 2?",
+      "safety_status": "passed",
+      "citation_count": 3,
+      "errors": []
+    },
+    {
+      "question": "Có những xét nghiệm nào để chẩn đoán tiểu đường?",
+      "safety_status": "passed",
+      "citation_count": 4,
+      "errors": []
+    },
+    {
+      "question": "Tiểu đường là gì?",
+      "safety_status": "passed",
+      "citation_count": 1,
+      "errors": []
+    },
+    {
+      "question": "Tôi nên uống metformin liều bao nhiêu?",
+      "safety_status": "fallback",
+      "citation_count": 0,
+      "errors": []
+    }
+  ],
+  "pytest": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "160",
+    "time": "36.034",
+    "timestamp": "2026-11-05T16:09:57.085629+07:00",
+    "hostname": "DESKTOP-SA997Q2"
+  },
+  "neo4j_integration_cases": 13,
+  "test_warnings": [
+    "6 joblib/NumPy deprecation warnings",
+    "1 pytest cache permission warning"
+  ],
+  "ruff": "passed",
+  "chunk_count": 58,
+  "document_count": 5,
+  "corpus_fingerprint": "5496cd17110941dc998fbe21a1e19088b58256687734060fd4ec47741ab48885",
+  "corpus_unchanged": true,
+  "reindex_required": false,
+  "limitations": "Valid quote selection does not prove semantic support. Three live knowledge questions are a smoke test, not a full RAG quality benchmark."
+}

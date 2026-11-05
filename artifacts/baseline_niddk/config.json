@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-11-03T08:20:44.706063+00:00",
+  "corpus_version": "5496cd17110941dc998fbe21a1e19088b58256687734060fd4ec47741ab48885",
+  "chunks": 58,
+  "collection": "diabetes_knowledge",
+  "embedding_model": "gemini-embedding-001",
+  "embedding_dimension": 768,
+  "k": 5,
+  "max_cosine_distance": 0.65
+}

@@ -1,0 +1,62 @@
+{
+  "checked_on": "2026-11-03",
+  "corpus_version": "5496cd17110941dc998fbe21a1e19088b58256687734060fd4ec47741ab48885",
+  "snapshot_id": "f70e5a9bc1bd55ff0e832eb266438204743f539f63ae62b0724912410f366b86",
+  "baseline_preserved": true,
+  "baseline_chunks": 58,
+  "active_chunks": 58,
+  "graph": {
+    "implemented": true,
+    "entities": 36,
+    "relations": 36,
+    "evidence_count": 38,
+    "dangling_reference_count": 0,
+    "quote_version_url_checks": "passed_by_snapshot_loader",
+    "human_relation_precision": null,
+    "source_checked_by": "codex_source_alignment_not_clinical_review",
+    "quality_gate_passed": false,
+    "enabled_by_default": false,
+    "improved_cases": [
+      "r05",
+      "r07",
+      "r36",
+      "r42"
+    ],
+    "regressed_cases": [
+      "r21",
+      "r24",
+      "r45"
+    ],
+    "additional_gold_evidence_cases": []
+  },
+  "hybrid": {
+    "implemented": true,
+    "quality_gate_passed": false,
+    "enabled_by_default": false
+  },
+  "wiki": {
+    "adapter_implemented": true,
+    "published_documents": 0,
+    "status": "blocked",
+    "enabled_by_default": false
+  },
+  "reranker": {
+    "implemented": true,
+    "benchmark_status": "completed",
+    "quality_resource_gate_passed": false,
+    "warm_p95_ms": 5604.035739880054,
+    "peak_rss_bytes": 1113243648,
+    "enabled_by_default": false
+  },
+  "evaluation": {
+    "questions": 50,
+    "answerable": 45,
+    "query_embedding_calls_initial": 4,
+    "query_embedding_calls_ablation": 0,
+    "generation_quality_measured": false,
+    "expert_annotations": false,
+    "heldout_blinded": false,
+    "limitation": "Fixed development/heldout partitions are exploratory; the same agent authored annotations and inspected reports. Independent human gold and blind validation remain required."
+  },
+  "rollout": "vector remains default; graph/hybrid available for explicit experiments; wiki API blocked; reranker failed gate"
+}

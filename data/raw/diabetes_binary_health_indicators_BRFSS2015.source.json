@@ -1,0 +1,7 @@
+{
+  "dataset_id": 891,
+  "metadata_url": "https://archive.ics.uci.edu/api/dataset?id=891",
+  "csv_url": "https://archive.ics.uci.edu/static/public/891/data.csv",
+  "sha256": "9f71fda9d4ae5f4878c99b9233b6a16accfa9a17c194116a6b78100540934964",
+  "citation": "CDC Diabetes Health Indicators (2017), DOI: 10.24432/C53919"
+}

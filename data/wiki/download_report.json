@@ -1,0 +1,15 @@
+{
+  "status": "blocked",
+  "checked_on": "2026-11-03",
+  "scope": "lead_background_only",
+  "downloaded": [],
+  "errors": [
+    {
+      "endpoint": "https://en.wikipedia.org/w/api.php",
+      "http_status": 403,
+      "reason": "Wikimedia robot policy denied the actual API diagnostic request.",
+      "action": "Stopped; did not switch endpoints or fabricate page content/revisions."
+    }
+  ],
+  "published_wiki_chunks": 0
+}

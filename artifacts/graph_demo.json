@@ -1,0 +1,567 @@
+{
+  "demo_type": "retrieval_and_context_only_no_llm_generation",
+  "case_id": "r36",
+  "question": "Tiền tiểu đường liên quan nguy cơ típ 2 và thay đổi lối sống nào có thể giúp trì hoãn?",
+  "query_embedding": "real_gemini_cached",
+  "retrieval_trace": {
+    "mode": "hybrid_graph",
+    "warnings": [],
+    "graph": {
+      "backend": "neo4j",
+      "linked_entities": [
+        {
+          "entity_id": "prediabetes",
+          "matched_alias": "tiền tiểu đường",
+          "method": "controlled_alias"
+        }
+      ],
+      "snapshot_id": "f70e5a9bc1bd55ff0e832eb266438204743f539f63ae62b0724912410f366b86",
+      "relation_count": 36,
+      "evidence_count": 38,
+      "status": "ok",
+      "connected": true,
+      "query_count": 3,
+      "raw_path_count": 17,
+      "expansion_limit_reached": false,
+      "paths": [
+        {
+          "entities": [
+            "prediabetes",
+            "type_2_diabetes",
+            "age_risk"
+          ],
+          "relations": [
+            {
+              "predicate": "RISK_FACTOR_FOR",
+              "subject": "prediabetes",
+              "qualifiers": "",
+              "object": "type_2_diabetes",
+              "relation_id": "3b33a9ef06af2b8e10690d16",
+              "polarity": "positive"
+            },
+            {
+              "predicate": "RISK_FACTOR_FOR",
+              "subject": "age_risk",
+              "qualifiers": "Risk rises with age; children and teens can also develop type 2 diabetes.",
+              "object": "type_2_diabetes",
+              "relation_id": "9b31fb0453a7e68f4b491cf9",
+              "polarity": "positive"
+            }
+          ],
+          "evidence": [
+            {
+              "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+              "quote": "If you have prediabetes, you have a higher risk of developing type 2 diabetes in the future.",
+              "checked_by": "codex_source_alignment_not_clinical_review",
+              "source_provider": "niddk",
+              "evidence_id": "1b85ea7671db735b6a12b2d3",
+              "document_id": "niddk-overview",
+              "chunk_id": "8eb04b5c41080d228d1bad68",
+              "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+              "relation_id": "3b33a9ef06af2b8e10690d16",
+              "status": "source_checked"
+            },
+            {
+              "content_version": "8d5fbb19ed5b5c8d9ed994ff977d9cc2a9a37477fd010b7978268e61c7ef32dc",
+              "quote": "are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older.",
+              "checked_by": "codex_source_alignment_not_clinical_review",
+              "source_provider": "niddk",
+              "evidence_id": "bfd733055aff31c482257250",
+              "document_id": "niddk-risk",
+              "chunk_id": "c185033cc2d2eef7b62ae616",
+              "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+              "relation_id": "9b31fb0453a7e68f4b491cf9",
+              "status": "source_checked"
+            }
+          ],
+          "chunk_ids": [
+            "8eb04b5c41080d228d1bad68",
+            "c185033cc2d2eef7b62ae616"
+          ],
+          "hops": 2,
+          "matched_query_entities": 1,
+          "intent_matches": 2,
+          "source_quality": 2.0,
+          "inference": "navigation_only_no_transitive_claim",
+          "used_in_context": true
+        },
+        {
+          "entities": [
+            "prediabetes",
+            "type_2_diabetes",
+            "family_history"
+          ],
+          "relations": [
+            {
+              "predicate": "RISK_FACTOR_FOR",
+              "subject": "prediabetes",
+              "qualifiers": "",
+              "object": "type_2_diabetes",
+              "relation_id": "3b33a9ef06af2b8e10690d16",
+              "polarity": "positive"
+            },
+            {
+              "predicate": "RISK_FACTOR_FOR",
+              "subject": "family_history",
+              "qualifiers": "Risk-factor list in section What are the risk factors for type 2 diabetes.",
+              "object": "type_2_diabetes",
+              "relation_id": "955d6e1ec6864cd520ad6449",
+              "polarity": "positive"
+            }
+          ],
+          "evidence": [
+            {
+              "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+              "quote": "If you have prediabetes, you have a higher risk of developing type 2 diabetes in the future.",
+              "checked_by": "codex_source_alignment_not_clinical_review",
+              "source_provider": "niddk",
+              "evidence_id": "1b85ea7671db735b6a12b2d3",
+              "document_id": "niddk-overview",
+              "chunk_id": "8eb04b5c41080d228d1bad68",
+              "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+              "relation_id": "3b33a9ef06af2b8e10690d16",
+              "status": "source_checked"
+            },
+            {
+              "content_version": "8d5fbb19ed5b5c8d9ed994ff977d9cc2a9a37477fd010b7978268e61c7ef32dc",
+              "quote": "have a family history of diabetes.",
+              "checked_by": "codex_source_alignment_not_clinical_review",
+              "source_provider": "niddk",
+              "evidence_id": "05fe643b367a4942bf3cde97",
+              "document_id": "niddk-risk",
+              "chunk_id": "c185033cc2d2eef7b62ae616",
+              "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+              "relation_id": "955d6e1ec6864cd520ad6449",
+              "status": "source_checked"
+            }
+          ],
+          "chunk_ids": [
+            "8eb04b5c41080d228d1bad68",
+            "c185033cc2d2eef7b62ae616"
+          ],
+          "hops": 2,
+          "matched_query_entities": 1,
+          "intent_matches": 2,
+          "source_quality": 2.0,
+          "inference": "navigation_only_no_transitive_claim",
+          "used_in_context": true
+        },
+        {
+          "entities": [
+            "prediabetes",
+            "type_2_diabetes",
+            "healthy_eating"
+          ],
+          "relations": [
+            {
+              "predicate": "RISK_FACTOR_FOR",
+              "subject": "prediabetes",
+              "qualifiers": "",
+              "object": "type_2_diabetes",
+              "relation_id": "3b33a9ef06af2b8e10690d16",
+              "polarity": "positive"
+            },
+            {
+              "predicate": "MAY_REDUCE_RISK_OF",
+              "subject": "healthy_eating",
+              "qualifiers": "Combined lifestyle changes, not a guaranteed effect from one food.",
+              "object": "type_2_diabetes",
+              "relation_id": "4f5080627d0349b0a7e2a6d4",
+              "polarity": "positive"
+            }
+          ],
+          "evidence": [
+            {
+              "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+              "quote": "If you have prediabetes, you have a higher risk of developing type 2 diabetes in the future.",
+              "checked_by": "codex_source_alignment_not_clinical_review",
+              "source_provider": "niddk",
+              "evidence_id": "1b85ea7671db735b6a12b2d3",
+              "document_id": "niddk-overview",
+              "chunk_id": "8eb04b5c41080d228d1bad68",
+              "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+              "relation_id": "3b33a9ef06af2b8e10690d16",
+              "status": "source_checked"
+            },
+            {
+              "content_version": "76843635266f031a11fa2952657af78aa580fd99a340ef84bba39058d4d93e29",
+              "quote": "You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week.",
+              "checked_by": "codex_source_alignment_not_clinical_review",
+              "source_provider": "niddk",
+              "evidence_id": "827feb1e8c03ad90e8c2e2ed",
+              "document_id": "niddk-prevention",
+              "chunk_id": "362d9a4153cd186782aafd3e",
+              "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+              "relation_id": "4f5080627d0349b0a7e2a6d4",
+              "status": "source_checked"
+            }
+          ],
+          "chunk_ids": [
+            "362d9a4153cd186782aafd3e",
+            "8eb04b5c41080d228d1bad68"
+          ],
+          "hops": 2,
+          "matched_query_entities": 1,
+          "intent_matches": 2,
+          "source_quality": 2.0,
+          "inference": "navigation_only_no_transitive_claim",
+          "used_in_context": true
+        },
+        {
+          "entities": [
+            "prediabetes",
+            "type_2_diabetes",
+            "obesity"
+          ],
+          "relations": [
+            {
+              "predicate": "RISK_FACTOR_FOR",
+              "subject": "prediabetes",
+              "qualifiers": "",
+              "object": "type_2_diabetes",
+              "relation_id": "3b33a9ef06af2b8e10690d16",
+              "polarity": "positive"
+            },
+            {
+              "predicate": "RISK_FACTOR_FOR",
+              "subject": "obesity",
+              "qualifiers": "Risk-factor list in section What are the risk factors for type 2 diabetes; not a diagnosis.",
+              "object": "type_2_diabetes",
+              "relation_id": "2e7dcbf6bd0d91b458210ea8",
+              "polarity": "positive"
+            }
+          ],
+          "evidence": [
+            {
+              "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+              "quote": "If you have prediabetes, you have a higher risk of developing type 2 diabetes in the future.",
+              "checked_by": "codex_source_alignment_not_clinical_review",
+              "source_provider": "niddk",
+              "evidence_id": "1b85ea7671db735b6a12b2d3",
+              "document_id": "niddk-overview",
+              "chunk_id": "8eb04b5c41080d228d1bad68",
+              "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+              "relation_id": "3b33a9ef06af2b8e10690d16",
+              "status": "source_checked"
+            },
+            {
+              "content_version": "8d5fbb19ed5b5c8d9ed994ff977d9cc2a9a37477fd010b7978268e61c7ef32dc",
+              "quote": "are overweight or have obesity.",
+              "checked_by": "codex_source_alignment_not_clinical_review",
+              "source_provider": "niddk",
+              "evidence_id": "6c72e8dc3d1e5e25b145364b",
+              "document_id": "niddk-risk",
+              "chunk_id": "c185033cc2d2eef7b62ae616",
+              "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+              "relation_id": "2e7dcbf6bd0d91b458210ea8",
+              "status": "source_checked"
+            }
+          ],
+          "chunk_ids": [
+            "8eb04b5c41080d228d1bad68",
+            "c185033cc2d2eef7b62ae616"
+          ],
+          "hops": 2,
+          "matched_query_entities": 1,
+          "intent_matches": 2,
+          "source_quality": 2.0,
+          "inference": "navigation_only_no_transitive_claim",
+          "used_in_context": true
+        },
+        {
+          "entities": [
+            "prediabetes",
+            "type_2_diabetes",
+            "physical_activity"
+          ],
+          "relations": [
+            {
+              "predicate": "RISK_FACTOR_FOR",
+              "subject": "prediabetes",
+              "qualifiers": "",
+              "object": "type_2_diabetes",
+              "relation_id": "3b33a9ef06af2b8e10690d16",
+              "polarity": "positive"
+            },
+            {
+              "predicate": "MAY_REDUCE_RISK_OF",
+              "subject": "physical_activity",
+              "qualifiers": "Physical activity together with modest weight loss and reduced-calorie eating; not a guarantee.",
+              "object": "type_2_diabetes",
+              "relation_id": "58af3c9255b071932c467fee",
+              "polarity": "positive"
+            }
+          ],
+          "evidence": [
+            {
+              "content_version": "127d59063e408e0c13da6aa2ca21e2ff0731d2f6aeccc3270b5503a6a2606113",
+              "quote": "If you have prediabetes, you have a higher risk of developing type 2 diabetes in the future.",
+              "checked_by": "codex_source_alignment_not_clinical_review",
+              "source_provider": "niddk",
+              "evidence_id": "1b85ea7671db735b6a12b2d3",
+              "document_id": "niddk-overview",
+              "chunk_id": "8eb04b5c41080d228d1bad68",
+              "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+              "relation_id": "3b33a9ef06af2b8e10690d16",
+              "status": "source_checked"
+            },
+            {
+              "content_version": "76843635266f031a11fa2952657af78aa580fd99a340ef84bba39058d4d93e29",
+              "quote": "You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week.",
+              "checked_by": "codex_source_alignment_not_clinical_review",
+              "source_provider": "niddk",
+              "evidence_id": "5e3a27fa1c7927d3b41f03f3",
+              "document_id": "niddk-prevention",
+              "chunk_id": "362d9a4153cd186782aafd3e",
+              "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+              "relation_id": "58af3c9255b071932c467fee",
+              "status": "source_checked"
+            }
+          ],
+          "chunk_ids": [
+            "362d9a4153cd186782aafd3e",
+            "8eb04b5c41080d228d1bad68"
+          ],
+          "hops": 2,
+          "matched_query_entities": 1,
+          "intent_matches": 2,
+          "source_quality": 2.0,
+          "inference": "navigation_only_no_transitive_claim",
+          "used_in_context": true
+        }
+      ],
+      "ranking_policy": "entity_coverage,intent_match,hops,source_quality,stable_ids",
+      "latency_ms": 2078.772
+    },
+    "channel_counts": {
+      "vector": 15,
+      "graph": 8
+    },
+    "selected_chunk_ids": [
+      "8eb04b5c41080d228d1bad68",
+      "362d9a4153cd186782aafd3e",
+      "c185033cc2d2eef7b62ae616",
+      "51f155be2db8f29c78324d39",
+      "becdee0078a45398c4c510a2"
+    ],
+    "reranker": "disabled",
+    "snapshot_id": "f70e5a9bc1bd55ff0e832eb266438204743f539f63ae62b0724912410f366b86",
+    "corpus_version": "5496cd17110941dc998fbe21a1e19088b58256687734060fd4ec47741ab48885",
+    "wiki_policy": "disabled",
+    "candidates": [
+      {
+        "chunk_id": "8eb04b5c41080d228d1bad68",
+        "channels": [
+          "graph",
+          "vector"
+        ],
+        "distance": 0.28866028785705566,
+        "rank_score": 0.03177805800756621
+      },
+      {
+        "chunk_id": "362d9a4153cd186782aafd3e",
+        "channels": [
+          "graph",
+          "vector"
+        ],
+        "distance": 0.26757025718688965,
+        "rank_score": 0.0315136476426799
+      },
+      {
+        "chunk_id": "c185033cc2d2eef7b62ae616",
+        "channels": [
+          "graph",
+          "vector"
+        ],
+        "distance": 0.34070760011672974,
+        "rank_score": 0.030017921146953404
+      },
+      {
+        "chunk_id": "51f155be2db8f29c78324d39",
+        "channels": [
+          "graph",
+          "vector"
+        ],
+        "distance": 0.3030232787132263,
+        "rank_score": 0.029850746268656716
+      },
+      {
+        "chunk_id": "becdee0078a45398c4c510a2",
+        "channels": [
+          "vector"
+        ],
+        "distance": 0.2622312307357788,
+        "rank_score": 0.01639344262295082
+      },
+      {
+        "chunk_id": "627e32b211d493b43c98658b",
+        "channels": [
+          "vector"
+        ],
+        "distance": 0.27095234394073486,
+        "rank_score": 0.015873015873015872
+      },
+      {
+        "chunk_id": "7a5b18415aff1c3452865608",
+        "channels": [
+          "graph"
+        ],
+        "distance": null,
+        "rank_score": 0.015873015873015872
+      },
+      {
+        "chunk_id": "a60703ed189ae9042c8c62b6",
+        "channels": [
+          "vector"
+        ],
+        "distance": 0.28567206859588623,
+        "rank_score": 0.015625
+      },
+      {
+        "chunk_id": "b9a50021c01bccf24741250e",
+        "channels": [
+          "graph"
+        ],
+        "distance": null,
+        "rank_score": 0.015625
+      },
+      {
+        "chunk_id": "1e89935edd1f3947b50d720d",
+        "channels": [
+          "graph"
+        ],
+        "distance": null,
+        "rank_score": 0.015151515151515152
+      },
+      {
+        "chunk_id": "5bc47f506b741ec196c1b6a1",
+        "channels": [
+          "vector"
+        ],
+        "distance": 0.2978631258010864,
+        "rank_score": 0.015151515151515152
+      },
+      {
+        "chunk_id": "11b504f8c7ad53f5b5606c37",
+        "channels": [
+          "vector"
+        ],
+        "distance": 0.30729490518569946,
+        "rank_score": 0.014705882352941176
+      },
+      {
+        "chunk_id": "a9f6e2487b8ee8c3f4803d3f",
+        "channels": [
+          "graph"
+        ],
+        "distance": null,
+        "rank_score": 0.014705882352941176
+      },
+      {
+        "chunk_id": "c90b2ce7675a3c722e52708d",
+        "channels": [
+          "vector"
+        ],
+        "distance": 0.32645636796951294,
+        "rank_score": 0.014492753623188406
+      },
+      {
+        "chunk_id": "d787aab9bfe0f2c47e831922",
+        "channels": [
+          "vector"
+        ],
+        "distance": 0.328483521938324,
+        "rank_score": 0.014285714285714285
+      }
+    ],
+    "context_chunk_ids": [
+      "362d9a4153cd186782aafd3e",
+      "51f155be2db8f29c78324d39",
+      "8eb04b5c41080d228d1bad68",
+      "becdee0078a45398c4c510a2",
+      "c185033cc2d2eef7b62ae616"
+    ]
+  },
+  "citations": [
+    {
+      "citation_id": "S1",
+      "document_id": "niddk-overview",
+      "chunk_id": "8eb04b5c41080d228d1bad68",
+      "title": "NIDDK — Tổng quan tiểu đường",
+      "section": "Prediabetes",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+      "quote": "People with prediabetes have blood glucose levels that are higher than normal but not high enough to be diagnosed with type 2 diabetes. If you have prediabetes, you have a higher risk of developing type 2 diabetes in the future. You also have a higher risk for heart disease than people with normal glucose levels.",
+      "source_provider": null,
+      "revision_id": null,
+      "license": null,
+      "license_url": null,
+      "attribution_url": null,
+      "section_scope": null,
+      "changes": null
+    },
+    {
+      "citation_id": "S2",
+      "document_id": "niddk-prevention",
+      "chunk_id": "362d9a4153cd186782aafd3e",
+      "title": "NIDDK — Phòng ngừa típ 2",
+      "section": "NIDDK — Phòng ngừa típ 2",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+      "quote": "Perhaps you have learned that you have a high chance of developing type 2 diabetes, the most common type of diabetes. You might be overweight or have a parent, brother, or sister with type 2 diabetes. Maybe you had gestational diabetes, which is diabetes that develops during pregnancy. These are just a few examples of factors that can raise your chances of developing type 2 diabetes.\n\nDiabetes can cause serious health problems, such as heart disease, stroke, and eye and foot problems. Prediabetes also can cause health problems. The good news is that type 2 diabetes can be delayed or even prevented. The longer you have diabetes, the more likely you are to develop health problems, so delaying diabetes by even a few years will benefit your health. You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week. Ask your doctor if you should take the diabetes drug metformin to help prevent or delay type 2 diabetes.<sup>1</sup>",
+      "source_provider": null,
+      "revision_id": null,
+      "license": null,
+      "license_url": null,
+      "attribution_url": null,
+      "section_scope": null,
+      "changes": null
+    },
+    {
+      "citation_id": "S3",
+      "document_id": "niddk-risk",
+      "chunk_id": "c185033cc2d2eef7b62ae616",
+      "title": "NIDDK — Yếu tố nguy cơ típ 2",
+      "section": "What are the risk factors for type 2 diabetes?",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+      "quote": "Diabetes type 2 can affect people at any age.\n\nYou can develop type 2 diabetes at any age, even during childhood. You are more likely to develop type 2 diabetes if you<sup>1</sup>\n\n- are overweight or have obesity.\n- are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older.\n- have a family history of diabetes.\n- are African American, American Indian, Asian American, Hispanic/Latino, or Pacific Islander.\n- are not physically active, because of physical limitations, a sedentary lifestyle, or a job that requires sitting for long periods of time.\n- have prediabetes.\n- have a history of gestational diabetes, a type of diabetes that develops during pregnancy, or gave birth to a baby weighing 9 pounds or more.\n\nChildren and teens are also at higher risk of developing type 2 diabetes if, in addition to the previous risk factors, they were born with a low birth weight or if their parent had gestational diabetes while pregnant with the child.<sup>1</sup>\n\nYou are encouraged to talk with a doctor about any of the health conditions listed above that may require medical treatment. Managing health problems may help reduce your chances of developing type 2 diabetes.<sup>2</sup> Also, ask your doctor about any medicines you or your child take that might increase your risk. You can also take the Diabetes Risk Test to learn more about your risk for type 2 diabetes.",
+      "source_provider": null,
+      "revision_id": null,
+      "license": null,
+      "license_url": null,
+      "attribution_url": null,
+      "section_scope": null,
+      "changes": null
+    },
+    {
+      "citation_id": "S4",
+      "document_id": "niddk-symptoms",
+      "chunk_id": "51f155be2db8f29c78324d39",
+      "title": "NIDDK — Triệu chứng và nguyên nhân",
+      "section": "What causes type 2 diabetes?",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "quote": "Type 2 diabetes is the most common form of diabetes. Type 2 diabetes develops when your pancreas doesn’t produce enough insulin, and your body has trouble using insulin, a condition called insulin resistance. Insulin resistance is when the cells in your muscles, fat, and liver don’t respond well to insulin. When there isn’t enough insulin to balance blood glucose levels, they begin to rise.\n\nWhen blood glucose levels are higher than normal but not high enough to be diagnosed as type 2 diabetes, you have a condition called prediabetes. You have type 2 diabetes when health care professionals diagnose your blood glucose level as being too high.\n\nResearchers don’t fully know what causes problems with insulin production and insulin resistance in type 2 diabetes. However, people are more likely to develop type 2 diabetes if they\n\n- have overweight, obesity, or a large waist size.\n- are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older.\n- have a family history of type 2 diabetes.\n- are African American, American Indian, Asian American, Hispanic, Latino, or Pacific Islander.\n- are not physically active, because of a job that requires sitting for long periods of time or because of difficulty moving their body.\n- smoke, including tobacco products and e-cigarettes, or are exposed to secondhand smoke.\n- have prediabetes.\n- have a history of gestational diabetes, a type of diabetes that develops during pregnancy, or gave birth to a baby weighing 9 pounds or more.\n\nYou can’t change some of these risk factors, such as your age, family history, or race. However, you may be able to change some risk factors and prevent or delay type 2 diabetes by maintaining a healthy weight, being physically active, and stopping smoking.\n\nYou may be able to prevent type 2 diabetes by maintaining a healthy weight and being physically active.",
+      "source_provider": null,
+      "revision_id": null,
+      "license": null,
+      "license_url": null,
+      "attribution_url": null,
+      "section_scope": null,
+      "changes": null
+    },
+    {
+      "citation_id": "S5",
+      "document_id": "niddk-prevention",
+      "chunk_id": "becdee0078a45398c4c510a2",
+      "title": "NIDDK — Phòng ngừa típ 2",
+      "section": "How can I lower my chances of developing type 2 diabetes?",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+      "quote": "Research such as the Diabetes Prevention Program shows that you can do a lot to reduce your chances of developing type 2 diabetes. Here are some things you can change to lower your risk:\n\n- Lose weight and keep it off. You may be able to prevent or delay diabetes by losing 5 to 7 percent of your starting weight.<sup>1</sup> For instance, if you weigh 200 pounds, your goal would be to lose about 10 to 14 pounds.\n- Move more. Get at least 30 minutes of physical activity 5 days a week. If you have not been active, talk with your health care professional about which activities are best. Start slowly to build up to your goal.\n- Eat healthy foods most of the time. Eat smaller portions to reduce the amount of calories you eat each day and help you lose weight. Choosing foods with less fat is another way to reduce calories. Drink water instead of sweetened beverages.\n\nAsk your health care professional about what other changes you can make to prevent or delay type 2 diabetes.\n\nMost often, your best chance for preventing type 2 diabetes is to make lifestyle changes that work for you long term. Get started with Your Game Plan to Prevent Type 2 Diabetes.\n\nLosing weight through healthy eating and regular physical activity can help you prevent type 2 diabetes.",
+      "source_provider": null,
+      "revision_id": null,
+      "license": null,
+      "license_url": null,
+      "attribution_url": null,
+      "section_scope": null,
+      "changes": null
+    }
+  ]
+}

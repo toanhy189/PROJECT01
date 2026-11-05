@@ -1,0 +1,214 @@
+{
+  "status": "verified",
+  "checked_at": "2026-11-03T21:46:52.195005+07:00",
+  "server": [
+    {
+      "name": "Neo4j Kernel",
+      "versions": [
+        "2026.10.1"
+      ],
+      "edition": "community"
+    },
+    {
+      "name": "Cypher",
+      "versions": [
+        "5",
+        "25"
+      ],
+      "edition": ""
+    }
+  ],
+  "python_driver": "6.4.0",
+  "snapshot_id": "f70e5a9bc1bd55ff0e832eb266438204743f539f63ae62b0724912410f366b86",
+  "corpus_version": "5496cd17110941dc998fbe21a1e19088b58256687734060fd4ec47741ab48885",
+  "migration": {
+    "status": "verified",
+    "backend": "neo4j",
+    "snapshot_id": "f70e5a9bc1bd55ff0e832eb266438204743f539f63ae62b0724912410f366b86",
+    "corpus_version": "5496cd17110941dc998fbe21a1e19088b58256687734060fd4ec47741ab48885",
+    "created": false,
+    "idempotent": true,
+    "counts": {
+      "Entity": 36,
+      "RelationFact": 36,
+      "Evidence": 38,
+      "Chunk": 58,
+      "Document": 5
+    },
+    "structural_relationships": 206,
+    "embedding_requests": 0,
+    "provenance_verified": true,
+    "chroma_modified": false
+  },
+  "baseline_corpus_unchanged": true,
+  "baseline_vectors_unchanged": true,
+  "networkx_neo4j_ranked_lists_matched": 200,
+  "ranked_lists_compared": 200,
+  "fusion_policy": "vector_guarded",
+  "exploratory_quality_gate_passed": true,
+  "graph_request_cases_connected": 62,
+  "ablation_no_graph_failures": true,
+  "query_embedding_requests_this_evaluation": 0,
+  "metrics": {
+    "vector": {
+      "recall_at_5": 0.9777777777777777,
+      "mrr": 0.8340740740740742,
+      "ndcg_at_5": 0.8617265760473869,
+      "latency_p95_ms": 4.580550047103316,
+      "by_split": {
+        "development": {
+          "answerable_cases": 15,
+          "recall_at_5": 1.0,
+          "mrr": 0.8022222222222222,
+          "ndcg_at_5": 0.8480413245783109,
+          "all_reference_groups_found": 15
+        },
+        "heldout": {
+          "answerable_cases": 30,
+          "recall_at_5": 0.9666666666666667,
+          "mrr": 0.85,
+          "ndcg_at_5": 0.8685692017819249,
+          "all_reference_groups_found": 29
+        }
+      },
+      "improved_cases": [],
+      "regressed_cases": [],
+      "graph_added_gold_evidence_cases": []
+    },
+    "vector_bm25": {
+      "recall_at_5": 0.9777777777777777,
+      "mrr": 0.7692592592592593,
+      "ndcg_at_5": 0.813502511908001,
+      "latency_p95_ms": 94.70292496262117,
+      "by_split": {
+        "development": {
+          "answerable_cases": 15,
+          "recall_at_5": 1.0,
+          "mrr": 0.65,
+          "ndcg_at_5": 0.7420026276780329,
+          "all_reference_groups_found": 15
+        },
+        "heldout": {
+          "answerable_cases": 30,
+          "recall_at_5": 0.9666666666666667,
+          "mrr": 0.8288888888888889,
+          "ndcg_at_5": 0.849252454022985,
+          "all_reference_groups_found": 29
+        }
+      },
+      "improved_cases": [
+        "r07",
+        "r25",
+        "r37",
+        "r42",
+        "r45"
+      ],
+      "regressed_cases": [
+        "r01",
+        "r02",
+        "r03",
+        "r06",
+        "r11",
+        "r14",
+        "r18",
+        "r21",
+        "r24",
+        "r26"
+      ],
+      "graph_added_gold_evidence_cases": []
+    },
+    "vector_graph": {
+      "recall_at_5": 0.9777777777777777,
+      "mrr": 0.861851851851852,
+      "ndcg_at_5": 0.8918704087158869,
+      "latency_p95_ms": 153.89847496990114,
+      "by_split": {
+        "development": {
+          "answerable_cases": 15,
+          "recall_at_5": 1.0,
+          "mrr": 0.8188888888888888,
+          "ndcg_at_5": 0.8632306079252928,
+          "all_reference_groups_found": 15
+        },
+        "heldout": {
+          "answerable_cases": 30,
+          "recall_at_5": 0.9666666666666667,
+          "mrr": 0.8833333333333333,
+          "ndcg_at_5": 0.9061903091111838,
+          "all_reference_groups_found": 29
+        }
+      },
+      "improved_cases": [
+        "r05",
+        "r07",
+        "r36",
+        "r42"
+      ],
+      "regressed_cases": [
+        "r21",
+        "r24"
+      ],
+      "graph_added_gold_evidence_cases": []
+    },
+    "vector_bm25_graph": {
+      "recall_at_5": 0.9777777777777777,
+      "mrr": 0.8192592592592592,
+      "ndcg_at_5": 0.855788741536711,
+      "latency_p95_ms": 126.320504990872,
+      "by_split": {
+        "development": {
+          "answerable_cases": 15,
+          "recall_at_5": 1.0,
+          "mrr": 0.7666666666666667,
+          "ndcg_at_5": 0.8235757323910021,
+          "all_reference_groups_found": 15
+        },
+        "heldout": {
+          "answerable_cases": 30,
+          "recall_at_5": 0.9666666666666667,
+          "mrr": 0.8455555555555556,
+          "ndcg_at_5": 0.8718952461095654,
+          "all_reference_groups_found": 29
+        }
+      },
+      "improved_cases": [
+        "r05",
+        "r07",
+        "r25",
+        "r36",
+        "r37",
+        "r42",
+        "r45"
+      ],
+      "regressed_cases": [
+        "r01",
+        "r11",
+        "r13",
+        "r14",
+        "r18",
+        "r21",
+        "r24",
+        "r26"
+      ],
+      "graph_added_gold_evidence_cases": []
+    }
+  },
+  "tests": {
+    "passed": 150,
+    "real_neo4j_integration_passed": 13,
+    "failed_or_skipped": 0
+  },
+  "runtime": {
+    "graph_backend": "neo4j",
+    "graph_enabled": true,
+    "bm25_enabled": false,
+    "reranker_enabled": false
+  },
+  "a4_reranker": "Not rerun: prior real benchmark failed quality and latency gates.",
+  "limitations": [
+    "Exploratory agent-authored gold; not blinded or expert-reviewed.",
+    "No new gold evidence beyond vector top-5 on this corpus.",
+    "No end-to-end generation/groundedness measurement in this migration.",
+    "Wikipedia remains blocked; no wiki documents imported."
+  ]
+}

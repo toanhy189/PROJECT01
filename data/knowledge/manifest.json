@@ -1,0 +1,8 @@
+[
+  {"document_id":"niddk-overview","title":"NIDDK — Tổng quan tiểu đường","path":"overview.md","source_url":"https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes"},
+  {"document_id":"niddk-symptoms","title":"NIDDK — Triệu chứng và nguyên nhân","path":"symptoms.md","source_url":"https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes"},
+  {"document_id":"niddk-risk","title":"NIDDK — Yếu tố nguy cơ típ 2","path":"risk.md","source_url":"https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes"},
+  {"document_id":"niddk-prevention","title":"NIDDK — Phòng ngừa típ 2","path":"prevention.md","source_url":"https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes"},
+  {"document_id":"niddk-tests","title":"NIDDK — Xét nghiệm và chẩn đoán","path":"tests.md","source_url":"https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis"},
+  {"document_id":"niddk-bmi","title":"NIDDK — Phân loại BMI ở người trưởng thành","path":"bmi.md","source_url":"https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/definition-facts"}
+]

@@ -1,0 +1,29 @@
+name: glucoguide
+services:
+  neo4j:
+    image: neo4j:2026.10.1
+    ports:
+      - "127.0.0.1:${NEO4J_HTTP_PORT:-17474}:7474"
+      - "127.0.0.1:${NEO4J_BOLT_PORT:-7687}:7687"
+    environment:
+      NEO4J_AUTH: "neo4j/${NEO4J_PASSWORD:?Set NEO4J_PASSWORD in .env}"
+      NEO4J_server_memory_heap_initial__size: 256M
+      NEO4J_server_memory_heap_max__size: 512M
+      NEO4J_server_memory_pagecache_size: 256M
+      NEO4J_db_transaction_timeout: 5s
+      NEO4J_server_http_advertised__address: "localhost:${NEO4J_HTTP_PORT:-17474}"
+      NEO4J_server_bolt_advertised__address: "localhost:${NEO4J_BOLT_PORT:-7687}"
+    mem_limit: 2g
+    cpus: 2
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+    healthcheck:
+      test: ["CMD-SHELL", "wget --quiet --spider http://localhost:7474 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 30s
+volumes:
+  neo4j_data:
+  neo4j_logs:

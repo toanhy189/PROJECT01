@@ -1,0 +1,95 @@
+{
+  "checked_at": "2026-11-01T15:30:28.006039+00:00",
+  "collection": "diabetes_knowledge",
+  "embedding_model": "gemini-embedding-001",
+  "embedding_dimension": 768,
+  "chunks_before": 55,
+  "first_run": {
+    "documents": 5,
+    "chunks": 58,
+    "unchanged_documents": 0,
+    "errors": [],
+    "results": [
+      {
+        "document_id": "niddk-overview",
+        "source_type": "md",
+        "chunks": 10,
+        "status": "indexed"
+      },
+      {
+        "document_id": "niddk-symptoms",
+        "source_type": "md",
+        "chunks": 19,
+        "status": "indexed"
+      },
+      {
+        "document_id": "niddk-risk",
+        "source_type": "md",
+        "chunks": 6,
+        "status": "indexed"
+      },
+      {
+        "document_id": "niddk-prevention",
+        "source_type": "md",
+        "chunks": 5,
+        "status": "indexed"
+      },
+      {
+        "document_id": "niddk-tests",
+        "source_type": "md",
+        "chunks": 18,
+        "status": "indexed"
+      }
+    ]
+  },
+  "embedding_requests_first_run": 5,
+  "embedding_texts_first_run": 58,
+  "second_run": {
+    "documents": 0,
+    "chunks": 0,
+    "unchanged_documents": 5,
+    "errors": [],
+    "results": [
+      {
+        "document_id": "niddk-overview",
+        "source_type": "md",
+        "chunks": 10,
+        "status": "unchanged"
+      },
+      {
+        "document_id": "niddk-symptoms",
+        "source_type": "md",
+        "chunks": 19,
+        "status": "unchanged"
+      },
+      {
+        "document_id": "niddk-risk",
+        "source_type": "md",
+        "chunks": 6,
+        "status": "unchanged"
+      },
+      {
+        "document_id": "niddk-prevention",
+        "source_type": "md",
+        "chunks": 5,
+        "status": "unchanged"
+      },
+      {
+        "document_id": "niddk-tests",
+        "source_type": "md",
+        "chunks": 18,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "embedding_requests_second_run": 0,
+  "chunks_after": 58,
+  "expected_manifest_chunks": 58,
+  "all_current_chunks_match_content_and_metadata": true,
+  "duplicate_chunk_ids": 0,
+  "unexpected_chunk_ids": 0,
+  "missing_required_metadata": 0,
+  "vectors_finite_and_correct_dimension": true,
+  "vectors_l2_normalized": true,
+  "passed": true
+}

@@ -1,0 +1,3992 @@
+{
+  "evaluation_type": "retrieval_only_real_cached_gemini_queries",
+  "k": 5,
+  "case_count": 50,
+  "gold_annotation": "agent_source_checked_not_expert_reviewed",
+  "citation_correctness": null,
+  "groundedness_human": null,
+  "unanswerable_note": "Candidates are not answers; refusals/groundedness require separate generation/Safety evaluation.",
+  "reports": {
+    "vector": {
+      "answerable_cases": 45,
+      "recall_at_5": 0.9777777777777777,
+      "mrr": 0.8340740740740742,
+      "all_reference_groups_found": 44,
+      "by_split": {
+        "development": {
+          "answerable_cases": 15,
+          "recall_at_5": 1.0,
+          "mrr": 0.8022222222222222,
+          "all_reference_groups_found": 15
+        },
+        "heldout": {
+          "answerable_cases": 30,
+          "recall_at_5": 0.9666666666666667,
+          "mrr": 0.85,
+          "all_reference_groups_found": 29
+        }
+      },
+      "latency_mean_ms": 4.631657991558313,
+      "latency_p95_ms": 5.656525038648397,
+      "results": [
+        {
+          "case_id": "r01",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "820f69cc4efaf4d6f2cbc179",
+            "1e89935edd1f3947b50d720d",
+            "5be02ecaca00c742222c181f",
+            "159ad42fe12819997e1292fa",
+            "4f38ccad2670e96ab10f5fdf"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 5.039700074121356,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "820f69cc4efaf4d6f2cbc179",
+              "1e89935edd1f3947b50d720d",
+              "5be02ecaca00c742222c181f",
+              "159ad42fe12819997e1292fa",
+              "4f38ccad2670e96ab10f5fdf"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "820f69cc4efaf4d6f2cbc179",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.30666643381118774,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "1e89935edd1f3947b50d720d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3215194344520569,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5be02ecaca00c742222c181f",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3235045075416565,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "159ad42fe12819997e1292fa",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33583343029022217,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "4f38ccad2670e96ab10f5fdf",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.342648983001709,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r02",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "1e89935edd1f3947b50d720d",
+            "e9d5c6523b987140e5cc008b",
+            "5be02ecaca00c742222c181f",
+            "8ed8fcc8691b65fc9129552a",
+            "c90b2ce7675a3c722e52708d"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 5.645800149068236,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "1e89935edd1f3947b50d720d",
+              "e9d5c6523b987140e5cc008b",
+              "5be02ecaca00c742222c181f",
+              "8ed8fcc8691b65fc9129552a",
+              "c90b2ce7675a3c722e52708d"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "1e89935edd1f3947b50d720d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.23561882972717285,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "e9d5c6523b987140e5cc008b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.31176209449768066,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5be02ecaca00c742222c181f",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3272743225097656,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "8ed8fcc8691b65fc9129552a",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33218812942504883,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c90b2ce7675a3c722e52708d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3345944881439209,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r03",
+          "group": "direct",
+          "split": "development",
+          "chunk_ids": [
+            "8eb04b5c41080d228d1bad68",
+            "627e32b211d493b43c98658b",
+            "51f155be2db8f29c78324d39",
+            "362d9a4153cd186782aafd3e",
+            "c90b2ce7675a3c722e52708d"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 3.5647000186145306,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "8eb04b5c41080d228d1bad68",
+              "627e32b211d493b43c98658b",
+              "51f155be2db8f29c78324d39",
+              "362d9a4153cd186782aafd3e",
+              "c90b2ce7675a3c722e52708d"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "8eb04b5c41080d228d1bad68",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.26952898502349854,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "627e32b211d493b43c98658b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.29171907901763916,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "51f155be2db8f29c78324d39",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.30766594409942627,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "362d9a4153cd186782aafd3e",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.31154894828796387,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c90b2ce7675a3c722e52708d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3192593455314636,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r04",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "4f38ccad2670e96ab10f5fdf",
+            "070f8ed744c8931c860fdd92",
+            "159ad42fe12819997e1292fa",
+            "115696eb2a57a52d75017627",
+            "8c9eaa7c339a9daa41309fca"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 5.628300132229924,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "4f38ccad2670e96ab10f5fdf",
+              "070f8ed744c8931c860fdd92",
+              "159ad42fe12819997e1292fa",
+              "115696eb2a57a52d75017627",
+              "8c9eaa7c339a9daa41309fca"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "4f38ccad2670e96ab10f5fdf",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.22698628902435303,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "070f8ed744c8931c860fdd92",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2566831111907959,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "159ad42fe12819997e1292fa",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2883867025375366,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "115696eb2a57a52d75017627",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.31421375274658203,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "8c9eaa7c339a9daa41309fca",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.31455689668655396,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r05",
+          "group": "bilingual",
+          "split": "heldout",
+          "chunk_ids": [
+            "51f155be2db8f29c78324d39",
+            "c185033cc2d2eef7b62ae616",
+            "11b504f8c7ad53f5b5606c37",
+            "becdee0078a45398c4c510a2",
+            "c90b2ce7675a3c722e52708d"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 0.5,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 5.665299948304892,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "51f155be2db8f29c78324d39",
+              "c185033cc2d2eef7b62ae616",
+              "11b504f8c7ad53f5b5606c37",
+              "becdee0078a45398c4c510a2",
+              "c90b2ce7675a3c722e52708d"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "51f155be2db8f29c78324d39",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.26950937509536743,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c185033cc2d2eef7b62ae616",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.28941863775253296,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "11b504f8c7ad53f5b5606c37",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.29454779624938965,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "becdee0078a45398c4c510a2",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2985827922821045,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c90b2ce7675a3c722e52708d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2988314628601074,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r06",
+          "group": "direct",
+          "split": "development",
+          "chunk_ids": [
+            "c185033cc2d2eef7b62ae616",
+            "c90b2ce7675a3c722e52708d",
+            "51f155be2db8f29c78324d39",
+            "11b504f8c7ad53f5b5606c37",
+            "362d9a4153cd186782aafd3e"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.58529987372458,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "c185033cc2d2eef7b62ae616",
+              "c90b2ce7675a3c722e52708d",
+              "51f155be2db8f29c78324d39",
+              "11b504f8c7ad53f5b5606c37",
+              "362d9a4153cd186782aafd3e"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "c185033cc2d2eef7b62ae616",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2895657420158386,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c90b2ce7675a3c722e52708d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2898836135864258,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "51f155be2db8f29c78324d39",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2899553179740906,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "11b504f8c7ad53f5b5606c37",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3048020005226135,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "362d9a4153cd186782aafd3e",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3062942624092102,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r07",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "becdee0078a45398c4c510a2",
+            "362d9a4153cd186782aafd3e",
+            "5bc47f506b741ec196c1b6a1",
+            "51f155be2db8f29c78324d39",
+            "11b504f8c7ad53f5b5606c37"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 0.5,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 5.49090001732111,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "becdee0078a45398c4c510a2",
+              "362d9a4153cd186782aafd3e",
+              "5bc47f506b741ec196c1b6a1",
+              "51f155be2db8f29c78324d39",
+              "11b504f8c7ad53f5b5606c37"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "becdee0078a45398c4c510a2",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2396308183670044,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "362d9a4153cd186782aafd3e",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2704765796661377,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5bc47f506b741ec196c1b6a1",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.27943098545074463,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "51f155be2db8f29c78324d39",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2872852683067322,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "11b504f8c7ad53f5b5606c37",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.29607492685317993,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r08",
+          "group": "bilingual",
+          "split": "heldout",
+          "chunk_ids": [
+            "2051c02baa3df2782b80fa3d",
+            "0e26aa1514cc435da2979f82",
+            "ba338b6f6631693128d68761",
+            "571daabd66d3fc1cf2b631dd",
+            "9c23b3ec18a3db5e8f874635"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 5.581600125879049,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "2051c02baa3df2782b80fa3d",
+              "0e26aa1514cc435da2979f82",
+              "ba338b6f6631693128d68761",
+              "571daabd66d3fc1cf2b631dd",
+              "9c23b3ec18a3db5e8f874635"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "2051c02baa3df2782b80fa3d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.26105618476867676,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33903414011001587,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "ba338b6f6631693128d68761",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3443763852119446,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "571daabd66d3fc1cf2b631dd",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3775519132614136,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "9c23b3ec18a3db5e8f874635",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.386069655418396,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r09",
+          "group": "negation",
+          "split": "development",
+          "chunk_ids": [
+            "8ed8fcc8691b65fc9129552a",
+            "e9d5c6523b987140e5cc008b",
+            "0e26aa1514cc435da2979f82",
+            "5291debddfc47a01c42dc3a6",
+            "ba338b6f6631693128d68761"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.476199857890606,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "8ed8fcc8691b65fc9129552a",
+              "e9d5c6523b987140e5cc008b",
+              "0e26aa1514cc435da2979f82",
+              "5291debddfc47a01c42dc3a6",
+              "ba338b6f6631693128d68761"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "8ed8fcc8691b65fc9129552a",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2710537314414978,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "e9d5c6523b987140e5cc008b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.32671475410461426,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.32822102308273315,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5291debddfc47a01c42dc3a6",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.32952725887298584,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "ba338b6f6631693128d68761",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33626413345336914,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r10",
+          "group": "bilingual",
+          "split": "heldout",
+          "chunk_ids": [
+            "0045496a4a7991ca04f3d613",
+            "9c23b3ec18a3db5e8f874635",
+            "a9f6e2487b8ee8c3f4803d3f",
+            "5e1af90f213bbba42cbcbb1b",
+            "0e26aa1514cc435da2979f82"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.395199939608574,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "0045496a4a7991ca04f3d613",
+              "9c23b3ec18a3db5e8f874635",
+              "a9f6e2487b8ee8c3f4803d3f",
+              "5e1af90f213bbba42cbcbb1b",
+              "0e26aa1514cc435da2979f82"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "0045496a4a7991ca04f3d613",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2496688961982727,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "9c23b3ec18a3db5e8f874635",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3333398699760437,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "a9f6e2487b8ee8c3f4803d3f",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3437983989715576,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5e1af90f213bbba42cbcbb1b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.34573525190353394,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.36382579803466797,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r11",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "159ad42fe12819997e1292fa",
+            "115696eb2a57a52d75017627",
+            "17b1fb269f4220c6c72dbee0",
+            "820f69cc4efaf4d6f2cbc179",
+            "303e061e167686b6ff4b734c"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 0.25,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.879900021478534,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "159ad42fe12819997e1292fa",
+              "115696eb2a57a52d75017627",
+              "17b1fb269f4220c6c72dbee0",
+              "820f69cc4efaf4d6f2cbc179",
+              "303e061e167686b6ff4b734c"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "159ad42fe12819997e1292fa",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.32772737741470337,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "115696eb2a57a52d75017627",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3424415588378906,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "17b1fb269f4220c6c72dbee0",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3527546525001526,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "820f69cc4efaf4d6f2cbc179",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3532401919364929,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "303e061e167686b6ff4b734c",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3678051829338074,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r12",
+          "group": "direct",
+          "split": "development",
+          "chunk_ids": [
+            "c185033cc2d2eef7b62ae616",
+            "c90b2ce7675a3c722e52708d",
+            "4f38ccad2670e96ab10f5fdf",
+            "51f155be2db8f29c78324d39",
+            "767689d0b2e5da770aef2b58"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 0.5,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.778699949383736,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "c185033cc2d2eef7b62ae616",
+              "c90b2ce7675a3c722e52708d",
+              "4f38ccad2670e96ab10f5fdf",
+              "51f155be2db8f29c78324d39",
+              "767689d0b2e5da770aef2b58"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "c185033cc2d2eef7b62ae616",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2786957025527954,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c90b2ce7675a3c722e52708d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.30604225397109985,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "4f38ccad2670e96ab10f5fdf",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.32739508152008057,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "51f155be2db8f29c78324d39",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33226221799850464,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "767689d0b2e5da770aef2b58",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3363959789276123,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r13",
+          "group": "negation",
+          "split": "heldout",
+          "chunk_ids": [
+            "b9a50021c01bccf24741250e",
+            "eef45104ed4a3b63471f2c39",
+            "7a5b18415aff1c3452865608",
+            "6df0dd4c474cf0325229d58b",
+            "02c665a518aa17996450417a"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 3.993900027126074,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "b9a50021c01bccf24741250e",
+              "eef45104ed4a3b63471f2c39",
+              "7a5b18415aff1c3452865608",
+              "6df0dd4c474cf0325229d58b",
+              "02c665a518aa17996450417a"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "b9a50021c01bccf24741250e",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2588310241699219,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "eef45104ed4a3b63471f2c39",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.27475225925445557,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "7a5b18415aff1c3452865608",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.29044240713119507,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "6df0dd4c474cf0325229d58b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3181988000869751,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "02c665a518aa17996450417a",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3239401578903198,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r14",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "66577d71a2ccb529a12a46ee",
+            "820f69cc4efaf4d6f2cbc179",
+            "5be02ecaca00c742222c181f",
+            "f6ec130ee2635a641de8a157",
+            "17b1fb269f4220c6c72dbee0"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 0.5,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 5.958500085398555,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "66577d71a2ccb529a12a46ee",
+              "820f69cc4efaf4d6f2cbc179",
+              "5be02ecaca00c742222c181f",
+              "f6ec130ee2635a641de8a157",
+              "17b1fb269f4220c6c72dbee0"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "66577d71a2ccb529a12a46ee",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.27046912908554077,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "820f69cc4efaf4d6f2cbc179",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3008071184158325,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5be02ecaca00c742222c181f",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.31229329109191895,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "f6ec130ee2635a641de8a157",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.32007402181625366,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "17b1fb269f4220c6c72dbee0",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.32783347368240356,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r15",
+          "group": "bilingual",
+          "split": "development",
+          "chunk_ids": [
+            "5b9a8a36be74d1edbc714213",
+            "ccba5c0e0afd7564638b97c5",
+            "5bc47f506b741ec196c1b6a1",
+            "d787aab9bfe0f2c47e831922",
+            "0e26aa1514cc435da2979f82"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.195799818262458,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "5b9a8a36be74d1edbc714213",
+              "ccba5c0e0afd7564638b97c5",
+              "5bc47f506b741ec196c1b6a1",
+              "d787aab9bfe0f2c47e831922",
+              "0e26aa1514cc435da2979f82"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "5b9a8a36be74d1edbc714213",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3081182837486267,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "ccba5c0e0afd7564638b97c5",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3688633441925049,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5bc47f506b741ec196c1b6a1",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3699933886528015,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "d787aab9bfe0f2c47e831922",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.39701294898986816,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.41761159896850586,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r16",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "ccba5c0e0afd7564638b97c5",
+            "d787aab9bfe0f2c47e831922",
+            "5b9a8a36be74d1edbc714213",
+            "5bc47f506b741ec196c1b6a1",
+            "8eb04b5c41080d228d1bad68"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.81799989938736,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "ccba5c0e0afd7564638b97c5",
+              "d787aab9bfe0f2c47e831922",
+              "5b9a8a36be74d1edbc714213",
+              "5bc47f506b741ec196c1b6a1",
+              "8eb04b5c41080d228d1bad68"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "ccba5c0e0afd7564638b97c5",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2635480761528015,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "d787aab9bfe0f2c47e831922",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3062264323234558,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5b9a8a36be74d1edbc714213",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3242068290710449,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5bc47f506b741ec196c1b6a1",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3327927589416504,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "8eb04b5c41080d228d1bad68",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.35484349727630615,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r17",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "c185033cc2d2eef7b62ae616",
+            "767689d0b2e5da770aef2b58",
+            "51f155be2db8f29c78324d39",
+            "c90b2ce7675a3c722e52708d",
+            "11b504f8c7ad53f5b5606c37"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.496099893003702,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "c185033cc2d2eef7b62ae616",
+              "767689d0b2e5da770aef2b58",
+              "51f155be2db8f29c78324d39",
+              "c90b2ce7675a3c722e52708d",
+              "11b504f8c7ad53f5b5606c37"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "c185033cc2d2eef7b62ae616",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.23833799362182617,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "767689d0b2e5da770aef2b58",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2669777274131775,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "51f155be2db8f29c78324d39",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.26837384700775146,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c90b2ce7675a3c722e52708d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.27378636598587036,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "11b504f8c7ad53f5b5606c37",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.28929442167282104,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r18",
+          "group": "direct",
+          "split": "development",
+          "chunk_ids": [
+            "becdee0078a45398c4c510a2",
+            "5bc47f506b741ec196c1b6a1",
+            "362d9a4153cd186782aafd3e",
+            "d787aab9bfe0f2c47e831922",
+            "51f155be2db8f29c78324d39"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.405499901622534,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "becdee0078a45398c4c510a2",
+              "5bc47f506b741ec196c1b6a1",
+              "362d9a4153cd186782aafd3e",
+              "d787aab9bfe0f2c47e831922",
+              "51f155be2db8f29c78324d39"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "becdee0078a45398c4c510a2",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.26042455434799194,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5bc47f506b741ec196c1b6a1",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2718920111656189,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "362d9a4153cd186782aafd3e",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2963275909423828,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "d787aab9bfe0f2c47e831922",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3099614381790161,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "51f155be2db8f29c78324d39",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.31064629554748535,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r19",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "becdee0078a45398c4c510a2",
+            "5bc47f506b741ec196c1b6a1",
+            "627e32b211d493b43c98658b",
+            "0e26aa1514cc435da2979f82",
+            "d787aab9bfe0f2c47e831922"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.798599984496832,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "becdee0078a45398c4c510a2",
+              "5bc47f506b741ec196c1b6a1",
+              "627e32b211d493b43c98658b",
+              "0e26aa1514cc435da2979f82",
+              "d787aab9bfe0f2c47e831922"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "becdee0078a45398c4c510a2",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.36710941791534424,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5bc47f506b741ec196c1b6a1",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.37291258573532104,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "627e32b211d493b43c98658b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.385844886302948,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.39449721574783325,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "d787aab9bfe0f2c47e831922",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3972233533859253,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r20",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "627e32b211d493b43c98658b",
+            "8eb04b5c41080d228d1bad68",
+            "ba338b6f6631693128d68761",
+            "362d9a4153cd186782aafd3e",
+            "a60703ed189ae9042c8c62b6"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 3.7372999358922243,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "627e32b211d493b43c98658b",
+              "8eb04b5c41080d228d1bad68",
+              "ba338b6f6631693128d68761",
+              "362d9a4153cd186782aafd3e",
+              "a60703ed189ae9042c8c62b6"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "627e32b211d493b43c98658b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2952048182487488,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "8eb04b5c41080d228d1bad68",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2970826029777527,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "ba338b6f6631693128d68761",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.34558552503585815,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "362d9a4153cd186782aafd3e",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3509488105773926,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "a60703ed189ae9042c8c62b6",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.35608339309692383,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r21",
+          "group": "direct",
+          "split": "development",
+          "chunk_ids": [
+            "6df0dd4c474cf0325229d58b",
+            "eef45104ed4a3b63471f2c39",
+            "5e1af90f213bbba42cbcbb1b",
+            "0e26aa1514cc435da2979f82",
+            "b9a50021c01bccf24741250e"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 0.5,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.80609992519021,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "6df0dd4c474cf0325229d58b",
+              "eef45104ed4a3b63471f2c39",
+              "5e1af90f213bbba42cbcbb1b",
+              "0e26aa1514cc435da2979f82",
+              "b9a50021c01bccf24741250e"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "6df0dd4c474cf0325229d58b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.28345704078674316,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "eef45104ed4a3b63471f2c39",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3166629672050476,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5e1af90f213bbba42cbcbb1b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3250446915626526,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3344920873641968,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "b9a50021c01bccf24741250e",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33499467372894287,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r22",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "8c9eaa7c339a9daa41309fca",
+            "070f8ed744c8931c860fdd92",
+            "4f38ccad2670e96ab10f5fdf",
+            "02b8c2538de3988a8d262cd9",
+            "7a5b18415aff1c3452865608"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 3.60619998537004,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "8c9eaa7c339a9daa41309fca",
+              "070f8ed744c8931c860fdd92",
+              "4f38ccad2670e96ab10f5fdf",
+              "02b8c2538de3988a8d262cd9",
+              "7a5b18415aff1c3452865608"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "8c9eaa7c339a9daa41309fca",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.27391648292541504,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "070f8ed744c8931c860fdd92",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.29873794317245483,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "4f38ccad2670e96ab10f5fdf",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3009790778160095,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "02b8c2538de3988a8d262cd9",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.35408419370651245,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "7a5b18415aff1c3452865608",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.35595226287841797,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r23",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "4f38ccad2670e96ab10f5fdf",
+            "5be02ecaca00c742222c181f",
+            "f6ec130ee2635a641de8a157",
+            "070f8ed744c8931c860fdd92",
+            "159ad42fe12819997e1292fa"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 5.628800019621849,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "4f38ccad2670e96ab10f5fdf",
+              "5be02ecaca00c742222c181f",
+              "f6ec130ee2635a641de8a157",
+              "070f8ed744c8931c860fdd92",
+              "159ad42fe12819997e1292fa"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "4f38ccad2670e96ab10f5fdf",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2706308364868164,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5be02ecaca00c742222c181f",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.31561070680618286,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "f6ec130ee2635a641de8a157",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33088791370391846,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "070f8ed744c8931c860fdd92",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3321177363395691,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "159ad42fe12819997e1292fa",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33393239974975586,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r24",
+          "group": "negation",
+          "split": "development",
+          "chunk_ids": [
+            "f6ec130ee2635a641de8a157",
+            "8c9eaa7c339a9daa41309fca",
+            "4f38ccad2670e96ab10f5fdf",
+            "c90b2ce7675a3c722e52708d",
+            "c185033cc2d2eef7b62ae616"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 3.5647000186145306,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "f6ec130ee2635a641de8a157",
+              "8c9eaa7c339a9daa41309fca",
+              "4f38ccad2670e96ab10f5fdf",
+              "c90b2ce7675a3c722e52708d",
+              "c185033cc2d2eef7b62ae616"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "f6ec130ee2635a641de8a157",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.24504786729812622,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "8c9eaa7c339a9daa41309fca",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2805178165435791,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "4f38ccad2670e96ab10f5fdf",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2992873191833496,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c90b2ce7675a3c722e52708d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3031456470489502,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c185033cc2d2eef7b62ae616",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3045981526374817,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r25",
+          "group": "bilingual",
+          "split": "heldout",
+          "chunk_ids": [
+            "36a8045a152f5632e655c7a9",
+            "c90b2ce7675a3c722e52708d",
+            "820f69cc4efaf4d6f2cbc179",
+            "51f155be2db8f29c78324d39",
+            "a7fd2bde528716864aeb708b"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 0.25,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 5.501299863681197,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "36a8045a152f5632e655c7a9",
+              "c90b2ce7675a3c722e52708d",
+              "820f69cc4efaf4d6f2cbc179",
+              "51f155be2db8f29c78324d39",
+              "a7fd2bde528716864aeb708b"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "36a8045a152f5632e655c7a9",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.35408997535705566,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c90b2ce7675a3c722e52708d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.35772329568862915,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "820f69cc4efaf4d6f2cbc179",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.36427998542785645,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "51f155be2db8f29c78324d39",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.37339216470718384,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "a7fd2bde528716864aeb708b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.38526302576065063,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r26",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "115696eb2a57a52d75017627",
+            "159ad42fe12819997e1292fa",
+            "db5b3fd7e159b7ba599474dc",
+            "070f8ed744c8931c860fdd92",
+            "4f38ccad2670e96ab10f5fdf"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.8513999208807945,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "115696eb2a57a52d75017627",
+              "159ad42fe12819997e1292fa",
+              "db5b3fd7e159b7ba599474dc",
+              "070f8ed744c8931c860fdd92",
+              "4f38ccad2670e96ab10f5fdf"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "115696eb2a57a52d75017627",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.26426565647125244,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "159ad42fe12819997e1292fa",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2833606004714966,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "db5b3fd7e159b7ba599474dc",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.30468589067459106,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "070f8ed744c8931c860fdd92",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3205747604370117,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "4f38ccad2670e96ab10f5fdf",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33212393522262573,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r27",
+          "group": "direct",
+          "split": "development",
+          "chunk_ids": [
+            "165067e61cf10e510cf545c9",
+            "0faf21b4303e36394c921d15",
+            "768971484417553bfbfc1dd5",
+            "5f8b97e40f38ac8f46f31529",
+            "5be02ecaca00c742222c181f"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.776200046762824,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "165067e61cf10e510cf545c9",
+              "0faf21b4303e36394c921d15",
+              "768971484417553bfbfc1dd5",
+              "5f8b97e40f38ac8f46f31529",
+              "5be02ecaca00c742222c181f"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "165067e61cf10e510cf545c9",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2450801134109497,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0faf21b4303e36394c921d15",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2683810591697693,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "768971484417553bfbfc1dd5",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2726393938064575,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5f8b97e40f38ac8f46f31529",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.279391348361969,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5be02ecaca00c742222c181f",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3257194757461548,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r28",
+          "group": "bilingual",
+          "split": "heldout",
+          "chunk_ids": [
+            "4f38ccad2670e96ab10f5fdf",
+            "0e26aa1514cc435da2979f82",
+            "070f8ed744c8931c860fdd92",
+            "9c23b3ec18a3db5e8f874635",
+            "8c9eaa7c339a9daa41309fca"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 5.721500143408775,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "4f38ccad2670e96ab10f5fdf",
+              "0e26aa1514cc435da2979f82",
+              "070f8ed744c8931c860fdd92",
+              "9c23b3ec18a3db5e8f874635",
+              "8c9eaa7c339a9daa41309fca"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "4f38ccad2670e96ab10f5fdf",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3274209499359131,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.34659308195114136,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "070f8ed744c8931c860fdd92",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3719175457954407,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "9c23b3ec18a3db5e8f874635",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.4013218283653259,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "8c9eaa7c339a9daa41309fca",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.4019854664802551,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r29",
+          "group": "negation",
+          "split": "heldout",
+          "chunk_ids": [
+            "4f38ccad2670e96ab10f5fdf",
+            "0e26aa1514cc435da2979f82",
+            "070f8ed744c8931c860fdd92",
+            "1e89935edd1f3947b50d720d",
+            "cc769f6884d12f17efb41ac2"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.765200195834041,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "4f38ccad2670e96ab10f5fdf",
+              "0e26aa1514cc435da2979f82",
+              "070f8ed744c8931c860fdd92",
+              "1e89935edd1f3947b50d720d",
+              "cc769f6884d12f17efb41ac2"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "4f38ccad2670e96ab10f5fdf",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.280021607875824,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3242601752281189,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "070f8ed744c8931c860fdd92",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33240729570388794,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "1e89935edd1f3947b50d720d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.340035617351532,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "cc769f6884d12f17efb41ac2",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.351565420627594,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r30",
+          "group": "direct",
+          "split": "development",
+          "chunk_ids": [
+            "a9f6e2487b8ee8c3f4803d3f",
+            "5e1af90f213bbba42cbcbb1b",
+            "7a5b18415aff1c3452865608",
+            "5291debddfc47a01c42dc3a6",
+            "8eb04b5c41080d228d1bad68"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 5.339199909940362,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "a9f6e2487b8ee8c3f4803d3f",
+              "5e1af90f213bbba42cbcbb1b",
+              "7a5b18415aff1c3452865608",
+              "5291debddfc47a01c42dc3a6",
+              "8eb04b5c41080d228d1bad68"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "a9f6e2487b8ee8c3f4803d3f",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2590290307998657,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5e1af90f213bbba42cbcbb1b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.30141884088516235,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "7a5b18415aff1c3452865608",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3300625681877136,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5291debddfc47a01c42dc3a6",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33658844232559204,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "8eb04b5c41080d228d1bad68",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3416186571121216,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r31",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "9c23b3ec18a3db5e8f874635",
+            "0045496a4a7991ca04f3d613",
+            "5e1af90f213bbba42cbcbb1b",
+            "a9f6e2487b8ee8c3f4803d3f",
+            "2051c02baa3df2782b80fa3d"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.631299991160631,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "9c23b3ec18a3db5e8f874635",
+              "0045496a4a7991ca04f3d613",
+              "5e1af90f213bbba42cbcbb1b",
+              "a9f6e2487b8ee8c3f4803d3f",
+              "2051c02baa3df2782b80fa3d"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "9c23b3ec18a3db5e8f874635",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2694138288497925,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0045496a4a7991ca04f3d613",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2705851197242737,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5e1af90f213bbba42cbcbb1b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3108886480331421,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "a9f6e2487b8ee8c3f4803d3f",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3235238194465637,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "2051c02baa3df2782b80fa3d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.34715133905410767,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r32",
+          "group": "direct",
+          "split": "heldout",
+          "chunk_ids": [
+            "768971484417553bfbfc1dd5",
+            "e9d5c6523b987140e5cc008b",
+            "5f8b97e40f38ac8f46f31529",
+            "165067e61cf10e510cf545c9",
+            "0faf21b4303e36394c921d15"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 3.870900021865964,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "768971484417553bfbfc1dd5",
+              "e9d5c6523b987140e5cc008b",
+              "5f8b97e40f38ac8f46f31529",
+              "165067e61cf10e510cf545c9",
+              "0faf21b4303e36394c921d15"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "768971484417553bfbfc1dd5",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.22082501649856567,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "e9d5c6523b987140e5cc008b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2727804183959961,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5f8b97e40f38ac8f46f31529",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.27499645948410034,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "165067e61cf10e510cf545c9",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.287636399269104,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0faf21b4303e36394c921d15",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.289431095123291,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r33",
+          "group": "bilingual",
+          "split": "development",
+          "chunk_ids": [
+            "db5b3fd7e159b7ba599474dc",
+            "159ad42fe12819997e1292fa",
+            "070f8ed744c8931c860fdd92",
+            "115696eb2a57a52d75017627",
+            "4f38ccad2670e96ab10f5fdf"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.845800111070275,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "db5b3fd7e159b7ba599474dc",
+              "159ad42fe12819997e1292fa",
+              "070f8ed744c8931c860fdd92",
+              "115696eb2a57a52d75017627",
+              "4f38ccad2670e96ab10f5fdf"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "db5b3fd7e159b7ba599474dc",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.22078263759613037,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "159ad42fe12819997e1292fa",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.29169130325317383,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "070f8ed744c8931c860fdd92",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2948310971260071,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "115696eb2a57a52d75017627",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.30100512504577637,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "4f38ccad2670e96ab10f5fdf",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3227773904800415,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r34",
+          "group": "condition",
+          "split": "heldout",
+          "chunk_ids": [
+            "2051c02baa3df2782b80fa3d",
+            "ba338b6f6631693128d68761",
+            "0e26aa1514cc435da2979f82",
+            "571daabd66d3fc1cf2b631dd",
+            "e9d5c6523b987140e5cc008b"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.472200060263276,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "2051c02baa3df2782b80fa3d",
+              "ba338b6f6631693128d68761",
+              "0e26aa1514cc435da2979f82",
+              "571daabd66d3fc1cf2b631dd",
+              "e9d5c6523b987140e5cc008b"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "2051c02baa3df2782b80fa3d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.26710784435272217,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "ba338b6f6631693128d68761",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33342814445495605,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3561076521873474,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "571daabd66d3fc1cf2b631dd",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3662189841270447,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "e9d5c6523b987140e5cc008b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.39024096727371216,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r35",
+          "group": "condition",
+          "split": "heldout",
+          "chunk_ids": [
+            "02c665a518aa17996450417a",
+            "5e1af90f213bbba42cbcbb1b",
+            "6df0dd4c474cf0325229d58b",
+            "0e26aa1514cc435da2979f82",
+            "7a5b18415aff1c3452865608"
+          ],
+          "recall_at_5": 0.0,
+          "reciprocal_rank": 0,
+          "all_reference_groups_found": false,
+          "entity_link_recall": null,
+          "latency_ms": 4.23559988848865,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "02c665a518aa17996450417a",
+              "5e1af90f213bbba42cbcbb1b",
+              "6df0dd4c474cf0325229d58b",
+              "0e26aa1514cc435da2979f82",
+              "7a5b18415aff1c3452865608"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "02c665a518aa17996450417a",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3034698963165283,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5e1af90f213bbba42cbcbb1b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.30832260847091675,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "6df0dd4c474cf0325229d58b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.31701308488845825,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.332852840423584,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "7a5b18415aff1c3452865608",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33410942554473877,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r36",
+          "group": "relation",
+          "split": "development",
+          "chunk_ids": [
+            "becdee0078a45398c4c510a2",
+            "362d9a4153cd186782aafd3e",
+            "627e32b211d493b43c98658b",
+            "a60703ed189ae9042c8c62b6",
+            "8eb04b5c41080d228d1bad68"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 0.5,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.849000135436654,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "becdee0078a45398c4c510a2",
+              "362d9a4153cd186782aafd3e",
+              "627e32b211d493b43c98658b",
+              "a60703ed189ae9042c8c62b6",
+              "8eb04b5c41080d228d1bad68"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "becdee0078a45398c4c510a2",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2622312307357788,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "362d9a4153cd186782aafd3e",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.26757025718688965,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "627e32b211d493b43c98658b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.27095234394073486,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "a60703ed189ae9042c8c62b6",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.28567206859588623,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "8eb04b5c41080d228d1bad68",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.28866028785705566,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r37",
+          "group": "relation",
+          "split": "heldout",
+          "chunk_ids": [
+            "7a5b18415aff1c3452865608",
+            "b9a50021c01bccf24741250e",
+            "a9f6e2487b8ee8c3f4803d3f",
+            "02c665a518aa17996450417a",
+            "5e1af90f213bbba42cbcbb1b"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 0.5,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 5.250399932265282,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "7a5b18415aff1c3452865608",
+              "b9a50021c01bccf24741250e",
+              "a9f6e2487b8ee8c3f4803d3f",
+              "02c665a518aa17996450417a",
+              "5e1af90f213bbba42cbcbb1b"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "7a5b18415aff1c3452865608",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2859903573989868,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "b9a50021c01bccf24741250e",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.28613942861557007,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "a9f6e2487b8ee8c3f4803d3f",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.28694307804107666,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "02c665a518aa17996450417a",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.29996585845947266,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5e1af90f213bbba42cbcbb1b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.31906288862228394,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r38",
+          "group": "relation",
+          "split": "heldout",
+          "chunk_ids": [
+            "5b9a8a36be74d1edbc714213",
+            "5bc47f506b741ec196c1b6a1",
+            "ccba5c0e0afd7564638b97c5",
+            "51f155be2db8f29c78324d39",
+            "c185033cc2d2eef7b62ae616"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.135399824008346,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "5b9a8a36be74d1edbc714213",
+              "5bc47f506b741ec196c1b6a1",
+              "ccba5c0e0afd7564638b97c5",
+              "51f155be2db8f29c78324d39",
+              "c185033cc2d2eef7b62ae616"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "5b9a8a36be74d1edbc714213",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.26595765352249146,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5bc47f506b741ec196c1b6a1",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2876299023628235,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "ccba5c0e0afd7564638b97c5",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.31069642305374146,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "51f155be2db8f29c78324d39",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3170458674430847,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c185033cc2d2eef7b62ae616",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.32270193099975586,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r39",
+          "group": "relation",
+          "split": "development",
+          "chunk_ids": [
+            "2051c02baa3df2782b80fa3d",
+            "0e26aa1514cc435da2979f82",
+            "ba338b6f6631693128d68761",
+            "0045496a4a7991ca04f3d613",
+            "9c23b3ec18a3db5e8f874635"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.4704999309033155,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "2051c02baa3df2782b80fa3d",
+              "0e26aa1514cc435da2979f82",
+              "ba338b6f6631693128d68761",
+              "0045496a4a7991ca04f3d613",
+              "9c23b3ec18a3db5e8f874635"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "2051c02baa3df2782b80fa3d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.29178500175476074,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3442610502243042,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "ba338b6f6631693128d68761",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.34985727071762085,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0045496a4a7991ca04f3d613",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.36789506673812866,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "9c23b3ec18a3db5e8f874635",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3740707039833069,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r40",
+          "group": "relation",
+          "split": "heldout",
+          "chunk_ids": [
+            "2051c02baa3df2782b80fa3d",
+            "ba338b6f6631693128d68761",
+            "8ed8fcc8691b65fc9129552a",
+            "0e26aa1514cc435da2979f82",
+            "5291debddfc47a01c42dc3a6"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.7617999371141195,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "2051c02baa3df2782b80fa3d",
+              "ba338b6f6631693128d68761",
+              "8ed8fcc8691b65fc9129552a",
+              "0e26aa1514cc435da2979f82",
+              "5291debddfc47a01c42dc3a6"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "2051c02baa3df2782b80fa3d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.292887806892395,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "ba338b6f6631693128d68761",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.32115620374679565,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "8ed8fcc8691b65fc9129552a",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.32401174306869507,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.326058030128479,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5291debddfc47a01c42dc3a6",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.34341228008270264,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r41",
+          "group": "relation",
+          "split": "heldout",
+          "chunk_ids": [
+            "a9f6e2487b8ee8c3f4803d3f",
+            "c90b2ce7675a3c722e52708d",
+            "51f155be2db8f29c78324d39",
+            "767689d0b2e5da770aef2b58",
+            "8eb04b5c41080d228d1bad68"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.374900134280324,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "a9f6e2487b8ee8c3f4803d3f",
+              "c90b2ce7675a3c722e52708d",
+              "51f155be2db8f29c78324d39",
+              "767689d0b2e5da770aef2b58",
+              "8eb04b5c41080d228d1bad68"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "a9f6e2487b8ee8c3f4803d3f",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.29167431592941284,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c90b2ce7675a3c722e52708d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.30035197734832764,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "51f155be2db8f29c78324d39",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.30385398864746094,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "767689d0b2e5da770aef2b58",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3444085717201233,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "8eb04b5c41080d228d1bad68",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3456442356109619,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r42",
+          "group": "relation",
+          "split": "development",
+          "chunk_ids": [
+            "51f155be2db8f29c78324d39",
+            "11b504f8c7ad53f5b5606c37",
+            "362d9a4153cd186782aafd3e",
+            "c185033cc2d2eef7b62ae616",
+            "becdee0078a45398c4c510a2"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 0.3333333333333333,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 3.742000088095665,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "51f155be2db8f29c78324d39",
+              "11b504f8c7ad53f5b5606c37",
+              "362d9a4153cd186782aafd3e",
+              "c185033cc2d2eef7b62ae616",
+              "becdee0078a45398c4c510a2"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "51f155be2db8f29c78324d39",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2614455223083496,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "11b504f8c7ad53f5b5606c37",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2747986316680908,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "362d9a4153cd186782aafd3e",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.27582675218582153,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c185033cc2d2eef7b62ae616",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.27701759338378906,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "becdee0078a45398c4c510a2",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2881471514701843,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r43",
+          "group": "relation",
+          "split": "heldout",
+          "chunk_ids": [
+            "db5b3fd7e159b7ba599474dc",
+            "4f38ccad2670e96ab10f5fdf",
+            "070f8ed744c8931c860fdd92",
+            "159ad42fe12819997e1292fa",
+            "115696eb2a57a52d75017627"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.038400016725063,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "db5b3fd7e159b7ba599474dc",
+              "4f38ccad2670e96ab10f5fdf",
+              "070f8ed744c8931c860fdd92",
+              "159ad42fe12819997e1292fa",
+              "115696eb2a57a52d75017627"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "db5b3fd7e159b7ba599474dc",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2487202286720276,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "4f38ccad2670e96ab10f5fdf",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2740483283996582,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "070f8ed744c8931c860fdd92",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.27811652421951294,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "159ad42fe12819997e1292fa",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.28580808639526367,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "115696eb2a57a52d75017627",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.30508798360824585,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r44",
+          "group": "condition",
+          "split": "heldout",
+          "chunk_ids": [
+            "2051c02baa3df2782b80fa3d",
+            "0e26aa1514cc435da2979f82",
+            "ba338b6f6631693128d68761",
+            "571daabd66d3fc1cf2b631dd",
+            "e9d5c6523b987140e5cc008b"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 1.0,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 3.5910001024603844,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "2051c02baa3df2782b80fa3d",
+              "0e26aa1514cc435da2979f82",
+              "ba338b6f6631693128d68761",
+              "571daabd66d3fc1cf2b631dd",
+              "e9d5c6523b987140e5cc008b"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "2051c02baa3df2782b80fa3d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.2779560089111328,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.32032209634780884,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "ba338b6f6631693128d68761",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.32302528619766235,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "571daabd66d3fc1cf2b631dd",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.325111448764801,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "e9d5c6523b987140e5cc008b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3598918318748474,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r45",
+          "group": "condition",
+          "split": "development",
+          "chunk_ids": [
+            "a9f6e2487b8ee8c3f4803d3f",
+            "9c23b3ec18a3db5e8f874635",
+            "5e1af90f213bbba42cbcbb1b",
+            "0045496a4a7991ca04f3d613",
+            "ba338b6f6631693128d68761"
+          ],
+          "recall_at_5": 1.0,
+          "reciprocal_rank": 0.2,
+          "all_reference_groups_found": true,
+          "entity_link_recall": null,
+          "latency_ms": 4.92039998061955,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "a9f6e2487b8ee8c3f4803d3f",
+              "9c23b3ec18a3db5e8f874635",
+              "5e1af90f213bbba42cbcbb1b",
+              "0045496a4a7991ca04f3d613",
+              "ba338b6f6631693128d68761"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "a9f6e2487b8ee8c3f4803d3f",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.28065043687820435,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "9c23b3ec18a3db5e8f874635",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.30541157722473145,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5e1af90f213bbba42cbcbb1b",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.31299614906311035,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0045496a4a7991ca04f3d613",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3234991431236267,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "ba338b6f6631693128d68761",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3476874828338623,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r46",
+          "group": "unsupported",
+          "split": "heldout",
+          "chunk_ids": [
+            "a60703ed189ae9042c8c62b6",
+            "800f607443285d96a3fc10ce",
+            "02b8c2538de3988a8d262cd9",
+            "7fa81bb9f0ceb30299f9e880",
+            "0e26aa1514cc435da2979f82"
+          ],
+          "recall_at_5": null,
+          "reciprocal_rank": null,
+          "all_reference_groups_found": null,
+          "entity_link_recall": null,
+          "latency_ms": 4.144399892538786,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "a60703ed189ae9042c8c62b6",
+              "800f607443285d96a3fc10ce",
+              "02b8c2538de3988a8d262cd9",
+              "7fa81bb9f0ceb30299f9e880",
+              "0e26aa1514cc435da2979f82"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "a60703ed189ae9042c8c62b6",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.380221962928772,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "800f607443285d96a3fc10ce",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.38215363025665283,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "02b8c2538de3988a8d262cd9",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3837658166885376,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "7fa81bb9f0ceb30299f9e880",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3863276243209839,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.39489996433258057,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r47",
+          "group": "unsupported",
+          "split": "heldout",
+          "chunk_ids": [
+            "0e26aa1514cc435da2979f82",
+            "2051c02baa3df2782b80fa3d",
+            "ba338b6f6631693128d68761",
+            "a60703ed189ae9042c8c62b6",
+            "5b9a8a36be74d1edbc714213"
+          ],
+          "recall_at_5": null,
+          "reciprocal_rank": null,
+          "all_reference_groups_found": null,
+          "entity_link_recall": null,
+          "latency_ms": 4.909599898383021,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "0e26aa1514cc435da2979f82",
+              "2051c02baa3df2782b80fa3d",
+              "ba338b6f6631693128d68761",
+              "a60703ed189ae9042c8c62b6",
+              "5b9a8a36be74d1edbc714213"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.4450283646583557,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "2051c02baa3df2782b80fa3d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.45739883184432983,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "ba338b6f6631693128d68761",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.46665865182876587,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "a60703ed189ae9042c8c62b6",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.46676522493362427,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5b9a8a36be74d1edbc714213",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.4687231183052063,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r48",
+          "group": "unsupported",
+          "split": "development",
+          "chunk_ids": [
+            "0e26aa1514cc435da2979f82",
+            "8eb04b5c41080d228d1bad68",
+            "a60703ed189ae9042c8c62b6",
+            "b9a50021c01bccf24741250e",
+            "c185033cc2d2eef7b62ae616"
+          ],
+          "recall_at_5": null,
+          "reciprocal_rank": null,
+          "all_reference_groups_found": null,
+          "entity_link_recall": null,
+          "latency_ms": 4.023999907076359,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "0e26aa1514cc435da2979f82",
+              "8eb04b5c41080d228d1bad68",
+              "a60703ed189ae9042c8c62b6",
+              "b9a50021c01bccf24741250e",
+              "c185033cc2d2eef7b62ae616"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.5185260772705078,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "8eb04b5c41080d228d1bad68",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.5250653028488159,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "a60703ed189ae9042c8c62b6",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.525565505027771,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "b9a50021c01bccf24741250e",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.526451587677002,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c185033cc2d2eef7b62ae616",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.5290846228599548,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r49",
+          "group": "unsupported",
+          "split": "heldout",
+          "chunk_ids": [
+            "800f607443285d96a3fc10ce",
+            "cc769f6884d12f17efb41ac2",
+            "7fa81bb9f0ceb30299f9e880",
+            "0e26aa1514cc435da2979f82",
+            "a60703ed189ae9042c8c62b6"
+          ],
+          "recall_at_5": null,
+          "reciprocal_rank": null,
+          "all_reference_groups_found": null,
+          "entity_link_recall": null,
+          "latency_ms": 4.283299902454019,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "800f607443285d96a3fc10ce",
+              "cc769f6884d12f17efb41ac2",
+              "7fa81bb9f0ceb30299f9e880",
+              "0e26aa1514cc435da2979f82",
+              "a60703ed189ae9042c8c62b6"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "800f607443285d96a3fc10ce",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3437339663505554,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "cc769f6884d12f17efb41ac2",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3613361120223999,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "7fa81bb9f0ceb30299f9e880",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3752305507659912,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3916081190109253,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "a60703ed189ae9042c8c62b6",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.4070665240287781,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "r50",
+          "group": "unsupported",
+          "split": "heldout",
+          "chunk_ids": [
+            "0e26aa1514cc435da2979f82",
+            "159ad42fe12819997e1292fa",
+            "c90b2ce7675a3c722e52708d",
+            "ba338b6f6631693128d68761",
+            "5b9a8a36be74d1edbc714213"
+          ],
+          "recall_at_5": null,
+          "reciprocal_rank": null,
+          "all_reference_groups_found": null,
+          "entity_link_recall": null,
+          "latency_ms": 3.3361001405864954,
+          "trace": {
+            "mode": "vector",
+            "warnings": [],
+            "graph": {
+              "linked_entities": [],
+              "paths": []
+            },
+            "channel_counts": {
+              "vector": 5
+            },
+            "selected_chunk_ids": [
+              "0e26aa1514cc435da2979f82",
+              "159ad42fe12819997e1292fa",
+              "c90b2ce7675a3c722e52708d",
+              "ba338b6f6631693128d68761",
+              "5b9a8a36be74d1edbc714213"
+            ],
+            "reranker": "disabled",
+            "wiki_policy": "disabled",
+            "candidates": [
+              {
+                "chunk_id": "0e26aa1514cc435da2979f82",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.33715832233428955,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "159ad42fe12819997e1292fa",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.3715862035751343,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "c90b2ce7675a3c722e52708d",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.39450377225875854,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "ba338b6f6631693128d68761",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.4060128331184387,
+                "rank_score": 0.0
+              },
+              {
+                "chunk_id": "5b9a8a36be74d1edbc714213",
+                "channels": [
+                  "vector"
+                ],
+                "distance": 0.40690696239471436,
+                "rank_score": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "improved_cases": [],
+      "regressed_cases": [],
+      "graph_added_gold_evidence_cases": []
+    }
+  },
+  "corpus_version": "5496cd17110941dc998fbe21a1e19088b58256687734060fd4ec47741ab48885",
+  "embedding_model": "gemini-embedding-001",
+  "query_embedding_requests": 4,
+  "chunks": 58
+}

@@ -1,0 +1,890 @@
+{
+  "status": "incomplete",
+  "cases_requested": 10,
+  "cases_completed": 9,
+  "retrieval_cases_completed": 10,
+  "answer_cases_passed": 8,
+  "answer_cases_fallback": 1,
+  "request_delay_seconds": 7.0,
+  "k": 5,
+  "embedding_model": "gemini-embedding-001",
+  "llm_model": "gemini-2.5-flash",
+  "recall_at_k": 1.0,
+  "mrr": 0.8666666666666666,
+  "citation_correctness_rule_check": 0.9583333333333334,
+  "groundedness_human": null,
+  "groundedness_note": "Cần người đọc đối chiếu từng claim với retrieved_sources; kiểm tra quote không chứng minh suy diễn ngữ nghĩa.",
+  "latency_mean_ms": 4618.45772000961,
+  "latency_p95_ms": 6762.832285021432,
+  "results": [
+    {
+      "case_id": "q01",
+      "question": "Tiểu đường là gì?",
+      "reference_answer": "Tiểu đường xảy ra khi glucose máu quá cao.",
+      "errors": [],
+      "error_codes": [],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        {
+          "citation_id": "S1",
+          "document_id": "niddk-overview",
+          "chunk_id": "9ff83c05f412ba266c2363b4",
+          "title": "NIDDK — Tổng quan tiểu đường",
+          "section": "NIDDK — Tổng quan tiểu đường",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+          "quote": "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Glucose is your body’s main source of energy. Your body can make glucose, but glucose also comes from the food you eat. Insulin is a hormone made by the pancreas that helps glucose get into your cells to be used for energy. If you have diabetes, your body doesn’t make enough—or any—insulin, or doesn’t use insulin properly. Glucose then stays in your blood and doesn’t reach your cells. Diabetes raises the risk for damage to the eyes, kidneys, nerves, and heart. Diabetes is also linked to some types of cancer. Taking steps to prevent or manage diabetes may lower your risk of developing diabetes health problems."
+        },
+        {
+          "citation_id": "S2",
+          "document_id": "niddk-overview",
+          "chunk_id": "1e89935edd1f3947b50d720d",
+          "title": "NIDDK — Tổng quan tiểu đường",
+          "section": "What are the different types of diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+          "quote": "The most common types of diabetes are type 1, type 2, and gestational diabetes."
+        },
+        {
+          "citation_id": "S3",
+          "document_id": "niddk-symptoms",
+          "chunk_id": "8c6de514490100f94093513c",
+          "title": "NIDDK — Triệu chứng và nguyên nhân",
+          "section": "NIDDK — Triệu chứng và nguyên nhân",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+          "quote": "In this section: What are the symptoms of diabetes? What causes type 1 diabetes? What causes type 2 diabetes? What causes gestational diabetes? What else can cause diabetes? Clinical Trials for Symptoms and Causes of Diabetes"
+        },
+        {
+          "citation_id": "S4",
+          "document_id": "niddk-symptoms",
+          "chunk_id": "e9ca020f8afedf6d12b25bbd",
+          "title": "NIDDK — Triệu chứng và nguyên nhân",
+          "section": "What else can cause diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+          "quote": "Other causes of diabetes may include diseases caused by changes in your genes , also called gene variants endocrine diseases damage to or removal of the pancreas taking certain medicines"
+        },
+        {
+          "citation_id": "S5",
+          "document_id": "niddk-overview",
+          "chunk_id": "05fff0b7bb0d828ccd8c2841",
+          "title": "NIDDK — Tổng quan tiểu đường",
+          "section": "Type 1 diabetes",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+          "quote": "If you have type 1 diabetes , your body makes little or no insulin. Your immune system attacks and destroys the cells in your pancreas that make insulin. Type 1 diabetes is usually diagnosed in children and young adults, although it can appear at any age. People with type 1 diabetes need to take insulin every day to stay alive."
+        }
+      ],
+      "claims": [
+        {
+          "text": "Tiểu đường là một bệnh xảy ra khi lượng đường trong máu (glucose) quá cao.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high."
+          }
+        },
+        {
+          "text": "Glucose là nguồn năng lượng chính của cơ thể, có thể được cơ thể tạo ra hoặc đến từ thức ăn.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "Glucose is your body’s main source of energy. Your body can make glucose, but glucose also comes from the food you eat."
+          }
+        },
+        {
+          "text": "Bệnh tiểu đường có thể do cơ thể không sản xuất đủ insulin, không sản xuất insulin hoặc không sử dụng insulin đúng cách, dẫn đến glucose tích tụ trong máu và không đến được các tế bào.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "If you have diabetes, your body doesn’t make enough—or any—insulin, or doesn’t use insulin properly. Glucose then stays in your blood and doesn’t reach your cells."
+          }
+        },
+        {
+          "text": "Các loại tiểu đường phổ biến bao gồm tiểu đường loại 1, loại 2 và tiểu đường thai kỳ.",
+          "citation_ids": [
+            "S2"
+          ],
+          "supporting_quotes": {
+            "S2": "The most common types of diabetes are type 1, type 2, and gestational diabetes."
+          }
+        }
+      ],
+      "citation_checks_passed": 4,
+      "answer": "Tiểu đường là một bệnh xảy ra khi lượng đường trong máu (glucose) quá cao. [S1]\n\nGlucose là nguồn năng lượng chính của cơ thể, có thể được cơ thể tạo ra hoặc đến từ thức ăn. [S1]\n\nBệnh tiểu đường có thể do cơ thể không sản xuất đủ insulin, không sản xuất insulin hoặc không sử dụng insulin đúng cách, dẫn đến glucose tích tụ trong máu và không đến được các tế bào. [S1]\n\nCác loại tiểu đường phổ biến bao gồm tiểu đường loại 1, loại 2 và tiểu đường thai kỳ. [S2]\n\nMô hình học từ khảo sát BRFSS 2015 tại Hoa Kỳ. Lớp 1 gộp tiền tiểu đường và tiểu đường theo nhãn dữ liệu. Điểm mô hình không phải xác suất chẩn đoán hoặc nguy cơ mắc bệnh trong tương lai. Không thay thế xét nghiệm hay bác sĩ.",
+      "safety_status": "passed",
+      "latency_ms": 4078.353099990636
+    },
+    {
+      "case_id": "q02",
+      "question": "Những loại tiểu đường phổ biến gồm những loại nào?",
+      "reference_answer": "Các loại thường gặp gồm típ 1, típ 2 và tiểu đường thai kỳ.",
+      "errors": [],
+      "error_codes": [],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        {
+          "citation_id": "S1",
+          "document_id": "niddk-overview",
+          "chunk_id": "1e89935edd1f3947b50d720d",
+          "title": "NIDDK — Tổng quan tiểu đường",
+          "section": "What are the different types of diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+          "quote": "The most common types of diabetes are type 1, type 2, and gestational diabetes."
+        },
+        {
+          "citation_id": "S2",
+          "document_id": "niddk-tests",
+          "chunk_id": "e9d5c6523b987140e5cc008b",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "Which tests help my doctor know what kind of diabetes I have?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "Even though the tests described above can confirm you have diabetes, they can’t identify what type you have—type 1, type 2, or a rare type of diabetes called monogenic diabetes. Treatment can depend on the type of diabetes you have, so knowing which type you have is important."
+        },
+        {
+          "citation_id": "S3",
+          "document_id": "niddk-symptoms",
+          "chunk_id": "8c6de514490100f94093513c",
+          "title": "NIDDK — Triệu chứng và nguyên nhân",
+          "section": "NIDDK — Triệu chứng và nguyên nhân",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+          "quote": "In this section: What are the symptoms of diabetes? What causes type 1 diabetes? What causes type 2 diabetes? What causes gestational diabetes? What else can cause diabetes? Clinical Trials for Symptoms and Causes of Diabetes"
+        },
+        {
+          "citation_id": "S4",
+          "document_id": "niddk-symptoms",
+          "chunk_id": "e9ca020f8afedf6d12b25bbd",
+          "title": "NIDDK — Triệu chứng và nguyên nhân",
+          "section": "What else can cause diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+          "quote": "Other causes of diabetes may include diseases caused by changes in your genes , also called gene variants endocrine diseases damage to or removal of the pancreas taking certain medicines"
+        },
+        {
+          "citation_id": "S5",
+          "document_id": "niddk-tests",
+          "chunk_id": "4528dd7fa2839b82d12dc4f9",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "NIDDK — Xét nghiệm và chẩn đoán",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "In this section: Who should be tested for diabetes? What tests are used to diagnose diabetes? What test results tell me if I have diabetes or prediabetes? Which tests help my doctor know what kind of diabetes I have? Your doctor can diagnose diabetes , prediabetes , and gestational diabetes using blood tests. The blood tests show if your blood glucose level , also called blood sugar, is higher than the range that is healthy for you. Blood tests can also help identify the type of diabetes you have. Don’t try to diagnose yourself if you think you might have diabetes. Blood testing equipment that you can buy over the counter, such as a blood glucose meter , cannot diagnose diabetes."
+        }
+      ],
+      "claims": [
+        {
+          "text": "Các loại tiểu đường phổ biến nhất bao gồm tiểu đường loại 1, loại 2 và tiểu đường thai kỳ.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "The most common types of diabetes are type 1, type 2, and gestational diabetes."
+          }
+        }
+      ],
+      "citation_checks_passed": 1,
+      "answer": "Các loại tiểu đường phổ biến nhất bao gồm tiểu đường loại 1, loại 2 và tiểu đường thai kỳ. [S1]\n\nMô hình học từ khảo sát BRFSS 2015 tại Hoa Kỳ. Lớp 1 gộp tiền tiểu đường và tiểu đường theo nhãn dữ liệu. Điểm mô hình không phải xác suất chẩn đoán hoặc nguy cơ mắc bệnh trong tương lai. Không thay thế xét nghiệm hay bác sĩ.",
+      "safety_status": "passed",
+      "latency_ms": 2861.6293000523
+    },
+    {
+      "case_id": "q03",
+      "question": "Tiền tiểu đường khác tiểu đường típ 2 thế nào?",
+      "reference_answer": "Glucose máu cao hơn bình thường nhưng chưa đủ để được chẩn đoán tiểu đường típ 2.",
+      "errors": [],
+      "error_codes": [],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        {
+          "citation_id": "S1",
+          "document_id": "niddk-overview",
+          "chunk_id": "8eb04b5c41080d228d1bad68",
+          "title": "NIDDK — Tổng quan tiểu đường",
+          "section": "Prediabetes",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+          "quote": "People with prediabetes have blood glucose levels that are higher than normal but not high enough to be diagnosed with type 2 diabetes. If you have prediabetes, you have a higher risk of developing type 2 diabetes in the future. You also have a higher risk for heart disease than people with normal glucose levels."
+        },
+        {
+          "citation_id": "S2",
+          "document_id": "niddk-prevention",
+          "chunk_id": "776aff82893031a6eb01c5d7",
+          "title": "NIDDK — Phòng ngừa típ 2",
+          "section": "What should I do if my health care professional told me I have prediabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+          "quote": "Prediabetes is when your blood glucose , also called blood sugar, levels are higher than normal, but not high enough to be called diabetes. Having prediabetes is serious because it raises your chance of developing type 2 diabetes. Many of the same factors that raise your chance of developing type 2 diabetes put you at risk for prediabetes. Other names for prediabetes include impaired fasting glucose or impaired glucose tolerance. Some people call prediabetes “borderline diabetes.” About 1 in 3 Americans has prediabetes, according to recent diabetes statistics from the Centers for Disease Control and Prevention. You won’t know if you have prediabetes unless you are tested. If you have prediabetes, you can lower your chance of developing type 2 diabetes. Lose weight if you need to, become more physically active, and follow a reduced-calorie eating plan. Get started with Your Game Plan to Prevent Type 2 Diabetes . For more support, you can find a lifestyle change program near you through the National Diabetes Prevention Program ."
+        },
+        {
+          "citation_id": "S3",
+          "document_id": "niddk-tests",
+          "chunk_id": "6d7fcd7c317992c913590482",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "Type 2 diabetes",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "Experts recommend routine testing for type 2 diabetes if you have certain risk factors . You may have a higher risk of developing type 2 diabetes if you are age 35 or older American Indian, Black or African American, Asian American, Hispanic/Latino, or Pacific Islander overweight or have obesity and have at least one other risk factor a woman who had gestational diabetes Take the American Diabetes Association Diabetes Risk Test to see if you are at risk for type 2 diabetes. Children can also develop type 2 diabetes. Experts recommend testing children and teens between the ages of 10 and 18 who are overweight or have obesity and have at least one more risk factor, such as a low birth weight, a parent who had diabetes while pregnant, or another factor. 1 Adults and children with normal diabetes test results should be retested every 3 years. 1 If your blood glucose levels are higher than the target range, but not high enough to be diagnosed with diabetes, doctors will diagnose you with prediabetes . Having prediabetes is serious because it raises the chance of developing type 2 diabetes. But developing type 2 diabetes can be prevented . Adults and children diagnosed with prediabetes should be tested for type 2 diabetes every year."
+        },
+        {
+          "citation_id": "S4",
+          "document_id": "niddk-symptoms",
+          "chunk_id": "f58d99df5ed778b25a1d6053",
+          "title": "NIDDK — Triệu chứng và nguyên nhân",
+          "section": "What causes type 2 diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+          "quote": "Type 2 diabetes is the most common form of diabetes. Type 2 diabetes develops when your pancreas doesn’t produce enough insulin, and your body has trouble using insulin, a condition called insulin resistance . Insulin resistance is when the cells in your muscles, fat, and liver don’t respond well to insulin. When there isn’t enough insulin to balance blood glucose levels, they begin to rise. When blood glucose levels are higher than normal but not high enough to be diagnosed as type 2 diabetes, you have a condition called prediabetes . You have type 2 diabetes when health care professionals diagnose your blood glucose level as being too high. Researchers don’t fully know what causes problems with insulin production and insulin resistance in type 2 diabetes. However, people are more likely to develop type 2 diabetes if they have overweight, obesity , or a large waist size. are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older. have a family history of type 2 diabetes. are African American, American Indian, Asian American, Hispanic, Latino, or Pacific Islander. are not physically active, because of a job that requires sitting for long periods of time or because of difficulty moving their body. smoke , including tobacco products and e-cigarettes , or are exposed to secondhand smoke . have prediabetes. have a history of gestational diabetes, a type of diabetes that develops during pregnancy, or gave birth to a baby weighing 9 pounds or more. You can’t change some of these risk factors, such as your age, family history, or race. However, you may be able to change some risk factors and prevent or delay type 2 diabetes by maintaining a healthy weight, being physically active, and stopping smoking. You may be able to prevent type 2 diabetes by maintaining a healthy weight and being physically active."
+        },
+        {
+          "citation_id": "S5",
+          "document_id": "niddk-prevention",
+          "chunk_id": "143f3c3eb5d404ae9cd82556",
+          "title": "NIDDK — Phòng ngừa típ 2",
+          "section": "NIDDK — Phòng ngừa típ 2",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+          "quote": "Perhaps you have learned that you have a high chance of developing type 2 diabetes , the most common type of diabetes. You might be overweight or have a parent, brother, or sister with type 2 diabetes. Maybe you had gestational diabetes, which is diabetes that develops during pregnancy. These are just a few examples of factors that can raise your chances of developing type 2 diabetes . Diabetes can cause serious health problems , such as heart disease, stroke, and eye and foot problems. Prediabetes also can cause health problems. The good news is that type 2 diabetes can be delayed or even prevented. The longer you have diabetes, the more likely you are to develop health problems, so delaying diabetes by even a few years will benefit your health. You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week. Ask your doctor if you should take the diabetes drug metformin to help prevent or delay type 2 diabetes. 1"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Tiền tiểu đường là tình trạng lượng đường trong máu cao hơn mức bình thường nhưng chưa đủ cao để được chẩn đoán là tiểu đường loại 2.",
+          "citation_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4"
+          ],
+          "supporting_quotes": {
+            "S1": "People with prediabetes have blood glucose levels that are higher than normal but not high enough to be diagnosed with type 2 diabetes.",
+            "S2": "Prediabetes is when your blood glucose , also called blood sugar, levels are higher than normal, but not high enough to be called diabetes.",
+            "S3": "If your blood glucose levels are higher than the target range, but not high enough to be diagnosed with diabetes, doctors will diagnose you with prediabetes .",
+            "S4": "When blood glucose levels are higher than normal but not high enough to be diagnosed as type 2 diabetes, you have a condition called prediabetes ."
+          }
+        },
+        {
+          "text": "Tiểu đường loại 2 được chẩn đoán khi lượng đường trong máu quá cao.",
+          "citation_ids": [
+            "S4"
+          ],
+          "supporting_quotes": {
+            "S4": "You have type 2 diabetes when health care professionals diagnose your blood glucose level as being too high."
+          }
+        },
+        {
+          "text": "Người bị tiền tiểu đường có nguy cơ cao hơn mắc tiểu đường loại 2 và bệnh tim mạch so với người có mức đường huyết bình thường.",
+          "citation_ids": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "supporting_quotes": {
+            "S1": "If you have prediabetes, you have a higher risk of developing type 2 diabetes in the future. You also have a higher risk for heart disease than people with normal glucose levels.",
+            "S2": "Having prediabetes is serious because it raises your chance of developing type 2 diabetes.",
+            "S3": "Having prediabetes is serious because it raises the chance of developing type 2 diabetes."
+          }
+        }
+      ],
+      "citation_checks_passed": 3,
+      "answer": "Tiền tiểu đường là tình trạng lượng đường trong máu cao hơn mức bình thường nhưng chưa đủ cao để được chẩn đoán là tiểu đường loại 2. [S1] [S2] [S3] [S4]\n\nTiểu đường loại 2 được chẩn đoán khi lượng đường trong máu quá cao. [S4]\n\nNgười bị tiền tiểu đường có nguy cơ cao hơn mắc tiểu đường loại 2 và bệnh tim mạch so với người có mức đường huyết bình thường. [S1] [S2] [S3]\n\nMô hình học từ khảo sát BRFSS 2015 tại Hoa Kỳ. Lớp 1 gộp tiền tiểu đường và tiểu đường theo nhãn dữ liệu. Điểm mô hình không phải xác suất chẩn đoán hoặc nguy cơ mắc bệnh trong tương lai. Không thay thế xét nghiệm hay bác sĩ.",
+      "safety_status": "passed",
+      "latency_ms": 4153.106299927458
+    },
+    {
+      "case_id": "q04",
+      "question": "Triệu chứng tiểu đường típ 1 thường xuất hiện nhanh hay chậm?",
+      "reference_answer": "Triệu chứng típ 1 thường xuất hiện nhanh trong vài ngày hoặc vài tuần.",
+      "errors": [],
+      "error_codes": [],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        {
+          "citation_id": "S1",
+          "document_id": "niddk-symptoms",
+          "chunk_id": "8c69924d7631738f54812e31",
+          "title": "NIDDK — Triệu chứng và nguyên nhân",
+          "section": "Type 1 diabetes symptoms",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+          "quote": "In addition to some of the common diabetes symptoms listed above, people with type 1 diabetes may also have an unexplained weight loss. Most people don’t know they have type 1 diabetes until they develop diabetes symptoms. Symptoms of type 1 diabetes usually develop quickly, over a few days or weeks. Type 1 diabetes is often diagnosed in children and young adults, but it can begin at any age. Children with type 1 diabetes typically develop symptoms over a short period of time. Common symptoms of type diabetes in children include having to urinate more often eating more but losing weight feeling very thirsty These symptoms are less common in adults with type 1 diabetes. For some adults, symptoms of type 1 diabetes may develop slowly and seem more like type 2 diabetes . Some adults who develop diabetes may need special tests to find out what type of diabetes they have. Talk with your health care professional about the type of diabetes you may have. They can help you understand its causes and treatments. Sometimes, people find out they have type 1 diabetes when they have signs and symptoms of a condition called diabetic ketoacidosis (DKA) . Symptoms of DKA may include feeling very tired having trouble breathing having fruity-smelling breath fainting from dehydration having pain in your abdomen , nausea , or vomiting If you have type 1 diabetes, your body doesn’t have enough insulin to use blood glucose—also called blood sugar—for energy. Your body will begin to use fat as a source of energy instead. This process produces substances called ketones . High levels of ketones can cause DKA, which is a medical emergency that needs to be treated right away. DKA usually affects people with type 1 diabetes. People with type 2 diabetes may also develop DKA if their body doesn’t produce enough insulin."
+        },
+        {
+          "citation_id": "S2",
+          "document_id": "niddk-tests",
+          "chunk_id": "a726ef77ce0b494068bcd982",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "Type 1 diabetes",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "Doctors often diagnose type 1 diabetes in children and young adults when they have diabetes symptoms, such as feeling thirsty and having to urinate more often, or if they may have diabetic ketoacidosis . Symptoms in adults may be less specific. 1 Type 1 diabetes can run in families. A study called TrialNet offers free testing to relatives of people with type 1 diabetes, even if the relatives don’t have symptoms."
+        },
+        {
+          "citation_id": "S3",
+          "document_id": "niddk-overview",
+          "chunk_id": "05fff0b7bb0d828ccd8c2841",
+          "title": "NIDDK — Tổng quan tiểu đường",
+          "section": "Type 1 diabetes",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+          "quote": "If you have type 1 diabetes , your body makes little or no insulin. Your immune system attacks and destroys the cells in your pancreas that make insulin. Type 1 diabetes is usually diagnosed in children and young adults, although it can appear at any age. People with type 1 diabetes need to take insulin every day to stay alive."
+        },
+        {
+          "citation_id": "S4",
+          "document_id": "niddk-symptoms",
+          "chunk_id": "33c58925d96c15d58fe1d4fb",
+          "title": "NIDDK — Triệu chứng và nguyên nhân",
+          "section": "What are the symptoms of diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+          "quote": "Common symptoms of diabetes include increased urination feeling very thirsty feeling very hungry, even after you have eaten blurred vision fatigue sores that do not heal frequent infections, such as urinary tract infections , skin infections , or yeast infections There are different types of diabetes. People with any type of diabetes can have these symptoms. Some other symptoms, and how quickly the symptoms develop, depend on the type of diabetes that you have. Talk with your primary health care professional about any symptoms you are having and ask if you should be tested for diabetes . Your primary health care professional may be a doctor, physician assistant, or nurse practitioner."
+        },
+        {
+          "citation_id": "S5",
+          "document_id": "niddk-symptoms",
+          "chunk_id": "6af0361d6a519e788ec6a411",
+          "title": "NIDDK — Triệu chứng và nguyên nhân",
+          "section": "What causes type 1 diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+          "quote": "Type 1 diabetes develops when the body’s immune system destroys the cells in the pancreas that make insulin. These cells are called beta cells. Genes and factors in the environment—the places where people live, play, work, study, and gather—may trigger the immune system to destroy beta cells in type 1 diabetes. Insulin is a hormone that helps blood glucose get into the body’s cells to be used as energy. When your body doesn’t have enough insulin, glucose in your blood can’t get into the cells. As a result, your cells lack energy, your blood glucose level rises, and you develop diabetes. Studies such as The Environmental Determinants of Diabetes in the Young (TEDDY) are trying to learn more about the causes of type 1 diabetes. Type 1 Diabetes TrialNet and other groups are working to find treatments that may prevent or slow the development of type 1 diabetes in people who are at risk for getting the disease."
+        }
+      ],
+      "claims": [
+        {
+          "text": "Các triệu chứng của bệnh tiểu đường loại 1 thường phát triển nhanh chóng, trong vài ngày hoặc vài tuần.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "Symptoms of type 1 diabetes usually develop quickly, over a few days or weeks."
+          }
+        },
+        {
+          "text": "Ở trẻ em mắc bệnh tiểu đường loại 1, các triệu chứng thường xuất hiện trong một thời gian ngắn.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "Children with type 1 diabetes typically develop symptoms over a short period of time."
+          }
+        },
+        {
+          "text": "Tuy nhiên, ở một số người lớn, các triệu chứng của bệnh tiểu đường loại 1 có thể phát triển chậm và giống với bệnh tiểu đường loại 2 hơn.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "For some adults, symptoms of type 1 diabetes may develop slowly and seem more like type 2 diabetes ."
+          }
+        }
+      ],
+      "citation_checks_passed": 3,
+      "answer": "Các triệu chứng của bệnh tiểu đường loại 1 thường phát triển nhanh chóng, trong vài ngày hoặc vài tuần. [S1]\n\nỞ trẻ em mắc bệnh tiểu đường loại 1, các triệu chứng thường xuất hiện trong một thời gian ngắn. [S1]\n\nTuy nhiên, ở một số người lớn, các triệu chứng của bệnh tiểu đường loại 1 có thể phát triển chậm và giống với bệnh tiểu đường loại 2 hơn. [S1]\n\nMô hình học từ khảo sát BRFSS 2015 tại Hoa Kỳ. Lớp 1 gộp tiền tiểu đường và tiểu đường theo nhãn dữ liệu. Điểm mô hình không phải xác suất chẩn đoán hoặc nguy cơ mắc bệnh trong tương lai. Không thay thế xét nghiệm hay bác sĩ.",
+      "safety_status": "passed",
+      "latency_ms": 5077.460299944505
+    },
+    {
+      "case_id": "q05",
+      "question": "Ít vận động có liên quan đến nguy cơ tiểu đường típ 2 không?",
+      "reference_answer": "Ít hoạt động thể chất là một yếu tố nguy cơ được NIDDK liệt kê.",
+      "errors": [],
+      "error_codes": [],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved_sources": [
+        {
+          "citation_id": "S1",
+          "document_id": "niddk-symptoms",
+          "chunk_id": "f58d99df5ed778b25a1d6053",
+          "title": "NIDDK — Triệu chứng và nguyên nhân",
+          "section": "What causes type 2 diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+          "quote": "Type 2 diabetes is the most common form of diabetes. Type 2 diabetes develops when your pancreas doesn’t produce enough insulin, and your body has trouble using insulin, a condition called insulin resistance . Insulin resistance is when the cells in your muscles, fat, and liver don’t respond well to insulin. When there isn’t enough insulin to balance blood glucose levels, they begin to rise. When blood glucose levels are higher than normal but not high enough to be diagnosed as type 2 diabetes, you have a condition called prediabetes . You have type 2 diabetes when health care professionals diagnose your blood glucose level as being too high. Researchers don’t fully know what causes problems with insulin production and insulin resistance in type 2 diabetes. However, people are more likely to develop type 2 diabetes if they have overweight, obesity , or a large waist size. are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older. have a family history of type 2 diabetes. are African American, American Indian, Asian American, Hispanic, Latino, or Pacific Islander. are not physically active, because of a job that requires sitting for long periods of time or because of difficulty moving their body. smoke , including tobacco products and e-cigarettes , or are exposed to secondhand smoke . have prediabetes. have a history of gestational diabetes, a type of diabetes that develops during pregnancy, or gave birth to a baby weighing 9 pounds or more. You can’t change some of these risk factors, such as your age, family history, or race. However, you may be able to change some risk factors and prevent or delay type 2 diabetes by maintaining a healthy weight, being physically active, and stopping smoking. You may be able to prevent type 2 diabetes by maintaining a healthy weight and being physically active."
+        },
+        {
+          "citation_id": "S2",
+          "document_id": "niddk-risk",
+          "chunk_id": "4ffe477d2d7fe9b84574c0dc",
+          "title": "NIDDK — Yếu tố nguy cơ típ 2",
+          "section": "Does your weight put you at risk for type 2 diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+          "quote": "If you have overweight or obesity, you may be able to prevent or delay type 2 diabetes by losing weight and being more physically active. 1 To see if your weight may put you at risk for type 2 diabetes, learn your body mass index (BMI) and waist circumference ."
+        },
+        {
+          "citation_id": "S3",
+          "document_id": "niddk-risk",
+          "chunk_id": "74adbe1f5ea24abe3dc938e4",
+          "title": "NIDDK — Yếu tố nguy cơ típ 2",
+          "section": "What are the risk factors for type 2 diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+          "quote": "You can develop type 2 diabetes at any age, even during childhood. You are more likely to develop type 2 diabetes if you 1 are overweight or have obesity . are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older. have a family history of diabetes. are African American, American Indian, Asian American, Hispanic/Latino, or Pacific Islander. are not physically active, because of physical limitations, a sedentary lifestyle, or a job that requires sitting for long periods of time. have prediabetes . have a history of gestational diabetes , a type of diabetes that develops during pregnancy, or gave birth to a baby weighing 9 pounds or more. Children and teens are also at higher risk of developing type 2 diabetes if, in addition to the previous risk factors, they were born with a low birth weight or if their parent had gestational diabetes while pregnant with the child. 1 You are encouraged to talk with a doctor about any of the health conditions listed above that may require medical treatment. Managing health problems may help reduce your chances of developing type 2 diabetes. 2 Also, ask your doctor about any medicines you or your child take that might increase your risk. You can also take the Diabetes Risk Test to learn more about your risk for type 2 diabetes."
+        },
+        {
+          "citation_id": "S4",
+          "document_id": "niddk-risk",
+          "chunk_id": "6d1054cd4be86ee9d3434bac",
+          "title": "NIDDK — Yếu tố nguy cơ típ 2",
+          "section": "NIDDK — Yếu tố nguy cơ típ 2",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+          "quote": "Your chances of developing type 2 diabetes depend on a combination of risk factors. Although you can’t change risk factors related to family history, age, race, or ethnicity, you may be able to avoid some risk factors by maintaining a healthy weight and being physically active. 1 Read about risk factors for type 2 diabetes below, and see which ones apply to you. Acting on the factors you can change may help delay or prevent type 2 diabetes ."
+        },
+        {
+          "citation_id": "S5",
+          "document_id": "niddk-prevention",
+          "chunk_id": "e2cead3e6f98ee82ad14bbdb",
+          "title": "NIDDK — Phòng ngừa típ 2",
+          "section": "How can I lower my chances of developing type 2 diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+          "quote": "Research such as the Diabetes Prevention Program shows that you can do a lot to reduce your chances of developing type 2 diabetes. Here are some things you can change to lower your risk: Lose weight and keep it off. You may be able to prevent or delay diabetes by losing 5 to 7 percent of your starting weight. 1 For instance, if you weigh 200 pounds, your goal would be to lose about 10 to 14 pounds. Move more. Get at least 30 minutes of physical activity 5 days a week. If you have not been active, talk with your health care professional about which activities are best. Start slowly to build up to your goal. Eat healthy foods most of the time. Eat smaller portions to reduce the amount of calories you eat each day and help you lose weight. Choosing foods with less fat is another way to reduce calories. Drink water instead of sweetened beverages. Ask your health care professional about what other changes you can make to prevent or delay type 2 diabetes. Most often, your best chance for preventing type 2 diabetes is to make lifestyle changes that work for you long term. Get started with Your Game Plan to Prevent Type 2 Diabetes ."
+        }
+      ],
+      "claims": [
+        {
+          "text": "Ít vận động là một trong những yếu tố nguy cơ có thể dẫn đến bệnh tiểu đường típ 2.",
+          "citation_ids": [
+            "S1",
+            "S3"
+          ],
+          "supporting_quotes": {
+            "S1": "However, people are more likely to develop type 2 diabetes if they have overweight, obesity , or a large waist size. are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older. have a family history of type 2 diabetes. are African American, American Indian, Asian American, Hispanic, Latino, or Pacific Islander. are not physically active, because of a job that requires sitting for long periods of time or because of difficulty moving their body.",
+            "S3": "You are more likely to develop type 2 diabetes if you 1 are overweight or have obesity . are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older. have a family history of diabetes. are African American, American Indian, Asian American, Hispanic/Latino, or Pacific Islander. are not physically active, because of physical limitations, a sedentary lifestyle, or a job that requires sitting for long periods of time."
+          }
+        },
+        {
+          "text": "Việc không hoạt động thể chất, bao gồm cả lối sống ít vận động hoặc công việc đòi hỏi phải ngồi lâu, có thể làm tăng nguy cơ mắc bệnh tiểu đường típ 2.",
+          "citation_ids": [
+            "S1",
+            "S3"
+          ],
+          "supporting_quotes": {
+            "S1": "are not physically active, because of a job that requires sitting for long periods of time or because of difficulty moving their body.",
+            "S3": "are not physically active, because of physical limitations, a sedentary lifestyle, or a job that requires sitting for long periods of time."
+          }
+        },
+        {
+          "text": "Duy trì hoạt động thể chất là một trong những cách có thể giúp ngăn ngừa hoặc trì hoãn sự phát triển của bệnh tiểu đường típ 2.",
+          "citation_ids": [
+            "S1",
+            "S4",
+            "S5"
+          ],
+          "supporting_quotes": {
+            "S1": "However, you may be able to change some risk factors and prevent or delay type 2 diabetes by maintaining a healthy weight, being physically active, and stopping smoking. You may be able to prevent type 2 diabetes by maintaining a healthy weight and being physically active.",
+            "S4": "Although you can’t change risk factors related to family history, age, race, or ethnicity, you may be able to avoid some risk factors by maintaining a healthy weight and being physically active. 1 Read about risk factors for type 2 diabetes below, and see which ones apply to you. Acting on the factors you can change may help delay or prevent type 2 diabetes .",
+            "S5": "Move more. Get at least 30 minutes of physical activity 5 days a week. If you have not been active, talk with your health care professional about which activities are best. Start slowly to build up to your goal."
+          }
+        }
+      ],
+      "citation_checks_passed": 3,
+      "answer": "Ít vận động là một trong những yếu tố nguy cơ có thể dẫn đến bệnh tiểu đường típ 2. [S1] [S3]\n\nViệc không hoạt động thể chất, bao gồm cả lối sống ít vận động hoặc công việc đòi hỏi phải ngồi lâu, có thể làm tăng nguy cơ mắc bệnh tiểu đường típ 2. [S1] [S3]\n\nDuy trì hoạt động thể chất là một trong những cách có thể giúp ngăn ngừa hoặc trì hoãn sự phát triển của bệnh tiểu đường típ 2. [S1] [S4] [S5]\n\nMô hình học từ khảo sát BRFSS 2015 tại Hoa Kỳ. Lớp 1 gộp tiền tiểu đường và tiểu đường theo nhãn dữ liệu. Điểm mô hình không phải xác suất chẩn đoán hoặc nguy cơ mắc bệnh trong tương lai. Không thay thế xét nghiệm hay bác sĩ.",
+      "safety_status": "passed",
+      "latency_ms": 6873.533499892801
+    },
+    {
+      "case_id": "q06",
+      "question": "Tài liệu nói gì về tiền sử gia đình và tiểu đường típ 2?",
+      "reference_answer": "Tiền sử gia đình có tiểu đường là một yếu tố nguy cơ.",
+      "errors": [],
+      "error_codes": [],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        {
+          "citation_id": "S1",
+          "document_id": "niddk-risk",
+          "chunk_id": "74adbe1f5ea24abe3dc938e4",
+          "title": "NIDDK — Yếu tố nguy cơ típ 2",
+          "section": "What are the risk factors for type 2 diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+          "quote": "You can develop type 2 diabetes at any age, even during childhood. You are more likely to develop type 2 diabetes if you 1 are overweight or have obesity . are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older. have a family history of diabetes. are African American, American Indian, Asian American, Hispanic/Latino, or Pacific Islander. are not physically active, because of physical limitations, a sedentary lifestyle, or a job that requires sitting for long periods of time. have prediabetes . have a history of gestational diabetes , a type of diabetes that develops during pregnancy, or gave birth to a baby weighing 9 pounds or more. Children and teens are also at higher risk of developing type 2 diabetes if, in addition to the previous risk factors, they were born with a low birth weight or if their parent had gestational diabetes while pregnant with the child. 1 You are encouraged to talk with a doctor about any of the health conditions listed above that may require medical treatment. Managing health problems may help reduce your chances of developing type 2 diabetes. 2 Also, ask your doctor about any medicines you or your child take that might increase your risk. You can also take the Diabetes Risk Test to learn more about your risk for type 2 diabetes."
+        },
+        {
+          "citation_id": "S2",
+          "document_id": "niddk-risk",
+          "chunk_id": "6d1054cd4be86ee9d3434bac",
+          "title": "NIDDK — Yếu tố nguy cơ típ 2",
+          "section": "NIDDK — Yếu tố nguy cơ típ 2",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+          "quote": "Your chances of developing type 2 diabetes depend on a combination of risk factors. Although you can’t change risk factors related to family history, age, race, or ethnicity, you may be able to avoid some risk factors by maintaining a healthy weight and being physically active. 1 Read about risk factors for type 2 diabetes below, and see which ones apply to you. Acting on the factors you can change may help delay or prevent type 2 diabetes ."
+        },
+        {
+          "citation_id": "S3",
+          "document_id": "niddk-symptoms",
+          "chunk_id": "f58d99df5ed778b25a1d6053",
+          "title": "NIDDK — Triệu chứng và nguyên nhân",
+          "section": "What causes type 2 diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+          "quote": "Type 2 diabetes is the most common form of diabetes. Type 2 diabetes develops when your pancreas doesn’t produce enough insulin, and your body has trouble using insulin, a condition called insulin resistance . Insulin resistance is when the cells in your muscles, fat, and liver don’t respond well to insulin. When there isn’t enough insulin to balance blood glucose levels, they begin to rise. When blood glucose levels are higher than normal but not high enough to be diagnosed as type 2 diabetes, you have a condition called prediabetes . You have type 2 diabetes when health care professionals diagnose your blood glucose level as being too high. Researchers don’t fully know what causes problems with insulin production and insulin resistance in type 2 diabetes. However, people are more likely to develop type 2 diabetes if they have overweight, obesity , or a large waist size. are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older. have a family history of type 2 diabetes. are African American, American Indian, Asian American, Hispanic, Latino, or Pacific Islander. are not physically active, because of a job that requires sitting for long periods of time or because of difficulty moving their body. smoke , including tobacco products and e-cigarettes , or are exposed to secondhand smoke . have prediabetes. have a history of gestational diabetes, a type of diabetes that develops during pregnancy, or gave birth to a baby weighing 9 pounds or more. You can’t change some of these risk factors, such as your age, family history, or race. However, you may be able to change some risk factors and prevent or delay type 2 diabetes by maintaining a healthy weight, being physically active, and stopping smoking. You may be able to prevent type 2 diabetes by maintaining a healthy weight and being physically active."
+        },
+        {
+          "citation_id": "S4",
+          "document_id": "niddk-overview",
+          "chunk_id": "13d71c52a79f7babde2685e9",
+          "title": "NIDDK — Tổng quan tiểu đường",
+          "section": "Type 2 diabetes",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+          "quote": "If you have type 2 diabetes , the cells in your body don’t use insulin properly. The pancreas may be making insulin but is not making enough insulin to keep your blood glucose level in the normal range. Type 2 diabetes is the most common type of diabetes. You are more likely to develop type 2 diabetes if you have risk factors , such as overweight or obesity , and a family history of the disease. You can develop type 2 diabetes at any age, even during childhood. You can help delay or prevent type 2 diabetes by knowing the risk factors and taking steps toward a healthier lifestyle, such as losing weight or preventing weight gain."
+        },
+        {
+          "citation_id": "S5",
+          "document_id": "niddk-prevention",
+          "chunk_id": "143f3c3eb5d404ae9cd82556",
+          "title": "NIDDK — Phòng ngừa típ 2",
+          "section": "NIDDK — Phòng ngừa típ 2",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+          "quote": "Perhaps you have learned that you have a high chance of developing type 2 diabetes , the most common type of diabetes. You might be overweight or have a parent, brother, or sister with type 2 diabetes. Maybe you had gestational diabetes, which is diabetes that develops during pregnancy. These are just a few examples of factors that can raise your chances of developing type 2 diabetes . Diabetes can cause serious health problems , such as heart disease, stroke, and eye and foot problems. Prediabetes also can cause health problems. The good news is that type 2 diabetes can be delayed or even prevented. The longer you have diabetes, the more likely you are to develop health problems, so delaying diabetes by even a few years will benefit your health. You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week. Ask your doctor if you should take the diabetes drug metformin to help prevent or delay type 2 diabetes. 1"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Tiền sử gia đình mắc bệnh tiểu đường là một trong những yếu tố nguy cơ làm tăng khả năng phát triển bệnh tiểu đường loại 2.",
+          "citation_ids": [
+            "S1",
+            "S3",
+            "S4",
+            "S5"
+          ],
+          "supporting_quotes": {
+            "S1": "You are more likely to develop type 2 diabetes if you 1 are overweight or have obesity . are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older. have a family history of diabetes.",
+            "S3": "However, people are more likely to develop type 2 diabetes if they have overweight, obesity , or a large waist size. are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older. have a family history of type 2 diabetes.",
+            "S4": "You are more likely to develop type 2 diabetes if you have risk factors , such as overweight or obesity , and a family history of the disease.",
+            "S5": "Perhaps you have learned that you have a high chance of developing type 2 diabetes , the most common type of diabetes. You might be overweight or have a parent, brother, or sister with type 2 diabetes."
+          }
+        },
+        {
+          "text": "Bạn không thể thay đổi các yếu tố nguy cơ liên quan đến tiền sử gia đình, tuổi tác, chủng tộc hoặc sắc tộc.",
+          "citation_ids": [
+            "S2",
+            "S3"
+          ],
+          "supporting_quotes": {
+            "S2": "Although you can’t change risk factors related to family history, age, race, or ethnicity, you may be able to avoid some risk factors by maintaining a healthy weight and being physically active.",
+            "S3": "You can’t change some of these risk factors, such as your age, family history, or race."
+          }
+        }
+      ],
+      "citation_checks_passed": 2,
+      "answer": "Tiền sử gia đình mắc bệnh tiểu đường là một trong những yếu tố nguy cơ làm tăng khả năng phát triển bệnh tiểu đường loại 2. [S1] [S3] [S4] [S5]\n\nBạn không thể thay đổi các yếu tố nguy cơ liên quan đến tiền sử gia đình, tuổi tác, chủng tộc hoặc sắc tộc. [S2] [S3]\n\nMô hình học từ khảo sát BRFSS 2015 tại Hoa Kỳ. Lớp 1 gộp tiền tiểu đường và tiểu đường theo nhãn dữ liệu. Điểm mô hình không phải xác suất chẩn đoán hoặc nguy cơ mắc bệnh trong tương lai. Không thay thế xét nghiệm hay bác sĩ.",
+      "safety_status": "passed",
+      "latency_ms": 6627.530800178647
+    },
+    {
+      "case_id": "q07",
+      "question": "Những thay đổi lối sống nào giúp trì hoãn tiểu đường típ 2?",
+      "reference_answer": "Tài liệu đề cập giảm cân vừa phải, chế độ ăn giảm năng lượng và hoạt động thể chất.",
+      "errors": [],
+      "error_codes": [],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved_sources": [
+        {
+          "citation_id": "S1",
+          "document_id": "niddk-prevention",
+          "chunk_id": "e2cead3e6f98ee82ad14bbdb",
+          "title": "NIDDK — Phòng ngừa típ 2",
+          "section": "How can I lower my chances of developing type 2 diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+          "quote": "Research such as the Diabetes Prevention Program shows that you can do a lot to reduce your chances of developing type 2 diabetes. Here are some things you can change to lower your risk: Lose weight and keep it off. You may be able to prevent or delay diabetes by losing 5 to 7 percent of your starting weight. 1 For instance, if you weigh 200 pounds, your goal would be to lose about 10 to 14 pounds. Move more. Get at least 30 minutes of physical activity 5 days a week. If you have not been active, talk with your health care professional about which activities are best. Start slowly to build up to your goal. Eat healthy foods most of the time. Eat smaller portions to reduce the amount of calories you eat each day and help you lose weight. Choosing foods with less fat is another way to reduce calories. Drink water instead of sweetened beverages. Ask your health care professional about what other changes you can make to prevent or delay type 2 diabetes. Most often, your best chance for preventing type 2 diabetes is to make lifestyle changes that work for you long term. Get started with Your Game Plan to Prevent Type 2 Diabetes ."
+        },
+        {
+          "citation_id": "S2",
+          "document_id": "niddk-risk",
+          "chunk_id": "4ffe477d2d7fe9b84574c0dc",
+          "title": "NIDDK — Yếu tố nguy cơ típ 2",
+          "section": "Does your weight put you at risk for type 2 diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+          "quote": "If you have overweight or obesity, you may be able to prevent or delay type 2 diabetes by losing weight and being more physically active. 1 To see if your weight may put you at risk for type 2 diabetes, learn your body mass index (BMI) and waist circumference ."
+        },
+        {
+          "citation_id": "S3",
+          "document_id": "niddk-prevention",
+          "chunk_id": "143f3c3eb5d404ae9cd82556",
+          "title": "NIDDK — Phòng ngừa típ 2",
+          "section": "NIDDK — Phòng ngừa típ 2",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+          "quote": "Perhaps you have learned that you have a high chance of developing type 2 diabetes , the most common type of diabetes. You might be overweight or have a parent, brother, or sister with type 2 diabetes. Maybe you had gestational diabetes, which is diabetes that develops during pregnancy. These are just a few examples of factors that can raise your chances of developing type 2 diabetes . Diabetes can cause serious health problems , such as heart disease, stroke, and eye and foot problems. Prediabetes also can cause health problems. The good news is that type 2 diabetes can be delayed or even prevented. The longer you have diabetes, the more likely you are to develop health problems, so delaying diabetes by even a few years will benefit your health. You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week. Ask your doctor if you should take the diabetes drug metformin to help prevent or delay type 2 diabetes. 1"
+        },
+        {
+          "citation_id": "S4",
+          "document_id": "niddk-risk",
+          "chunk_id": "6d1054cd4be86ee9d3434bac",
+          "title": "NIDDK — Yếu tố nguy cơ típ 2",
+          "section": "NIDDK — Yếu tố nguy cơ típ 2",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+          "quote": "Your chances of developing type 2 diabetes depend on a combination of risk factors. Although you can’t change risk factors related to family history, age, race, or ethnicity, you may be able to avoid some risk factors by maintaining a healthy weight and being physically active. 1 Read about risk factors for type 2 diabetes below, and see which ones apply to you. Acting on the factors you can change may help delay or prevent type 2 diabetes ."
+        },
+        {
+          "citation_id": "S5",
+          "document_id": "niddk-symptoms",
+          "chunk_id": "f58d99df5ed778b25a1d6053",
+          "title": "NIDDK — Triệu chứng và nguyên nhân",
+          "section": "What causes type 2 diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+          "quote": "Type 2 diabetes is the most common form of diabetes. Type 2 diabetes develops when your pancreas doesn’t produce enough insulin, and your body has trouble using insulin, a condition called insulin resistance . Insulin resistance is when the cells in your muscles, fat, and liver don’t respond well to insulin. When there isn’t enough insulin to balance blood glucose levels, they begin to rise. When blood glucose levels are higher than normal but not high enough to be diagnosed as type 2 diabetes, you have a condition called prediabetes . You have type 2 diabetes when health care professionals diagnose your blood glucose level as being too high. Researchers don’t fully know what causes problems with insulin production and insulin resistance in type 2 diabetes. However, people are more likely to develop type 2 diabetes if they have overweight, obesity , or a large waist size. are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older. have a family history of type 2 diabetes. are African American, American Indian, Asian American, Hispanic, Latino, or Pacific Islander. are not physically active, because of a job that requires sitting for long periods of time or because of difficulty moving their body. smoke , including tobacco products and e-cigarettes , or are exposed to secondhand smoke . have prediabetes. have a history of gestational diabetes, a type of diabetes that develops during pregnancy, or gave birth to a baby weighing 9 pounds or more. You can’t change some of these risk factors, such as your age, family history, or race. However, you may be able to change some risk factors and prevent or delay type 2 diabetes by maintaining a healthy weight, being physically active, and stopping smoking. You may be able to prevent type 2 diabetes by maintaining a healthy weight and being physically active."
+        }
+      ],
+      "claims": [
+        {
+          "text": "Để trì hoãn hoặc ngăn ngừa bệnh tiểu đường loại 2, bạn có thể giảm cân và duy trì cân nặng hợp lý, đồng thời tăng cường hoạt động thể chất.",
+          "citation_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ],
+          "supporting_quotes": {
+            "S1": "You may be able to prevent or delay diabetes by losing 5 to 7 percent of your starting weight.",
+            "S2": "If you have overweight or obesity, you may be able to prevent or delay type 2 diabetes by losing weight and being more physically active.",
+            "S3": "You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week.",
+            "S4": "Acting on the factors you can change may help delay or prevent type 2 diabetes.",
+            "S5": "You may be able to prevent or delay type 2 diabetes by maintaining a healthy weight, being physically active, and stopping smoking."
+          }
+        },
+        {
+          "text": "Việc giảm từ 5 đến 7 phần trăm trọng lượng cơ thể ban đầu có thể giúp ngăn ngừa hoặc trì hoãn bệnh tiểu đường.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "You may be able to prevent or delay diabetes by losing 5 to 7 percent of your starting weight."
+          }
+        },
+        {
+          "text": "Nên tập thể dục ít nhất 30 phút mỗi ngày, 5 ngày một tuần và ăn uống lành mạnh bằng cách giảm khẩu phần ăn, chọn thực phẩm ít chất béo và uống nước thay vì đồ uống có đường.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "Get at least 30 minutes of physical activity 5 days a week. If you have not been active, talk with your health care professional about which activities are best. Start slowly to build up to your goal. Eat healthy foods most of the time. Eat smaller portions to reduce the amount of calories you eat each day and help you lose weight. Choosing foods with less fat is another way to reduce calories. Drink water instead of sweetened beverages."
+          }
+        }
+      ],
+      "citation_checks_passed": 2,
+      "answer": "Đoạn trích dẫn không khớp tài liệu nguồn.\n\nMô hình học từ khảo sát BRFSS 2015 tại Hoa Kỳ. Lớp 1 gộp tiền tiểu đường và tiểu đường theo nhãn dữ liệu. Điểm mô hình không phải xác suất chẩn đoán hoặc nguy cơ mắc bệnh trong tương lai. Không thay thế xét nghiệm hay bác sĩ.",
+      "safety_status": "fallback",
+      "latency_ms": 4892.729500075802
+    },
+    {
+      "case_id": "q08",
+      "question": "Xét nghiệm A1C phản ánh glucose máu trong bao lâu?",
+      "reference_answer": "A1C phản ánh mức glucose máu trung bình trong khoảng 3 tháng.",
+      "errors": [
+        "Gemini đã hết quota hoặc vượt giới hạn gọi API. Vui lòng thử lại sau."
+      ],
+      "error_codes": [
+        "llm_rate_limited"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        {
+          "citation_id": "S1",
+          "document_id": "niddk-tests",
+          "chunk_id": "b613166ad58faa5605642d56",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "A1C test",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "The A1C test is a blood test that provides your average levels of blood glucose over the last 3 months. Other names for the A1C test are hemoglobin A1C, HbA1C, glycated hemoglobin, and glycosylated hemoglobin test. You can eat and drink before this test. Before using the A1C test to diagnose diabetes, your doctor will consider factors, such as whether you are in your second or third trimester of pregnancy or whether you have certain types of anemia or another problem with your blood. 1 The A1C test might not be accurate in those cases. Certain types of hemoglobin , called hemoglobin variants, can interfere with measuring A1C levels. Most A1C tests used in the United States are not affected by the most common variants. If your A1C test results and blood glucose levels do not match, your doctor should consider that the A1C test may not be a reliable test for you. Your doctor will report your A1C test result as a percentage, such as an A1C of 7%. The higher the percentage is, the higher your average blood glucose levels are."
+        },
+        {
+          "citation_id": "S2",
+          "document_id": "niddk-tests",
+          "chunk_id": "6e9bc3140a25047bdb0ab926",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "Test results for diagnosis of prediabetes and diabetes",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "Diagnosis A1C Fasting Plasma Glucose Oral Glucose Tolerance Test* Random Plasma Glucose Test‡ Normal below 5.7% 99 mg/dL or below 139 mg/dL or below N/A Prediabetes 5.7% to 6.4% 100 to 125 mg/dL 140 to 199 mg/dL N/A Diabetes 6.5% or above 126 mg/dL or above 200 mg/dL or above 200 mg/dL or above"
+        },
+        {
+          "citation_id": "S3",
+          "document_id": "niddk-tests",
+          "chunk_id": "3731bc2595d60a217762238f",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "What test results tell me if I have diabetes or prediabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "Each test to detect diabetes and prediabetes uses a different measurement. Usually, your doctor will use a second test to confirm you have diabetes. The table below helps you understand what your test results mean if you are not pregnant. 1 If you are pregnant, some tests use different cutoffs. Ask your doctor what your test results mean."
+        },
+        {
+          "citation_id": "S4",
+          "document_id": "niddk-tests",
+          "chunk_id": "9c23b3ec18a3db5e8f874635",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "Random plasma glucose test",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "Sometimes doctors use the random plasma glucose test to diagnose diabetes when you have symptoms of diabetes and they do not want to wait until you have fasted for 8 hours. You may have this blood test at any time."
+        },
+        {
+          "citation_id": "S5",
+          "document_id": "niddk-tests",
+          "chunk_id": "0045496a4a7991ca04f3d613",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "Fasting plasma glucose test",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "The fasting plasma glucose (FPG) test measures your blood glucose level at a single point in time. For the most reliable results, your doctor will give you the test in the morning after you have fasted for at least 8 hours. Fasting means having nothing to eat or drink except sips of water."
+        }
+      ],
+      "latency_ms": 2904.4371999334544
+    },
+    {
+      "case_id": "q09",
+      "question": "Máy đo đường huyết mua tại nhà có tự chẩn đoán tiểu đường được không?",
+      "reference_answer": "Theo tài liệu, máy đo đường huyết mua tự do không thể dùng để tự chẩn đoán tiểu đường.",
+      "errors": [],
+      "error_codes": [],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        {
+          "citation_id": "S1",
+          "document_id": "niddk-tests",
+          "chunk_id": "4528dd7fa2839b82d12dc4f9",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "NIDDK — Xét nghiệm và chẩn đoán",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "In this section: Who should be tested for diabetes? What tests are used to diagnose diabetes? What test results tell me if I have diabetes or prediabetes? Which tests help my doctor know what kind of diabetes I have? Your doctor can diagnose diabetes , prediabetes , and gestational diabetes using blood tests. The blood tests show if your blood glucose level , also called blood sugar, is higher than the range that is healthy for you. Blood tests can also help identify the type of diabetes you have. Don’t try to diagnose yourself if you think you might have diabetes. Blood testing equipment that you can buy over the counter, such as a blood glucose meter , cannot diagnose diabetes."
+        },
+        {
+          "citation_id": "S2",
+          "document_id": "niddk-tests",
+          "chunk_id": "e9d5c6523b987140e5cc008b",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "Which tests help my doctor know what kind of diabetes I have?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "Even though the tests described above can confirm you have diabetes, they can’t identify what type you have—type 1, type 2, or a rare type of diabetes called monogenic diabetes. Treatment can depend on the type of diabetes you have, so knowing which type you have is important."
+        },
+        {
+          "citation_id": "S3",
+          "document_id": "niddk-tests",
+          "chunk_id": "5291debddfc47a01c42dc3a6",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "What tests are used to diagnose diabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "Doctors use a variety of tests to diagnose diabetes and prediabetes. Your doctor may recommend different tests depending on whether you have symptoms or not, or whether you are pregnant."
+        },
+        {
+          "citation_id": "S4",
+          "document_id": "niddk-tests",
+          "chunk_id": "6e9bc3140a25047bdb0ab926",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "Test results for diagnosis of prediabetes and diabetes",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "Diagnosis A1C Fasting Plasma Glucose Oral Glucose Tolerance Test* Random Plasma Glucose Test‡ Normal below 5.7% 99 mg/dL or below 139 mg/dL or below N/A Prediabetes 5.7% to 6.4% 100 to 125 mg/dL 140 to 199 mg/dL N/A Diabetes 6.5% or above 126 mg/dL or above 200 mg/dL or above 200 mg/dL or above"
+        },
+        {
+          "citation_id": "S5",
+          "document_id": "niddk-tests",
+          "chunk_id": "3731bc2595d60a217762238f",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "What test results tell me if I have diabetes or prediabetes?",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "Each test to detect diabetes and prediabetes uses a different measurement. Usually, your doctor will use a second test to confirm you have diabetes. The table below helps you understand what your test results mean if you are not pregnant. 1 If you are pregnant, some tests use different cutoffs. Ask your doctor what your test results mean."
+        }
+      ],
+      "claims": [
+        {
+          "text": "Máy đo đường huyết mua tại nhà không thể dùng để tự chẩn đoán bệnh tiểu đường.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "Blood testing equipment that you can buy over the counter, such as a blood glucose meter , cannot diagnose diabetes."
+          }
+        },
+        {
+          "text": "Bác sĩ có thể chẩn đoán bệnh tiểu đường, tiền tiểu đường và tiểu đường thai kỳ thông qua xét nghiệm máu.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "Your doctor can diagnose diabetes , prediabetes , and gestational diabetes using blood tests."
+          }
+        },
+        {
+          "text": "Các xét nghiệm máu sẽ cho biết liệu mức đường huyết của bạn có cao hơn mức khỏe mạnh hay không.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "The blood tests show if your blood glucose level , also called blood sugar, is higher than the range that is healthy for you."
+          }
+        }
+      ],
+      "citation_checks_passed": 3,
+      "answer": "Máy đo đường huyết mua tại nhà không thể dùng để tự chẩn đoán bệnh tiểu đường. [S1]\n\nBác sĩ có thể chẩn đoán bệnh tiểu đường, tiền tiểu đường và tiểu đường thai kỳ thông qua xét nghiệm máu. [S1]\n\nCác xét nghiệm máu sẽ cho biết liệu mức đường huyết của bạn có cao hơn mức khỏe mạnh hay không. [S1]\n\nMô hình học từ khảo sát BRFSS 2015 tại Hoa Kỳ. Lớp 1 gộp tiền tiểu đường và tiểu đường theo nhãn dữ liệu. Điểm mô hình không phải xác suất chẩn đoán hoặc nguy cơ mắc bệnh trong tương lai. Không thay thế xét nghiệm hay bác sĩ.",
+      "safety_status": "passed",
+      "latency_ms": 3688.673499971628
+    },
+    {
+      "case_id": "q10",
+      "question": "Xét nghiệm glucose huyết tương lúc đói cần nhịn ăn thế nào?",
+      "reference_answer": "Tài liệu mô tả xét nghiệm buổi sáng sau khi nhịn ăn ít nhất 8 giờ theo hướng dẫn của bác sĩ.",
+      "errors": [],
+      "error_codes": [],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        {
+          "citation_id": "S1",
+          "document_id": "niddk-tests",
+          "chunk_id": "0045496a4a7991ca04f3d613",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "Fasting plasma glucose test",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "The fasting plasma glucose (FPG) test measures your blood glucose level at a single point in time. For the most reliable results, your doctor will give you the test in the morning after you have fasted for at least 8 hours. Fasting means having nothing to eat or drink except sips of water."
+        },
+        {
+          "citation_id": "S2",
+          "document_id": "niddk-tests",
+          "chunk_id": "9c23b3ec18a3db5e8f874635",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "Random plasma glucose test",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "Sometimes doctors use the random plasma glucose test to diagnose diabetes when you have symptoms of diabetes and they do not want to wait until you have fasted for 8 hours. You may have this blood test at any time."
+        },
+        {
+          "citation_id": "S3",
+          "document_id": "niddk-tests",
+          "chunk_id": "9c7538cf6d183d442b353d22",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "Oral glucose tolerance test",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "The oral glucose tolerance test (OGTT) helps doctors detect type 2 diabetes, prediabetes, and gestational diabetes. However, the OGTT is a more expensive test than the FPG test and the glucose challenge test, and it is not as easy to give. Before the test, you will need to fast for at least 8 hours. A health care professional will take a blood sample to measure your glucose level after fasting. Next, you will drink a liquid that is high in sugar. Another blood sample is taken 2 hours later to check your blood glucose level. If your blood glucose level is high, you may have diabetes. If you are pregnant, your blood will be drawn every hour for 2 to 3 hours. If your blood glucose levels are high two or more times during the OGTT, you may have gestational diabetes."
+        },
+        {
+          "citation_id": "S4",
+          "document_id": "niddk-tests",
+          "chunk_id": "5e1af90f213bbba42cbcbb1b",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "Glucose challenge test",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "If you are pregnant, your doctor might test you for gestational diabetes with the glucose challenge test. Another name for this test is the glucose screening test. In this test, a health care professional will take a sample of your blood 1 hour after you drink a sweet liquid containing glucose. You do not need to fast for this test. If your blood glucose level is too high—135 mg/dL to 140 mg/dL or higher—you may need to return for an oral glucose tolerance test while fasting."
+        },
+        {
+          "citation_id": "S5",
+          "document_id": "niddk-tests",
+          "chunk_id": "b613166ad58faa5605642d56",
+          "title": "NIDDK — Xét nghiệm và chẩn đoán",
+          "section": "A1C test",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+          "quote": "The A1C test is a blood test that provides your average levels of blood glucose over the last 3 months. Other names for the A1C test are hemoglobin A1C, HbA1C, glycated hemoglobin, and glycosylated hemoglobin test. You can eat and drink before this test. Before using the A1C test to diagnose diabetes, your doctor will consider factors, such as whether you are in your second or third trimester of pregnancy or whether you have certain types of anemia or another problem with your blood. 1 The A1C test might not be accurate in those cases. Certain types of hemoglobin , called hemoglobin variants, can interfere with measuring A1C levels. Most A1C tests used in the United States are not affected by the most common variants. If your A1C test results and blood glucose levels do not match, your doctor should consider that the A1C test may not be a reliable test for you. Your doctor will report your A1C test result as a percentage, such as an A1C of 7%. The higher the percentage is, the higher your average blood glucose levels are."
+        }
+      ],
+      "claims": [
+        {
+          "text": "Để có kết quả đáng tin cậy nhất cho xét nghiệm glucose huyết tương lúc đói (FPG), bạn cần nhịn ăn ít nhất 8 giờ trước khi xét nghiệm, thường là vào buổi sáng.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "For the most reliable results, your doctor will give you the test in the morning after you have fasted for at least 8 hours."
+          }
+        },
+        {
+          "text": "Nhịn ăn cho xét nghiệm FPG có nghĩa là bạn không được ăn hoặc uống bất cứ thứ gì, ngoại trừ một ít nước lọc.",
+          "citation_ids": [
+            "S1"
+          ],
+          "supporting_quotes": {
+            "S1": "Fasting means having nothing to eat or drink except sips of water."
+          }
+        }
+      ],
+      "citation_checks_passed": 2,
+      "answer": "Để có kết quả đáng tin cậy nhất cho xét nghiệm glucose huyết tương lúc đói (FPG), bạn cần nhịn ăn ít nhất 8 giờ trước khi xét nghiệm, thường là vào buổi sáng. [S1]\n\nNhịn ăn cho xét nghiệm FPG có nghĩa là bạn không được ăn hoặc uống bất cứ thứ gì, ngoại trừ một ít nước lọc. [S1]\n\nMô hình học từ khảo sát BRFSS 2015 tại Hoa Kỳ. Lớp 1 gộp tiền tiểu đường và tiểu đường theo nhãn dữ liệu. Điểm mô hình không phải xác suất chẩn đoán hoặc nguy cơ mắc bệnh trong tương lai. Không thay thế xét nghiệm hay bác sĩ.",
+      "safety_status": "passed",
+      "latency_ms": 5027.123700128868
+    }
+  ]
+}

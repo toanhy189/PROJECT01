@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-11-01T15:28:21.485012+00:00",
+  "method": "Compare words, numbers, %, inequality and footnote symbols in DOM order after removing confirmed navigation; check original heading levels. This is a parsing audit, not a clinical review.",
+  "documents": [
+    {
+      "document_id": "niddk-overview",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+      "source_words_numbers_symbols_in_original_order": true,
+      "source_token_count": 806,
+      "extracted_token_count": 806,
+      "headings": 9,
+      "missing_or_changed_headings": [],
+      "reference_entries": 4,
+      "chunks": 10,
+      "max_estimated_tokens": 215,
+      "oversized_chunks": 0,
+      "missing_required_metadata": 0,
+      "toc_present": false
+    },
+    {
+      "document_id": "niddk-symptoms",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "source_words_numbers_symbols_in_original_order": true,
+      "source_token_count": 2288,
+      "extracted_token_count": 2288,
+      "headings": 19,
+      "missing_or_changed_headings": [],
+      "reference_entries": 0,
+      "chunks": 19,
+      "max_estimated_tokens": 476,
+      "oversized_chunks": 0,
+      "missing_required_metadata": 0,
+      "toc_present": false
+    },
+    {
+      "document_id": "niddk-risk",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+      "source_words_numbers_symbols_in_original_order": true,
+      "source_token_count": 894,
+      "extracted_token_count": 894,
+      "headings": 5,
+      "missing_or_changed_headings": [],
+      "reference_entries": 7,
+      "chunks": 6,
+      "max_estimated_tokens": 458,
+      "oversized_chunks": 0,
+      "missing_required_metadata": 0,
+      "toc_present": false
+    },
+    {
+      "document_id": "niddk-prevention",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes",
+      "source_words_numbers_symbols_in_original_order": true,
+      "source_token_count": 910,
+      "extracted_token_count": 910,
+      "headings": 4,
+      "missing_or_changed_headings": [],
+      "reference_entries": 1,
+      "chunks": 5,
+      "max_estimated_tokens": 317,
+      "oversized_chunks": 0,
+      "missing_required_metadata": 0,
+      "toc_present": false
+    },
+    {
+      "document_id": "niddk-tests",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "source_words_numbers_symbols_in_original_order": true,
+      "source_token_count": 1612,
+      "extracted_token_count": 1612,
+      "headings": 17,
+      "missing_or_changed_headings": [],
+      "reference_entries": 1,
+      "chunks": 18,
+      "max_estimated_tokens": 320,
+      "oversized_chunks": 0,
+      "missing_required_metadata": 0,
+      "toc_present": false
+    }
+  ],
+  "total_chunks": 58,
+  "passed": true
+}

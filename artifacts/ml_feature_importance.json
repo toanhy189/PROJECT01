@@ -1,0 +1,297 @@
+{
+  "checked_at": "2026-11-05T09:34:24.195742+00:00",
+  "model_version": "cdc-mlp-20261101T102617Z",
+  "dataset_sha256": "9f71fda9d4ae5f4878c99b9233b6a16accfa9a17c194116a6b78100540934964",
+  "method": "Single-feature permutation importance on the original held-out test split; no retraining or threshold changes.",
+  "metric": "ROC-AUC drop; larger positive drop indicates greater model dependence.",
+  "baseline_roc_auc": 0.8146567312913753,
+  "baseline_matches_saved_metrics": true,
+  "test_rows": 34411,
+  "repeats": 5,
+  "permutation_seed": 42,
+  "split_seed": 42,
+  "results": [
+    {
+      "feature": "GenHlth",
+      "mean_roc_auc_drop": 0.05022506985658019,
+      "shuffle_std": 0.0023994902762666365,
+      "permuted_roc_auc": [
+        0.7687400348600284,
+        0.7618558732605258,
+        0.7627463243145212,
+        0.763795859193741,
+        0.765020215545159
+      ],
+      "rank": 1
+    },
+    {
+      "feature": "BMI",
+      "mean_roc_auc_drop": 0.04053869867840907,
+      "shuffle_std": 0.0011686546117679836,
+      "permuted_roc_auc": [
+        0.7754091771921549,
+        0.7744523054479825,
+        0.7741266762630473,
+        0.7719381332570107,
+        0.7746638709046357
+      ],
+      "rank": 2
+    },
+    {
+      "feature": "Age",
+      "mean_roc_auc_drop": 0.03397894309351572,
+      "shuffle_std": 0.0018061437352276928,
+      "permuted_roc_auc": [
+        0.7805068584535177,
+        0.7793009083066038,
+        0.7783066669820713,
+        0.7833736419111199,
+        0.781900865335985
+      ],
+      "rank": 3
+    },
+    {
+      "feature": "HighBP",
+      "mean_roc_auc_drop": 0.015238126238606608,
+      "shuffle_std": 0.0013021233732819595,
+      "permuted_roc_auc": [
+        0.7997786009577221,
+        0.7989605137549967,
+        0.7981392692479405,
+        0.8017735774226087,
+        0.7984410638805753
+      ],
+      "rank": 4
+    },
+    {
+      "feature": "HighChol",
+      "mean_roc_auc_drop": 0.009575823168540332,
+      "shuffle_std": 0.000828424486848798,
+      "permuted_roc_auc": [
+        0.8056177697649369,
+        0.8045762698831159,
+        0.8039967008939309,
+        0.8048454162294825,
+        0.8063683838427085
+      ],
+      "rank": 5
+    },
+    {
+      "feature": "CholCheck",
+      "mean_roc_auc_drop": 0.00625752955174943,
+      "shuffle_std": 0.0009018876033229642,
+      "permuted_roc_auc": [
+        0.8092784800417638,
+        0.8084696725116222,
+        0.8069539970006587,
+        0.8093809441793156,
+        0.8079129149647689
+      ],
+      "rank": 6
+    },
+    {
+      "feature": "HvyAlcoholConsump",
+      "mean_roc_auc_drop": 0.004580411849333843,
+      "shuffle_std": 0.0005935603130417541,
+      "permuted_roc_auc": [
+        0.8104722441017873,
+        0.8100626742830361,
+        0.8109672533778758,
+        0.809426922219987,
+        0.8094525032275209
+      ],
+      "rank": 7
+    },
+    {
+      "feature": "Sex",
+      "mean_roc_auc_drop": 0.0029663164176762626,
+      "shuffle_std": 0.0004115037086317586,
+      "permuted_roc_auc": [
+        0.8122086376678203,
+        0.8112218578777742,
+        0.8111983589316099,
+        0.8118151671686747,
+        0.812008052722616
+      ],
+      "rank": 8
+    },
+    {
+      "feature": "HeartDiseaseorAttack",
+      "mean_roc_auc_drop": 0.0026417057810731227,
+      "shuffle_std": 0.00028528205619450894,
+      "permuted_roc_auc": [
+        0.8123720778561923,
+        0.8116293619267155,
+        0.8117310342944507,
+        0.8121957738520331,
+        0.8121468796221192
+      ],
+      "rank": 9
+    },
+    {
+      "feature": "Income",
+      "mean_roc_auc_drop": 0.0026116849976041356,
+      "shuffle_std": 0.00019757991916590818,
+      "permuted_roc_auc": [
+        0.8121341005224444,
+        0.8119046534495193,
+        0.811729014141009,
+        0.8122189502253092,
+        0.8122385131305738
+      ],
+      "rank": 10
+    },
+    {
+      "feature": "DiffWalk",
+      "mean_roc_auc_drop": 0.0013651297665113304,
+      "shuffle_std": 0.00030279165624199397,
+      "permuted_roc_auc": [
+        0.8135748250824076,
+        0.8127218837161883,
+        0.8132595051966491,
+        0.8134812268118153,
+        0.8134205668172594
+      ],
+      "rank": 11
+    },
+    {
+      "feature": "PhysHlth",
+      "mean_roc_auc_drop": 0.0007805090903972856,
+      "shuffle_std": 0.00018872945641338582,
+      "permuted_roc_auc": [
+        0.813533379353732,
+        0.8138251840017663,
+        0.8140711930746011,
+        0.8139669694485678,
+        0.8139843851262227
+      ],
+      "rank": 12
+    },
+    {
+      "feature": "Stroke",
+      "mean_roc_auc_drop": 0.0007429902793475218,
+      "shuffle_std": 0.0002168931216534862,
+      "permuted_roc_auc": [
+        0.8142355227821502,
+        0.8137395099459648,
+        0.8137133066008383,
+        0.814113013509157,
+        0.8137673522220286
+      ],
+      "rank": 13
+    },
+    {
+      "feature": "MentHlth",
+      "mean_roc_auc_drop": 0.0006252283669425429,
+      "shuffle_std": 9.62443464398449e-05,
+      "permuted_roc_auc": [
+        0.8140426307115848,
+        0.8139147908401551,
+        0.8141914964703683,
+        0.8139518997555548,
+        0.8140566968445008
+      ],
+      "rank": 14
+    },
+    {
+      "feature": "Education",
+      "mean_roc_auc_drop": 0.0003115291655743535,
+      "shuffle_std": 0.0001536436118802036,
+      "permuted_roc_auc": [
+        0.8144926426989145,
+        0.8145354797268154,
+        0.8141403507468604,
+        0.8143469472777097,
+        0.8142105901787046
+      ],
+      "rank": 15
+    },
+    {
+      "feature": "Veggies",
+      "mean_roc_auc_drop": 0.0002875401692849611,
+      "shuffle_std": 0.00014962290666607026,
+      "permuted_roc_auc": [
+        0.8145270928317202,
+        0.8144810137833767,
+        0.8141437100665354,
+        0.8144535527298169,
+        0.8142405861990024
+      ],
+      "rank": 16
+    },
+    {
+      "feature": "Fruits",
+      "mean_roc_auc_drop": 0.0002784924885155471,
+      "shuffle_std": 0.00013747803557480963,
+      "permuted_roc_auc": [
+        0.8146339100741077,
+        0.8142409250634508,
+        0.8142777733138904,
+        0.8143657705461499,
+        0.8143728150166999
+      ],
+      "rank": 17
+    },
+    {
+      "feature": "AnyHealthcare",
+      "mean_roc_auc_drop": 0.0002490608078566936,
+      "shuffle_std": 0.00013889500107608845,
+      "permuted_roc_auc": [
+        0.8145318890669883,
+        0.8146022848978086,
+        0.81434009830588,
+        0.8143412941063849,
+        0.8142227860405312
+      ],
+      "rank": 18
+    },
+    {
+      "feature": "Smoker",
+      "mean_roc_auc_drop": 3.884038239807541e-05,
+      "shuffle_std": 0.0002271102948725752,
+      "permuted_roc_auc": [
+        0.8142545415493103,
+        0.8145823212201676,
+        0.8149611032488043,
+        0.8146970333525378,
+        0.8145944551740659
+      ],
+      "rank": 19
+    },
+    {
+      "feature": "PhysActivity",
+      "mean_roc_auc_drop": -2.3622762020214515e-05,
+      "shuffle_std": 0.00011564890192504341,
+      "permuted_roc_auc": [
+        0.8147160684112581,
+        0.8146184102839104,
+        0.8144902804227127,
+        0.8148219668096609,
+        0.8147550443394355
+      ],
+      "rank": 20
+    },
+    {
+      "feature": "NoDocbcCost",
+      "mean_roc_auc_drop": -5.100887440374624e-05,
+      "shuffle_std": 8.359661709355048e-05,
+      "permuted_roc_auc": [
+        0.8148093082675301,
+        0.8148025081703804,
+        0.8146311991585214,
+        0.8146839740380306,
+        0.8146117111944327
+      ],
+      "rank": 21
+    }
+  ],
+  "limitations": [
+    "Global model dependence is not a causal medical effect or a per-patient explanation.",
+    "Correlated features can share information and suppress individual permutation importance.",
+    "Shuffling can create unusual combinations of feature values.",
+    "Shuffle standard deviations reflect permutation variability, not population confidence intervals.",
+    "Do not use this test-set analysis to tune or select the model and then report the same test metrics as an independent evaluation."
+  ],
+  "model_sha256": "e3e4aa9cb9bece749c74a42bfed96856c9c2f62e7c3ad417fb465a4eefe523b8",
+  "preprocessor_sha256": "896107474d6cb4dad3b4b251ca48e737f339597298f44b7210ae2e614b39dab8"
+}

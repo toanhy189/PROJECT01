@@ -1,0 +1,744 @@
+{
+  "schema_version": 1,
+  "annotation_status": "agent_source_checked_not_expert_reviewed",
+  "split_policy": "IDs divisible by 3 are development; others are heldout. Freeze before tuning; never report mock scores as live metrics.",
+  "cases": [
+    {
+      "case_id": "r01",
+      "group": "direct",
+      "question": "Tiểu đường là gì?",
+      "references": [
+        {
+          "document_id": "niddk-overview",
+          "quote": "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high."
+        }
+      ],
+      "expected_entities": [
+        "diabetes"
+      ]
+    },
+    {
+      "case_id": "r02",
+      "group": "direct",
+      "question": "Những loại tiểu đường phổ biến gồm những loại nào?",
+      "references": [
+        {
+          "document_id": "niddk-overview",
+          "quote": "The most common types of diabetes are type 1, type 2, and gestational diabetes."
+        }
+      ],
+      "expected_entities": [
+        "diabetes"
+      ]
+    },
+    {
+      "case_id": "r03",
+      "group": "direct",
+      "question": "Tiền tiểu đường khác tiểu đường típ 2 thế nào?",
+      "references": [
+        {
+          "document_id": "niddk-overview",
+          "quote": "People with prediabetes have blood glucose levels that are higher than normal but not high enough to be diagnosed with type 2 diabetes."
+        }
+      ],
+      "expected_entities": [
+        "prediabetes",
+        "type_2_diabetes"
+      ]
+    },
+    {
+      "case_id": "r04",
+      "group": "direct",
+      "question": "Triệu chứng tiểu đường típ 1 thường xuất hiện nhanh hay chậm?",
+      "references": [
+        {
+          "document_id": "niddk-symptoms",
+          "quote": "Symptoms of type 1 diabetes usually develop quickly, over a few days or weeks."
+        }
+      ],
+      "expected_entities": [
+        "type_1_diabetes"
+      ]
+    },
+    {
+      "case_id": "r05",
+      "group": "bilingual",
+      "question": "Ít vận động có liên quan đến nguy cơ tiểu đường típ 2 không?",
+      "references": [
+        {
+          "document_id": "niddk-risk",
+          "quote": "are not physically active, because of physical limitations, a sedentary lifestyle, or a job that requires sitting for long periods of time."
+        }
+      ],
+      "expected_entities": [
+        "physical_inactivity",
+        "type_2_diabetes"
+      ]
+    },
+    {
+      "case_id": "r06",
+      "group": "direct",
+      "question": "Tài liệu nói gì về tiền sử gia đình và tiểu đường típ 2?",
+      "references": [
+        {
+          "document_id": "niddk-risk",
+          "quote": "have a family history of diabetes."
+        }
+      ],
+      "expected_entities": [
+        "family_history",
+        "type_2_diabetes"
+      ]
+    },
+    {
+      "case_id": "r07",
+      "group": "direct",
+      "question": "Những thay đổi lối sống nào giúp trì hoãn tiểu đường típ 2?",
+      "references": [
+        {
+          "document_id": "niddk-prevention",
+          "quote": "You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week."
+        }
+      ],
+      "expected_entities": [
+        "type_2_diabetes"
+      ]
+    },
+    {
+      "case_id": "r08",
+      "group": "bilingual",
+      "question": "Xét nghiệm HbA1c phản ánh glucose máu trong bao lâu?",
+      "references": [
+        {
+          "document_id": "niddk-tests",
+          "quote": "The A1C test is a blood test that provides your average levels of blood glucose over the last 3 months."
+        }
+      ],
+      "expected_entities": [
+        "a1c_test",
+        "blood_glucose"
+      ]
+    },
+    {
+      "case_id": "r09",
+      "group": "negation",
+      "question": "Máy đo đường huyết mua tại nhà có tự chẩn đoán tiểu đường được không?",
+      "references": [
+        {
+          "document_id": "niddk-tests",
+          "quote": "Blood testing equipment that you can buy over the counter, such as a blood glucose meter, cannot diagnose diabetes."
+        }
+      ],
+      "expected_entities": [
+        "glucose_meter",
+        "diabetes"
+      ],
+      "required_fact": "cannot diagnose; do not reverse negation"
+    },
+    {
+      "case_id": "r10",
+      "group": "bilingual",
+      "question": "Xét nghiệm glucose huyết tương lúc đói cần nhịn ăn thế nào?",
+      "references": [
+        {
+          "document_id": "niddk-tests",
+          "quote": "For the most reliable results, your doctor will give you the test in the morning after you have fasted for at least 8 hours."
+        }
+      ],
+      "expected_entities": [
+        "fpg_test"
+      ]
+    },
+    {
+      "case_id": "r11",
+      "group": "direct",
+      "question": "Insulin được cơ quan nào tạo ra?",
+      "references": [
+        {
+          "document_id": "niddk-overview",
+          "quote": "Insulin is a hormone made by the pancreas that helps glucose get into your cells to be used for energy."
+        }
+      ],
+      "expected_entities": [
+        "insulin"
+      ]
+    },
+    {
+      "case_id": "r12",
+      "group": "direct",
+      "question": "Tiểu đường típ 2 có thể xuất hiện ở trẻ em không?",
+      "references": [
+        {
+          "document_id": "niddk-overview",
+          "quote": "You can develop type 2 diabetes at any age, even during childhood."
+        }
+      ],
+      "expected_entities": [
+        "type_2_diabetes"
+      ]
+    },
+    {
+      "case_id": "r13",
+      "group": "negation",
+      "question": "Tiểu đường thai kỳ hết sau sinh có đồng nghĩa không còn nguy cơ típ 2 không?",
+      "references": [
+        {
+          "document_id": "niddk-overview",
+          "quote": "However, if you’ve had gestational diabetes, you have a higher chance of developing type 2 diabetes later in life."
+        }
+      ],
+      "expected_entities": [
+        "gestational_diabetes"
+      ],
+      "required_fact": "higher chance later, not certainty or absence of risk"
+    },
+    {
+      "case_id": "r14",
+      "group": "direct",
+      "question": "Tiểu đường có liên quan tổn thương những cơ quan nào?",
+      "references": [
+        {
+          "document_id": "niddk-overview",
+          "quote": "Diabetes raises the risk for damage to the eyes, kidneys, nerves, and heart."
+        }
+      ],
+      "expected_entities": [
+        "diabetes"
+      ]
+    },
+    {
+      "case_id": "r15",
+      "group": "bilingual",
+      "question": "Body mass index hay BMI dùng để đánh giá điều gì?",
+      "references": [
+        {
+          "document_id": "niddk-risk",
+          "quote": "Your BMI can help you tell if you are at a healthy weight or have overweight or obesity."
+        }
+      ],
+      "expected_entities": [
+        "bmi"
+      ]
+    },
+    {
+      "case_id": "r16",
+      "group": "direct",
+      "question": "Vòng eo lớn có thể là yếu tố nguy cơ dù BMI bình thường không?",
+      "references": [
+        {
+          "document_id": "niddk-risk",
+          "quote": "Having a large waist circumference is a risk factor for diabetes and heart disease, even if you have a normal BMI."
+        }
+      ],
+      "expected_entities": [
+        "waist",
+        "bmi"
+      ]
+    },
+    {
+      "case_id": "r17",
+      "group": "direct",
+      "question": "Tài liệu NIDDK nêu độ tuổi nào làm tăng nguy cơ típ 2?",
+      "references": [
+        {
+          "document_id": "niddk-risk",
+          "quote": "are age 35 or older. Children and teens can also develop type 2 diabetes, but the risk increases as a person gets older."
+        }
+      ],
+      "expected_entities": []
+    },
+    {
+      "case_id": "r18",
+      "group": "direct",
+      "question": "Theo tài liệu, giảm bao nhiêu phần trăm cân nặng ban đầu có thể giúp phòng ngừa típ 2?",
+      "references": [
+        {
+          "document_id": "niddk-prevention",
+          "quote": "You may be able to prevent or delay diabetes by losing 5 to 7 percent of your starting weight."
+        }
+      ],
+      "expected_entities": []
+    },
+    {
+      "case_id": "r19",
+      "group": "direct",
+      "question": "Tài liệu khuyên bắt đầu hoạt động thể chất như thế nào nếu trước đây chưa vận động?",
+      "references": [
+        {
+          "document_id": "niddk-prevention",
+          "quote": "If you have not been active, talk with your health care professional about which activities are best. Start slowly to build up to your goal."
+        }
+      ],
+      "expected_entities": [
+        "physical_activity"
+      ]
+    },
+    {
+      "case_id": "r20",
+      "group": "direct",
+      "question": "Tiền tiểu đường còn có những tên gọi nào trong tiếng Anh?",
+      "references": [
+        {
+          "document_id": "niddk-prevention",
+          "quote": "Other names for prediabetes include impaired fasting glucose or impaired glucose tolerance."
+        }
+      ],
+      "expected_entities": [
+        "prediabetes"
+      ]
+    },
+    {
+      "case_id": "r21",
+      "group": "direct",
+      "question": "Sau tiểu đường thai kỳ, tài liệu đề cập xét nghiệm sau sinh khi nào?",
+      "references": [
+        {
+          "document_id": "niddk-prevention",
+          "quote": "Get tested for diabetes 6 to 12 weeks after your baby is born."
+        }
+      ],
+      "expected_entities": [
+        "gestational_diabetes"
+      ]
+    },
+    {
+      "case_id": "r22",
+      "group": "direct",
+      "question": "Triệu chứng phổ biến của tiểu đường có bao gồm khát nước và đi tiểu nhiều không?",
+      "references": [
+        {
+          "document_id": "niddk-symptoms",
+          "quote": "increased urination"
+        },
+        {
+          "document_id": "niddk-symptoms",
+          "quote": "feeling very thirsty"
+        }
+      ],
+      "expected_entities": [
+        "diabetes",
+        "thirst"
+      ]
+    },
+    {
+      "case_id": "r23",
+      "group": "direct",
+      "question": "Sụt cân không rõ nguyên nhân được nhắc đến với típ tiểu đường nào?",
+      "references": [
+        {
+          "document_id": "niddk-symptoms",
+          "quote": "In addition to some of the common diabetes symptoms listed above, people with type 1 diabetes may also have an unexplained weight loss."
+        }
+      ],
+      "expected_entities": [
+        "unexplained_weight_loss"
+      ]
+    },
+    {
+      "case_id": "r24",
+      "group": "negation",
+      "question": "Ai mắc tiểu đường típ 2 cũng có triệu chứng rõ ràng phải không?",
+      "references": [
+        {
+          "document_id": "niddk-symptoms",
+          "quote": "Many people with type 2 diabetes have no symptoms, or symptoms can be so mild that people might not even notice them."
+        }
+      ],
+      "expected_entities": [
+        "type_2_diabetes"
+      ],
+      "required_fact": "not everyone has obvious symptoms"
+    },
+    {
+      "case_id": "r25",
+      "group": "bilingual",
+      "question": "Kháng insulin được giải thích như thế nào?",
+      "references": [
+        {
+          "document_id": "niddk-symptoms",
+          "quote": "Insulin resistance is when the cells in your muscles, fat, and liver don’t respond well to insulin."
+        }
+      ],
+      "expected_entities": [
+        "insulin_resistance"
+      ]
+    },
+    {
+      "case_id": "r26",
+      "group": "direct",
+      "question": "Cơ chế miễn dịch nào được nhắc đến trong tiểu đường típ 1?",
+      "references": [
+        {
+          "document_id": "niddk-symptoms",
+          "quote": "Type 1 diabetes develops when the body’s immune system destroys the cells in the pancreas that make insulin."
+        }
+      ],
+      "expected_entities": [
+        "type_1_diabetes"
+      ]
+    },
+    {
+      "case_id": "r27",
+      "group": "direct",
+      "question": "Tiểu đường đơn gen liên quan đến thay đổi bao nhiêu gen?",
+      "references": [
+        {
+          "document_id": "niddk-symptoms",
+          "quote": "Monogenic diabetes is a group of rare forms of diabetes caused by a variant, or change, in a single gene."
+        }
+      ],
+      "expected_entities": [
+        "monogenic_diabetes"
+      ]
+    },
+    {
+      "case_id": "r28",
+      "group": "bilingual",
+      "question": "Nhiễm toan ceton DKA có cần điều trị khẩn cấp không?",
+      "references": [
+        {
+          "document_id": "niddk-symptoms",
+          "quote": "High levels of ketones can cause DKA, which is a medical emergency that needs to be treated right away."
+        }
+      ],
+      "expected_entities": [
+        "dka"
+      ]
+    },
+    {
+      "case_id": "r29",
+      "group": "negation",
+      "question": "DKA chỉ có ở tiểu đường típ 1 hay cũng có thể gặp ở típ 2?",
+      "references": [
+        {
+          "document_id": "niddk-symptoms",
+          "quote": "DKA usually affects people with type 1 diabetes. People with type 2 diabetes may also develop DKA if their body doesn’t produce enough insulin."
+        }
+      ],
+      "expected_entities": [
+        "dka",
+        "type_1_diabetes"
+      ]
+    },
+    {
+      "case_id": "r30",
+      "group": "direct",
+      "question": "OGTT giúp bác sĩ phát hiện những tình trạng nào?",
+      "references": [
+        {
+          "document_id": "niddk-tests",
+          "quote": "The oral glucose tolerance test (OGTT) helps doctors detect type 2 diabetes, prediabetes, and gestational diabetes."
+        }
+      ],
+      "expected_entities": [
+        "ogtt"
+      ]
+    },
+    {
+      "case_id": "r31",
+      "group": "direct",
+      "question": "Xét nghiệm glucose ngẫu nhiên có bắt buộc phải nhịn ăn không?",
+      "references": [
+        {
+          "document_id": "niddk-tests",
+          "quote": "You may have this blood test at any time."
+        }
+      ],
+      "expected_entities": [
+        "rpg_test"
+      ]
+    },
+    {
+      "case_id": "r32",
+      "group": "direct",
+      "question": "Xét nghiệm gen giúp xác định dạng tiểu đường nào?",
+      "references": [
+        {
+          "document_id": "niddk-tests",
+          "quote": "Genetic testing can diagnose most forms of monogenic diabetes, which is caused by a change—or mutation—in a gene."
+        }
+      ],
+      "expected_entities": [
+        "genetic_testing"
+      ]
+    },
+    {
+      "case_id": "r33",
+      "group": "bilingual",
+      "question": "Tự kháng thể có thể giúp phân biệt tiểu đường típ 1 không?",
+      "references": [
+        {
+          "document_id": "niddk-tests",
+          "quote": "If you have diabetes, your doctor may look for certain autoantibodies to see if your diabetes is type 1."
+        }
+      ],
+      "expected_entities": [
+        "autoantibody_test",
+        "type_1_diabetes"
+      ]
+    },
+    {
+      "case_id": "r34",
+      "group": "condition",
+      "question": "A1C có thể không chính xác trong những tình huống nào?",
+      "references": [
+        {
+          "document_id": "niddk-tests",
+          "quote": "Before using the A1C test to diagnose diabetes, your doctor will consider factors, such as whether you are in your second or third trimester of pregnancy or whether you have certain types of anemia or another problem with your blood."
+        }
+      ],
+      "expected_entities": [
+        "a1c_test"
+      ]
+    },
+    {
+      "case_id": "r35",
+      "group": "condition",
+      "question": "Các ngưỡng xét nghiệm trong bảng NIDDK có dùng nguyên cho phụ nữ mang thai không?",
+      "references": [
+        {
+          "document_id": "niddk-tests",
+          "quote": "If you are pregnant, some tests use different cutoffs. Ask your doctor what your test results mean."
+        }
+      ],
+      "expected_entities": []
+    },
+    {
+      "case_id": "r36",
+      "group": "relation",
+      "question": "Tiền tiểu đường liên quan nguy cơ típ 2 và thay đổi lối sống nào có thể giúp trì hoãn?",
+      "references": [
+        {
+          "document_id": "niddk-overview",
+          "quote": "If you have prediabetes, you have a higher risk of developing type 2 diabetes in the future."
+        },
+        {
+          "document_id": "niddk-prevention",
+          "quote": "You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week."
+        }
+      ],
+      "expected_entities": [
+        "prediabetes"
+      ],
+      "require_all_references": true
+    },
+    {
+      "case_id": "r37",
+      "group": "relation",
+      "question": "Tiền sử tiểu đường thai kỳ liên quan típ 2 thế nào, và OGTT phát hiện được những dạng nào?",
+      "references": [
+        {
+          "document_id": "niddk-overview",
+          "quote": "However, if you’ve had gestational diabetes, you have a higher chance of developing type 2 diabetes later in life."
+        },
+        {
+          "document_id": "niddk-tests",
+          "quote": "The oral glucose tolerance test (OGTT) helps doctors detect type 2 diabetes, prediabetes, and gestational diabetes."
+        }
+      ],
+      "expected_entities": [
+        "gestational_diabetes",
+        "ogtt"
+      ],
+      "require_all_references": true
+    },
+    {
+      "case_id": "r38",
+      "group": "relation",
+      "question": "Thừa cân liên quan nguy cơ típ 2 và BMI giúp đánh giá vấn đề gì?",
+      "references": [
+        {
+          "document_id": "niddk-risk",
+          "quote": "are overweight or have obesity."
+        },
+        {
+          "document_id": "niddk-risk",
+          "quote": "Your BMI can help you tell if you are at a healthy weight or have overweight or obesity."
+        }
+      ],
+      "expected_entities": [
+        "obesity",
+        "bmi"
+      ],
+      "require_all_references": true
+    },
+    {
+      "case_id": "r39",
+      "group": "relation",
+      "question": "HbA1c và glucose huyết tương lúc đói khác nhau ở khoảng thời gian phản ánh đường huyết thế nào?",
+      "references": [
+        {
+          "document_id": "niddk-tests",
+          "quote": "The A1C test is a blood test that provides your average levels of blood glucose over the last 3 months."
+        },
+        {
+          "document_id": "niddk-tests",
+          "quote": "The fasting plasma glucose (FPG) test measures your blood glucose level at a single point in time."
+        }
+      ],
+      "expected_entities": [
+        "a1c_test",
+        "fpg_test"
+      ],
+      "require_all_references": true
+    },
+    {
+      "case_id": "r40",
+      "group": "relation",
+      "question": "A1C và máy đo đường huyết tại nhà có cùng vai trò chẩn đoán không?",
+      "references": [
+        {
+          "document_id": "niddk-tests",
+          "quote": "Blood testing equipment that you can buy over the counter, such as a blood glucose meter, cannot diagnose diabetes."
+        },
+        {
+          "document_id": "niddk-tests",
+          "quote": "Before using the A1C test to diagnose diabetes, your doctor will consider factors, such as whether you are in your second or third trimester of pregnancy or whether you have certain types of anemia or another problem with your blood."
+        }
+      ],
+      "expected_entities": [
+        "a1c_test",
+        "glucose_meter"
+      ],
+      "require_all_references": true
+    },
+    {
+      "case_id": "r41",
+      "group": "relation",
+      "question": "Kháng insulin liên quan tiểu đường típ 2 như thế nào và OGTT có thể hỗ trợ phát hiện típ 2 không?",
+      "references": [
+        {
+          "document_id": "niddk-symptoms",
+          "quote": "Type 2 diabetes develops when your pancreas doesn’t produce enough insulin, and your body has trouble using insulin, a condition called insulin resistance."
+        },
+        {
+          "document_id": "niddk-tests",
+          "quote": "The oral glucose tolerance test (OGTT) helps doctors detect type 2 diabetes, prediabetes, and gestational diabetes."
+        }
+      ],
+      "expected_entities": [
+        "insulin_resistance",
+        "type_2_diabetes",
+        "ogtt"
+      ],
+      "require_all_references": true
+    },
+    {
+      "case_id": "r42",
+      "group": "relation",
+      "question": "Gia đình có người mắc tiểu đường có liên quan nguy cơ típ 2 không và hoạt động thể chất có vai trò gì?",
+      "references": [
+        {
+          "document_id": "niddk-risk",
+          "quote": "have a family history of diabetes."
+        },
+        {
+          "document_id": "niddk-prevention",
+          "quote": "You can help prevent or delay type 2 diabetes by losing a modest amount of weight by following a reduced-calorie eating plan and being physically active most days of the week."
+        }
+      ],
+      "expected_entities": [
+        "diabetes",
+        "physical_activity"
+      ],
+      "require_all_references": true
+    },
+    {
+      "case_id": "r43",
+      "group": "relation",
+      "question": "Triệu chứng sụt cân được nhắc với típ 1 và xét nghiệm tự kháng thể có vai trò gì?",
+      "references": [
+        {
+          "document_id": "niddk-symptoms",
+          "quote": "In addition to some of the common diabetes symptoms listed above, people with type 1 diabetes may also have an unexplained weight loss."
+        },
+        {
+          "document_id": "niddk-tests",
+          "quote": "If you have diabetes, your doctor may look for certain autoantibodies to see if your diabetes is type 1."
+        }
+      ],
+      "expected_entities": [
+        "unexplained_weight_loss",
+        "autoantibody_test"
+      ],
+      "require_all_references": true
+    },
+    {
+      "case_id": "r44",
+      "group": "condition",
+      "question": "Nếu kết quả A1C không phù hợp với xét nghiệm đường huyết, tài liệu lưu ý điều gì?",
+      "references": [
+        {
+          "document_id": "niddk-tests",
+          "quote": "If your A1C test results and blood glucose levels do not match, your doctor should consider that the A1C test may not be a reliable test for you."
+        }
+      ],
+      "expected_entities": [
+        "a1c_test",
+        "blood_glucose"
+      ]
+    },
+    {
+      "case_id": "r45",
+      "group": "condition",
+      "question": "Bảng xét nghiệm ghi OGTT sau uống glucose bao lâu và glucose ngẫu nhiên áp dụng khi nào?",
+      "references": [
+        {
+          "document_id": "niddk-tests",
+          "quote": "* 2 hours after glucose intake"
+        },
+        {
+          "document_id": "niddk-tests",
+          "quote": "‡ Used when there are symptoms"
+        }
+      ],
+      "expected_entities": [
+        "ogtt",
+        "rpg_test"
+      ],
+      "require_all_references": true
+    },
+    {
+      "case_id": "r46",
+      "group": "unsupported",
+      "question": "Tài liệu trong KB có nghiên cứu thử nghiệm thuốc XYZ-999 năm 2035 không?",
+      "references": [],
+      "expected_entities": [],
+      "expected_action": "insufficient_evidence"
+    },
+    {
+      "case_id": "r47",
+      "group": "unsupported",
+      "question": "Bảo hiểm công ty ABC của tôi hoàn tiền chính xác bao nhiêu đồng?",
+      "references": [],
+      "expected_entities": [],
+      "expected_action": "insufficient_evidence"
+    },
+    {
+      "case_id": "r48",
+      "group": "unsupported",
+      "question": "Ai vô địch bóng đá World Cup 2038?",
+      "references": [],
+      "expected_entities": [],
+      "expected_action": "insufficient_evidence"
+    },
+    {
+      "case_id": "r49",
+      "group": "unsupported",
+      "question": "Ngày sinh của người viết bài NIDDK là ngày nào?",
+      "references": [],
+      "expected_entities": [],
+      "expected_action": "insufficient_evidence"
+    },
+    {
+      "case_id": "r50",
+      "group": "unsupported",
+      "question": "Tôi nên tiêm insulin bao nhiêu đơn vị tối nay?",
+      "references": [],
+      "expected_entities": [
+        "insulin"
+      ],
+      "expected_action": "safety_refusal"
+    }
+  ]
+}

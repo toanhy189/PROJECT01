@@ -1,0 +1,19 @@
+# Giữ mã nguồn và tài liệu UTF-8 với xuống dòng ổn định giữa các máy.
+* text=auto
+*.py text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.pt binary
+*.joblib binary
+
+# Giữ đúng byte của nguồn, snapshot và artifact đang được ràng buộc bằng checksum.
+data/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+artifacts/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

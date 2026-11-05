@@ -1,0 +1,8 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+markers = ["neo4j_integration: requires a real Neo4j database and explicit opt-in"]
+
+[tool.ruff]
+line-length = 100
